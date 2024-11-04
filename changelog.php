@@ -6,7 +6,8 @@
     <hr class="md-3">
     <h4>Changelog:</h4>
     <ul>
-        <li>2024/11/04 - initial push to git for version management and automation. test test test</li>
+        <li>2024/11/04 - Added automated deploy with git and webhook for ease of updating.</li>
+        <li>2024/11/04 - initial push to git for version management</li>
         <li>2024/11/03 - inHome Install, and unhappy drop forms migrated to new design with input-groups. Rest to follow.</li>
         <li>2024/11/03 - Migrated CSS from custom-written to Bootstrap 5.3 for coherent design and ease-of-maintenace. Forms still to be migrated fully.</li>
         <li>2024/10/28 - Added Project Unhappy Drop, RFoG Install form</li>
