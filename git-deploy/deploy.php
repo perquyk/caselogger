@@ -9,4 +9,4 @@ define("MAX_EXECUTION_TIME", 180);                                     // Overri
 define("BEFORE_PULL", "");                                             // A command to execute before pulling
 define("AFTER_PULL", "");                                              // A command to execute after successfully pulling
 
-require_once("deployer.php");
+//require_once("deployer.php");
