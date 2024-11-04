@@ -1,0 +1,18 @@
+
+<h1>Other Stuff</h1>
+<hr>
+<h2>Frustrafix</h2>
+<p>Gemaakt door mezelf. <br> Voegt knoppen toe aan je planning voor spot/ants. Voegt ook wat knoppen toe binnen in je taak</p>
+<a href="https://chromewebstore.google.com/detail/frustrafix/obefljbiiicgmfajdhnpaklocbnlnkaf?authuser=0&hl=nl" target="_blank"><button type="button" class="btn btn-secondary btn-lg"><i class="bi bi-browser-chrome"></i> Open Chrome Webstore</button></a>
+<hr>
+<h2>Antscopy Remastered</h2>
+<p>Laatst een grote update gekregen door Jonathan Gevaert.<br>Tool om makkelijker kopies te nemen van je modemtesten.</p>
+<p>Installatie:</p>
+<ol>
+<li>Download .zip via onderstaande knop</li>
+<li>Open Chrome en ga naar chrome://extensions</li>
+<li>Zorg ervoor dat "Developer mode" is ingeschakeld.</li>
+<li>Klik op "Load unpacked" en zoek de uitgepakte .zip</li>
+</ol>
+<a href="files/AntsCopy.zip" target="_blank" download><button type="button" class="btn btn-success btn-lg"><i class="bi bi-file-arrow-down"></i> Download AntsCopy.zip</button></a>
+
