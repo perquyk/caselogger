@@ -1,7 +1,7 @@
 <?php
 define("TOKEN", "Kez1855d5s123!");                                       // The secret token to add as a GitHub or GitLab secret, or otherwise as https://www.example.com/?token=secret-token
 define("REMOTE_REPOSITORY", "git@github.com:Plopkoekk/caselogger.git"); // The SSH URL to your repository
-define("DIR", "/root/lamp-server/html/caselogger");                          // The path to your repostiroy; this must begin with a forward slash (/)
+define("DIR", "/lamp-server/html/caselogger");                          // The path to your repostiroy; this must begin with a forward slash (/)
 define("BRANCH", "refs/heads/master");                                 // The branch route
 define("LOGFILE", "deploy.log");                                       // The name of the file you want to log to.
 define("GIT", "/usr/bin/git");                                         // The path to the git executable
