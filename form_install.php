@@ -5,7 +5,7 @@
     <hr class="mb-1">
     <!-- ROW 1 -->
     <div class="row">
-        <h4 class="mt-3">Info klant</h4>
+        <h4 class="mt-3">Klant info</h4>
         <!-- Tasknummer -->
         <div class="col mb-3">
             <div class="input-group mt-3">
