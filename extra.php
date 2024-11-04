@@ -15,5 +15,4 @@
 <li>Klik op "Load unpacked" en zoek de uitgepakte .zip</li>
 </ol>
 <a href="files/AntsCopy.zip" target="_blank" download><button type="button" class="btn btn-success btn-lg"><i class="bi bi-file-arrow-down"></i> Download AntsCopy.zip</button></a>
-<p>test</p>
 
