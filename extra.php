@@ -6,6 +6,9 @@
 <a href="https://chromewebstore.google.com/detail/frustrafix/obefljbiiicgmfajdhnpaklocbnlnkaf?authuser=0&hl=nl" target="_blank"><button type="button" class="btn btn-secondary btn-lg"><i class="bi bi-browser-chrome"></i> Open Chrome Webstore</button></a>
 <hr>
 <h2>Antscopy Remastered</h2>
+<div class="alert alert-warning" role="alert">
+  Antscopy gebruikt de oude Manifest V2. Google is begonnen met een phase-out die in 2025 zou gefinaliseerd zijn.<br> Mogelijks werkt deze extensie na een tijd niet meer tot er iemand deze in Manifest v3 overbrengt.
+</div>
 <p>Laatst een grote update gekregen door Jonathan Gevaert.<br>Tool om makkelijker kopies te nemen van je modemtesten.</p>
 <p>Installatie:</p>
 <ol>
