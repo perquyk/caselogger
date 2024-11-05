@@ -13,11 +13,6 @@ function trimWoli(){
     let woliNew = woli.split(" ").join("");
     return woliNew; 
 }
-// Function to toggle collapsible submenus
-function toggleCollapse(menuId) {
-    const submenu = document.getElementById(menuId);
-    submenu.classList.toggle("expanded");
-}
 
 //function that generates the output for the install form
 function generateInstallCaselog() {
