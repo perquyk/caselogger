@@ -384,3 +384,61 @@ function gsxToClipboard() {
     });
 
 }
+
+//psv KA functies
+function generatePsvKaCaselog(){
+    const formData = {
+        datum: setTodayDate(),
+        taaktype: 'PSV KA',
+        woli: document.getElementById('woli').value,
+        adres: document.getElementById('adres').value,
+        remarks: document.getElementById('remarks').value,
+        resultaat: document.getElementById('resultaat').value,
+        materiaal: document.getElementById('materiaal').value
+
+    };
+
+    // Generate the output text
+    const outputText = `
+Datum: ${formData.datum}
+Taaktype: ${formData.taaktype}
+WOLI: ${formData.woli}
+Adres: ${formData.adres}
+____________________________________________________________
+Omschrijving Taak:
+Uitvoeren PSV KA voor ${formData.adres}
+    
+Issues/Remarks:
+${formData.remarks}
+
+Nodige Materialen voor Build:
+${formData.materiaal}
+
+Resultaat:
+${formData.resultaat}
+
+    `;
+return outputText;
+}
+
+function psvkaToTXT(){
+    var outputText = generatePsvKaCaselog();
+    var date = setTodayDate();
+    var klantnummer = trimWoli();
+    var filename = date+'_'+klantnummer+'_'+"PSV-KA";
+    // Create a .txt file download
+    const blob = new Blob([outputText], { type: 'text/plain' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = filename+'.txt';
+    link.click();
+}
+function psvkaToClipboard(){
+    var outputText = generatePsvKaCaselog();
+    navigator.clipboard.writeText(outputText).then(() => {
+        console.log('Form data copied to clipboard!');
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+}
+

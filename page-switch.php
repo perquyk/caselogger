@@ -25,8 +25,10 @@ if (isset($_GET['page'])) {
             case 'test':
                 include('login.php');
                 break;
-            }
-            
+            case 'psvka':
+                include('form_psvKA.php');
+                break;
+        }
 } else {
 include('changelog.php');
 }
