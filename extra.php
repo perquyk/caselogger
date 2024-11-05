@@ -7,7 +7,8 @@
 <hr>
 <h2>Antscopy Remastered</h2>
 <div class="alert alert-warning" role="alert">
-  Antscopy gebruikt de oude Manifest V2. Google is begonnen met een phase-out die in 2025 zou gefinaliseerd zijn.<br> Mogelijks werkt deze extensie na een tijd niet meer tot er iemand deze in Manifest v3 overbrengt.
+  Antscopy gebruikt de oude Manifest V2. Google is begonnen met een phase-out die in 2025 zou gefinaliseerd zijn.<br> Mogelijks werkt deze extensie na een tijd niet meer tot er iemand deze in Manifest v3 overbrengt.<br>
+    <a href="https://developer.chrome.com/docs/extensions/develop/migrate/mv2-deprecation-timeline">Meer info hier.</a>
 </div>
 <p>Laatst een grote update gekregen door Jonathan Gevaert.<br>Tool om makkelijker kopies te nemen van je modemtesten.</p>
 <p>Installatie:</p>
