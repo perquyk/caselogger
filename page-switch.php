@@ -28,6 +28,9 @@ if (isset($_GET['page'])) {
             case 'psvka':
                 include('form_psvKA.php');
                 break;
+            case 'cfn':
+                include('form_cfn.php');
+                break;
         }
 } else {
 include('changelog.php');
