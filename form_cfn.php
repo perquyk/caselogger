@@ -1,11 +1,11 @@
 
 
 <form id="CFNForm">
-    <h1>CFN</h1>
+    <h1>Corperate Fibernet</h1>
     <hr class="mb-1">
     <!-- ROW 1 -->
     <div class="row">
-        <h4 class="mt-3">Klant info</h4>
+        <h4 class="mt-3">Taak info</h4>
         <!-- WOLI-nummer -->
         <div class="col mb-3">
             <div class="input-group mt-3">
@@ -42,8 +42,8 @@
         <div class="col mb-3">
             <div class="input-group">
                 <span class="input-group-text">Main</span>
-                <select id="main" name="main" class="form-select" onchange="dynamicProfiles()">
-                    <option value="" selected>geen</option>
+                <select id="main" name="main" class="form-select" onchange="dynamic()">
+                    <option value="Geen" selected>Geen</option>
                     <option value="TLN-Coax">Coax - Telenet</option>
                     <option value="VDSL">VDSL</option>
                     <option value="VOO-Coax">Coax - VOO</option>
@@ -65,8 +65,8 @@
         <div class="col mb-3">
         <div class="input-group">
                 <span class="input-group-text">Backup</span>
-                <select id="backup" name="backup" class="form-select">
-                    <option value="Geen" selected>geen</option>
+                <select id="backup" name="backup" class="form-select" onchange="dynamic()">
+                    <option value="Geen" selected>Geen</option>
                     <option value="5G">5G Backup</option>
                     <option value="4G externe">Externe 4G Backup</option>
                     <option value="ZTE">4G met ZTE modem</option>
@@ -133,7 +133,15 @@
         </div>
     </div>
     <hr class="mb-4">
-    <!-- Row 7 --> 
+    <!-- row 7 -->
+    <div class="row">
+        <h4 class="mb-3">Testen</h4>
+        <div id="tests">
+            <!-- dynamically add needed tests -->
+        </div>
+    </div>
+    <hr class="mb-4">
+    <!-- Row 8 --> 
     <div class="row">
         <h4 class="mb-3">Finishing up</h4>
         <!-- Materiaal -->
@@ -144,7 +152,7 @@
             </div>
         </div>
     </div>
-    <!-- ROW 8 -->
+    <!-- ROW 9 -->
     <div class="row">
         <!-- resultaat -->
         <div class="col mb-3">
@@ -172,6 +180,10 @@
 
 <script>
     //cfn specific script
+    function dynamic(){
+        dynamicProfiles();
+        dynamicTests();
+    }
     function dynamicProfiles(){
         const profile = {
             tln1000: '1G/75M',
@@ -233,6 +245,40 @@
         select.innerHTML = output;
     }
     function dynamicTests(){
-        
+        var main = document.getElementById('main');
+        var backup = document.getElementById('backup');
+        var testdiv = document.getElementById('tests');
+        var output = "";
+        var outputMain = "";
+        var outputBackup = "";
+        if(main.value === "Geen" ){ outputMain = ""}
+        else{        
+            outputMain += `<div class="col mb-3">
+            <div class="input-group">
+                <span class="input-group-text">Speedtest main</span>
+                <input type="text" id="mainspeeddown" name="mainspeeddown" class="form-control" placeholder="down">
+                <input type="text" id="mainspeedup" name="mainspeedup" class="form-control" placeholder="up">
+            </div>
+        </div>`;}
+            if(backup.value === "Geen"){ outputBackup = ""}
+            else{
+                outputBackup += `<div class="col mb-3">
+                <div class="input-group">
+                        <span class="input-group-text">Speedtest backup</span>
+                        <input type="text" id="mainspeeddown" name="mainspeeddown" class="form-control" placeholder="down">
+                        <input type="text" id="mainspeedup" name="mainspeedup" class="form-control" placeholder="up">
+                    </div>  
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Failover test</span>
+                    <select id="failover" name="failover" class="form-select">
+                        <option value="" selected disabled>OK/NOK</option>
+                        <option value="OK">OK</option>
+                        <option value="NOK">NOK</option>
+                    </select>
+                </div>`; } 
+        console.log(output);
+        testdiv.innerHTML = outputMain + outputBackup;
     }
+
 </script>
