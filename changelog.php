@@ -5,7 +5,9 @@
     easy-peasy.</p>
     <hr class="md-3">
     <h4>Changelog:</h4>
-    <ul>   
+    <ul>
+        <li>2024/11/09 - Added Antscopy manifest v3 to other stuff page.</li> 
+        <li>2024/11/08 - Started work on CFN form.</li>  
         <li>2024/11/05 - Draft version of PSV KA form has been added.</li>
         <li>2024/11/05 - Added manifestV2 warning to Antscopy on "Other stuff" page.
         <li>2024/11/04 - Initial push to git for version management</li>
