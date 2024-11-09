@@ -1,7 +1,7 @@
 
 
 <form id="CFNForm">
-    <h1>Corperate Fibernet</h1>
+    <h1>Managed Corperate Fibernet</h1>
     <hr class="mb-1">
     <!-- ROW 1 -->
     <div class="row">
@@ -132,13 +132,38 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col mb-3">
+            <div class="input-group">
+                <span class="input-group-text">Router</span>
+                <select id="router" name="router" class="form-select">
+                    <option value="" selected disabled>Select router</option>
+                    <option value="HPE MSR2003">HPE MSR2003</option>
+                    <option value="HPE MSR3012">HPE MSR3012</option>
+                    <option value="HPE MSR958x">HPE MSR958x</option>
+                    <option value="TMC-R3305(L)">TMC-R3305(L)</option>
+                </select>
+            </div>
+        </div>
+        <div class="col mb-3">
+            <div class="input-group">
+                <span class="input-group-text">NIU</span>
+                <select id="niu" name="niu" class="form-select">
+                    <option value="Onveranderd" selected>Onveranderd</option>
+                    <option value="85MHz 2-Data Mampaey">85MHz 2-Data Mampaey</option>
+                    <option value="65MHz 4-Data">65MHz 4-Data</option>
+                    <option value="85MHz 4-Data">85MHz 4-Data</option>
+                </select>
+            </div>
+        </div>
+    </div>
     <hr class="mb-4">
     <!-- row 7 -->
     <div class="row">
         <h4 class="mb-3">Testen</h4>
-        <div id="tests">
+    </div>
+    <div class="row"id="tests">
             <!-- dynamically add needed tests -->
-        </div>
     </div>
     <hr class="mb-4">
     <!-- Row 8 --> 
@@ -277,8 +302,9 @@
                         <option value="NOK">NOK</option>
                     </select>
                 </div>`; } 
-        console.log(output);
+        console.log(outputMain+outputBackup);
         testdiv.innerHTML = outputMain + outputBackup;
+        console.log(document.getElementById('tests'));
     }
 
 </script>
