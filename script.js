@@ -420,7 +420,6 @@ ${formData.resultaat}
     `;
 return outputText;
 }
-
 function psvkaToTXT(){
     var outputText = generatePsvKaCaselog();
     var date = setTodayDate();
@@ -440,5 +439,16 @@ function psvkaToClipboard(){
     }).catch(err => {
         console.error('Failed to copy: ', err);
     });
+}
+
+//CFN
+function generateCFNCaselog(){
+
+}
+function cfnToTXT(){
+
+}
+function cfnToClipboard(){
+    
 }
 

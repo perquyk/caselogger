@@ -25,5 +25,6 @@
   <p>Dit is nog in test! verwacht bugs en sommige dingen die niet werken!</p>
 </div>
 <p>De modemtest copy functie herschreven (door mezelf) voor Manifest v3.<br>
-Dit is nog in testfase en de bedoeling is deze functionaliteit te integreren in Frustrafix. Dit om geen duizenden extensies te moeten hebben voor functionaliteit die eigenlijk ingebouwd zou moeten zijn.</p>
-<a href="https://chromewebstore.google.com/detail/antscopy/ndcgnmdjcfifegkmmlfnjiplbiochjhj?authuser=0&hl=nl" target="_blank"><button type="button" class="btn btn-secondary btn-lg">< class="bi bi-browser-chrome"></i>Open Chrome Webstore</button></a>
+Dit is nog in testfase en de bedoeling is deze functionaliteit te integreren in Frustrafix. Dit om geen duizenden extensies te moeten hebben voor functionaliteit die eigenlijk ingebouwd zou moeten zijn.<br><br>
+Het is voorlopig niet de bedoeling de grafieken in modemtesten mee te nemen in de functionaliteit sinds ik dit zelf amper gebruik en ik geen idee heb hoe ik er aan zou moeten beginnen.</p>
+<a href="https://chromewebstore.google.com/detail/antscopy/ndcgnmdjcfifegkmmlfnjiplbiochjhj?authuser=0&hl=nl" target="_blank"><button type="button" class="btn btn-secondary btn-lg"><i class="bi bi-browser-chrome"></i> Open Chrome Webstore</button></a>
