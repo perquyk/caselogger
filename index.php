@@ -7,7 +7,7 @@
 
 
     <link rel="stylesheet" href="styles.css"> <!-- Custom Styles -->
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
