@@ -31,6 +31,9 @@ if (isset($_GET['page'])) {
             case 'cfn':
                 include('form_cfn.php');
                 break;
+            case 'ipcalc':
+                include('ipcalc.php');
+                break;
         }
 } else {
 include('changelog.php');

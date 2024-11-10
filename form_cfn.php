@@ -1,7 +1,7 @@
 
 
 <form id="CFNForm">
-    <h1>Managed Corperate Fibernet</h1>
+    <h1>Managed Corporate Fibernet</h1>
     <hr class="mb-1">
     <!-- ROW 1 -->
     <div class="row">
@@ -157,6 +157,24 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col mb-3">
+            <div class="input-group">
+                <span class="input-group-text">Modem</span>
+                <select id="modemtype" class="form-select">
+                    <option value="modemtype" selected disabled>Modem Type</option>
+                    <option value="D3.1ERT">Marakele</option>
+                    <option value="AMOD3">AMOD3</option>
+                    <option value="AMOD4">AMOD4</option>
+                    <option value="ZTE">ZTE</option>
+                    <option value="Nokia-5G">Nokia 5G</option>
+                </select>
+                <input id="mac" name="mac" class="form-control" placeholder="MAC-adres" style="text-transform:uppercase" maxlength="17" onchange="macformat()">
+                <button class="btn btn-outline-secondary" type="button" onclick="testBtn()">Modem-Test</button>
+                <button class="btn btn-outline-secondary" type="button" onclick="testfunction()">LineTest</button>
+            </div>
+        </div>
+    </div>
     <hr class="mb-4">
     <!-- row 7 -->
     <div class="row">
@@ -305,6 +323,27 @@
         console.log(outputMain+outputBackup);
         testdiv.innerHTML = outputMain + outputBackup;
         console.log(document.getElementById('tests'));
+    }
+    function testfunction() {
+        console.log("testfunction has been triggered succesfully!");
+    }
+    function macformat(){
+        var mac = document.getElementById('mac');
+        console.log(mac.value);
+
+        let inputString = document.getElementById('mac').value.toUpperCase();
+        let n = 2;
+        let insertChar = ":";
+        let outputString = inputString.split("").reduce(function(acc, val, i) {
+            return i % n === 0 && i !== 0 ? acc + insertChar + val : acc + val;
+        }, "");
+        console.log(outputString);
+        mac.value = outputString;
+    }
+    function testBtn(){
+        var mac = document.getElementById('mac').value.toUpperCase();
+        var url = "http://ants.inet.telenet.be/tools/modems/modemtest/"
+        window.open(url+mac, '_blank');
     }
 
 </script>

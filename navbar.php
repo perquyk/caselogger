@@ -38,7 +38,7 @@
             B2B
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="index.php?page=cfn">CFN [NOT DONE]</a></li>
+            <li><a class="dropdown-item" href="index.php?page=cfn">Managed CFN [NOT DONE]</a></li>
             <li><a class="dropdown-item" href="index.php?page=psvka">PSV KA</a></li>
           </ul>
         </li>
@@ -53,6 +53,15 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="index.php?page=extra">Other Stuff</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Other Stuff
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.php?page=extra">Other Tools</a></li>
+            <li><a class="dropdown-item" href="index.php?page=ipcalc">IP Calculator [NOT DONE!]</a></li>
+          </ul>
         </li>
       </ul>
     </div>
