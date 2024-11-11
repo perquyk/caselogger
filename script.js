@@ -5,13 +5,11 @@ function setTodayDate() {
     const yyyy = today.getFullYear();
     const mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
     const dd = String(today.getDate()).padStart(2, '0');
-    const formattedDate = `${yyyy}-${mm}-${dd}`; // Format: YYYY-MM-DD
-    return formattedDate;
+    return `${yyyy}-${mm}-${dd}`;
 }
 function trimWoli(){
     let woli = document.getElementById('woli').value;
-    let woliNew = woli.split(" ").join("");
-    return woliNew; 
+    return woli.split(" ").join("");
 }
 
 //function that generates the output for the install form
@@ -33,7 +31,7 @@ function generateInstallCaselog() {
     };
 
     // Generate the output text
-    const outputText = `
+    return `
 Datum: ${formData.datum}
 Taaktype: ${formData.taaktype}
 Task: ${formData.task}
@@ -61,14 +59,13 @@ ${formData.resultaat}
 Modemtest: 
 ${formData.modemtest}
     `;
-return outputText;
 }
 
 function installToTXT() {
-    var outputText = generateInstallCaselog();
-    var date = setTodayDate();
-    var klantnummer = document.getElementById('klantnummer').value;
-    var filename = date+'_'+klantnummer+'_'+"install";
+    let outputText = generateInstallCaselog();
+    let date = setTodayDate();
+    let klantnummer = document.getElementById('klantnummer').value;
+    let filename = date+'_'+klantnummer+'_'+"install";
     // Create a .txt file download
     const blob = new Blob([outputText], { type: 'text/plain' });
     const link = document.createElement('a');
@@ -77,7 +74,7 @@ function installToTXT() {
     link.click();
 }
 function installToClipboard() {
-    var outputText = generateInstallCaselog();
+    let outputText = generateInstallCaselog();
     navigator.clipboard.writeText(outputText).then(() => {
         console.log('Form data copied to clipboard!');
     }).catch(err => {
@@ -103,7 +100,7 @@ function generateRepairCaselog(){
     };
 
     // Generate the output text
-    const outputText = `
+    return `
 Datum: ${formData.datum}
 Taaktype: ${formData.taaktype}
 Task: ${formData.task}
@@ -129,14 +126,13 @@ ${formData.resultaat}
 Modemtest: 
 ${formData.modemtest}
     `;
-return outputText;
 }
 
 function repairToTXT() {
-    var outputText = generateRepairCaselog();
-    var date = setTodayDate();
-    var klantnummer = document.getElementById('klantnummer').value;
-    var filename = date+'_'+klantnummer+'_'+"repair";
+    let outputText = generateRepairCaselog();
+    let date = setTodayDate();
+    let klantnummer = document.getElementById('klantnummer').value;
+    let filename = date+'_'+klantnummer+'_'+"repair";
     // Create a .txt file download
     const blob = new Blob([outputText], { type: 'text/plain' });
     const link = document.createElement('a');
@@ -145,7 +141,7 @@ function repairToTXT() {
     link.click();
 }
 function repairToClipboard() {
-    var outputText = generateRepairCaselog();
+    let outputText = generateRepairCaselog();
     navigator.clipboard.writeText(outputText).then(() => {
         console.log('Form data copied to clipboard!');
     }).catch(err => {
@@ -173,7 +169,7 @@ function generateRfogInstallCaselog() {
     };
 
     // Generate the output text
-    const outputText = `
+    return `
 Datum: ${formData.datum}
 Taaktype: ${formData.taaktype}
 Task: ${formData.task}
@@ -200,13 +196,12 @@ Patch informatie:
 Modemtest: 
 ${formData.modemtest}
     `;
-return outputText;
 }
 function rfogInstallToTXT() {
-    var outputText = generateRfogInstallCaselog();
-    var date = setTodayDate();
-    var klantnummer = document.getElementById('klantnummer').value;
-    var filename = date+'_'+klantnummer+'_'+"RFOGinstall";
+    let outputText = generateRfogInstallCaselog();
+    let date = setTodayDate();
+    let klantnummer = document.getElementById('klantnummer').value;
+    let filename = date+'_'+klantnummer+'_'+"RFOGinstall";
     // Create a .txt file download
     const blob = new Blob([outputText], { type: 'text/plain' });
     const link = document.createElement('a');
@@ -215,7 +210,7 @@ function rfogInstallToTXT() {
     link.click();
 }
 function rfogInstallToClipboard() {
-    var outputText = generateRfogInstallCaselog();
+    let outputText = generateRfogInstallCaselog();
     navigator.clipboard.writeText(outputText).then(() => {
         console.log('Form data copied to clipboard!');
     }).catch(err => {
@@ -254,7 +249,7 @@ function generateProjectUnhappyDropCaselog() {
     };
 
     // Generate the output text
-    const outputText = `
+    return `
 Datum: ${formData.datum}
 Taaktype: ${formData.taaktype}
 Task: ${formData.task}
@@ -290,13 +285,12 @@ ${formData.pnmAfter}
 Resultaat:
 ${formData.resultaat}
     `;
-return outputText;
 }
 function projectUnhappyDropToTXT() {
-    var outputText = generateProjectUnhappyDropCaselog();
-    var date = setTodayDate();
-    var klantnummer = document.getElementById('klantnummer').value;
-    var filename = date+'_'+klantnummer+'_'+"Proj_UnhappyDrop";
+    let outputText = generateProjectUnhappyDropCaselog();
+    let date = setTodayDate();
+    let klantnummer = document.getElementById('klantnummer').value;
+    let filename = date+'_'+klantnummer+'_'+"Proj_UnhappyDrop";
     // Create a .txt file download
     const blob = new Blob([outputText], { type: 'text/plain' });
     const link = document.createElement('a');
@@ -305,7 +299,7 @@ function projectUnhappyDropToTXT() {
     link.click();
 }
 function projectUnhappyDropToClipboard() {
-    var outputText = generateProjectUnhappyDropCaselog();
+    let outputText = generateProjectUnhappyDropCaselog();
     navigator.clipboard.writeText(outputText).then(() => {
         console.log('Form data copied to clipboard!');
     }).catch(err => {
@@ -314,7 +308,7 @@ function projectUnhappyDropToClipboard() {
 
 }
 
-//GSX migraite functies
+//GSX migratie functies
 function generateGsxCaselog() {
     const formData = {
         datum: setTodayDate(),
@@ -333,7 +327,7 @@ function generateGsxCaselog() {
     };
 
     // Generate the output text
-    const outputText = `
+    return `
 Datum: ${formData.datum}
 Taaktype: ${formData.taaktype}
 WOLI: ${formData.woli}
@@ -361,13 +355,12 @@ Modemtest:
 ${formData.modemtest}
 
     `;
-return outputText;
 }
 function gsxToTXT() {
-    var outputText = generateGsxCaselog();
-    var date = setTodayDate();
-    var klantnummer = trimWoli();
-    var filename = date+'_'+klantnummer+'_'+"GSX";
+    let outputText = generateGsxCaselog();
+    let date = setTodayDate();
+    let klantnummer = trimWoli();
+    let filename = date+'_'+klantnummer+'_'+"GSX";
     // Create a .txt file download
     const blob = new Blob([outputText], { type: 'text/plain' });
     const link = document.createElement('a');
@@ -376,7 +369,7 @@ function gsxToTXT() {
     link.click();
 }
 function gsxToClipboard() {
-    var outputText = generateGsxCaselog();
+    let outputText = generateGsxCaselog();
     navigator.clipboard.writeText(outputText).then(() => {
         console.log('Form data copied to clipboard!');
     }).catch(err => {
@@ -399,7 +392,7 @@ function generatePsvKaCaselog(){
     };
 
     // Generate the output text
-    const outputText = `
+    return `
 Datum: ${formData.datum}
 Taaktype: ${formData.taaktype}
 WOLI: ${formData.woli}
@@ -418,13 +411,12 @@ Resultaat:
 ${formData.resultaat}
 
     `;
-return outputText;
 }
 function psvkaToTXT(){
-    var outputText = generatePsvKaCaselog();
-    var date = setTodayDate();
-    var klantnummer = trimWoli();
-    var filename = date+'_'+klantnummer+'_'+"PSV-KA";
+    let outputText = generatePsvKaCaselog();
+    let date = setTodayDate();
+    let klantnummer = trimWoli();
+    let filename = date+'_'+klantnummer+'_'+"PSV-KA";
     // Create a .txt file download
     const blob = new Blob([outputText], { type: 'text/plain' });
     const link = document.createElement('a');
@@ -433,7 +425,7 @@ function psvkaToTXT(){
     link.click();
 }
 function psvkaToClipboard(){
-    var outputText = generatePsvKaCaselog();
+    let outputText = generatePsvKaCaselog();
     navigator.clipboard.writeText(outputText).then(() => {
         console.log('Form data copied to clipboard!');
     }).catch(err => {
