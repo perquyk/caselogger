@@ -2,6 +2,9 @@
 <h1>Other Stuff</h1>
 <hr>
 <h2>Frustrafix</h2>
+<div class="alert alert-warning" role="alert">
+  <p>V3.0.1 is gereleased. Dit brengt de Antscopy Manifest v3 tot in deze extensie. Moest je beiden geinstalleerd hebben, kun je ofwel de optie uitzetten in frustrafix, ofwel de antscopy-V3 addon verwijderen.</p>
+</div>
 <p>Gemaakt door mezelf. <br> Voegt knoppen toe aan je planning voor spot/ants. Voegt ook wat knoppen toe binnen in je taak</p>
 <a href="https://chromewebstore.google.com/detail/frustrafix/obefljbiiicgmfajdhnpaklocbnlnkaf?authuser=0&hl=nl" target="_blank"><button type="button" class="btn btn-secondary btn-lg"><i class="bi bi-browser-chrome"></i> Open Chrome Webstore</button></a>
 <hr>
