@@ -453,12 +453,9 @@ function generateCFNCaselog(){
         resultaat: document.getElementById('resultaat').value,
         modemtest: document.getElementById('modemtest').value,
         //dynamic vars
-        mobileTests: "",
-        backupTests: "",
-        mainTests: "",
-        south: "",
-        dynaMateriaal:"",
-        dynaTests: ""
+        dynaSouth: dynaSouth(),
+        dynaMateriaal: dynaMat(),
+        dynaTests: dynaTest()
     }
     return `
     Datum: ${formData.datum}
@@ -467,7 +464,7 @@ function generateCFNCaselog(){
     Adres: ${formData.adres}
     ____________________________________________________________
     Omschrijving Taak:
-    Installatie Managed CFN${formData.south} ${formData.profiel}
+    Installatie Managed CFN${formData.dynaSouth} ${formData.profiel}
     - Main: ${formData.main}
     - Backup: ${formData.backup}
     - Catsap-status bij aankomst: ${formData.catsap}
@@ -512,4 +509,19 @@ function cfnToClipboard(){
         console.error('Failed to copy: ', err);
     });
 }
-
+//functions that add value to dynamic vars in CFN caselog
+function dynaMat(){
+    let output = "";
+    output += " ";
+    return output;
+}
+function dynaTest(){
+    let output = "";
+    output += " ";
+    return output;
+}
+function dynaSouth(){
+    let output = "";
+    output += " ";
+    return output;
+}
