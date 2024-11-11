@@ -458,36 +458,36 @@ function generateCFNCaselog(){
         dynaTests: dynaTest()
     }
     return `
-    Datum: ${formData.datum}
-    Taaktype: ${formData.taaktype}
-    WOLI: ${formData.woli}
-    Adres: ${formData.adres}
-    ____________________________________________________________
-    Omschrijving Taak:
-    Installatie Managed CFN${formData.dynaSouth} ${formData.profiel}
-    - Main: ${formData.main}
-    - Backup: ${formData.backup}
-    - Catsap-status bij aankomst: ${formData.catsap}
-    - filter-status bij aankomst: ${formData.filter}
-    
-    Testen:
-    ${formData.dynaTests}
-    
-    Acties:
-    ${formData.acties}
-    
-    Materiaal:
-    ${formData.dynaMateriaal}
-    
-    Extra materiaal:
-    ${formData.materiaal}
-    
-    Resultaat:
-    ${formData.resultaat}
-    
-    Modemtest:
-    ${formData.modemtest}
-    `
+Datum: ${formData.datum}
+Taaktype: ${formData.taaktype}
+WOLI: ${formData.woli}
+Adres: ${formData.adres}
+____________________________________________________________
+Omschrijving Taak:
+Installatie Managed CFN${formData.dynaSouth} ${formData.profiel}
+- Main: ${formData.main}
+- Backup: ${formData.backup}
+- Catsap-status bij aankomst: ${formData.catsap}
+- filter-status bij aankomst: ${formData.filter}
+
+Testen:
+${formData.dynaTests}
+
+Acties:
+${formData.acties}
+
+Materiaal:
+${formData.dynaMateriaal}
+
+Extra materiaal:
+${formData.materiaal}
+
+Resultaat:
+${formData.resultaat}
+
+Modemtest:
+${formData.modemtest}
+`
 }
 function cfnToTXT(){
     let outputText = generateCFNCaselog();
@@ -518,69 +518,147 @@ function dynaMat(){
     const mac = document.getElementById('mac').value;
     switch(router){
         case "HPE MSR2003":
-            output += "1x HPE MSR2003" + `
-            `;
+            output += "- 1x HPE MSR2003";
+            output += `
+`;
             break;
         case "HPE MSR3012":
-            output += "1x HPE MSR3012" + `
-            `;
+            output += "- 1x HPE MSR3012";
+            output += `
+`;
             break;
         case "HPE MSR958x":
-            output += "1x HPE MSR958x" + `
-            `;
+            output += "- 1x HPE MSR958x";
+            output += `
+`;
             break;
         case "TMC-R3305(L)":
-            output += "1x HPE TMC-R3305(L)" + `
-            `;
+            output += "- 1x HPE TMC-R3305(L)";
+            output += `
+`;
             break;
     }
     switch(modem){
         case "D3.1ERT":
-            output += "1x Marakele - " + mac + `
-            `;
+            output += "- 1x CBN CV8560E (Marakele) - " + mac;
+            output += `
+`;
             break;
         case "AMOD3":
-            output += "1x AMOD3 - " + mac + `
-            `;
+            output += "- 1x Technicolor TG546Bv A-MOD 3 - " + mac;
+            output += `
+`;
             break;
         case "AMOD4":
-            output += "1x AMOD4 - " + mac + `
-            `;
+            output += "- 1x Sagemcom CS50001 A-MOD 4 - " + mac;
+            output += `
+`;
             break;
         case "ZTE":
-            output += "1x ZTE Modem - " + mac + `
-            `;
+            output += "- 1x ZTE MF281 LTE modem - " + mac;
+            output += `
+`;
             break;
         case "Nokia-5G":
-            output += "1x Nokia 5G Modem - " + mac + `
-            `;
+            output += "- 1x Nokia 5G26-A - " + mac;
+            output += `
+`;
             break;
     }
     switch(niu){
         case "Onveranderd":
             break;
         case "85MHz 2-Data Mampaey":
-            output += "1x NIU 85MHz 2-Data Mampaey" + `
-            `;
+            output += "- 1x Mampaey – NIU-85/105 – Versterker – Garage NIU 85MHz upstream – 2CM + lifeline";
             break;
         case "65MHz 4-Data":
-            output += "1x NIU 65MHz 4-Data" + `
-            `;
+            output += "- 1x DINH - NIU-65/88 - Versterker - 4CM NIU 65 MHz upstream";
             break;
         case "85MHz 4-Data":
-            output += "1x NIU 85MHz 4-Data" + `
-            `;
+            output += "- 1x Teleste – NIU-85/105 – Versterker – 4CM NIU 85MHz upstream";
             break;
     }
     return output;
 }
 function dynaTest(){
     let output = "";
-    output += " ";
+    const testData = {
+        mainSpeedDown: document.getElementById('mainSpeedDown'),
+        mainSpeedUp: document.getElementById('mainSpeedUp'),
+        mainRsrp: document.getElementById('mainRsrp'),
+        mainBand: document.getElementById('mainBand'),
+        backupSpeedDown: document.getElementById('backupSpeedDown'),
+        backupSpeedUp: document.getElementById('backupSpeedUp'),
+        backupRsrp: document.getElementById('backupRsrp'),
+        backupBand: document.getElementById('backupBand'),
+        failOver: document.getElementById('failOver')
+    }
+    const main = document.getElementById('main').value;
+    const backup = document.getElementById('backup').value;
+    switch(main){
+        case 'Geen':
+            break;
+            //coax lines
+        case 'TLN-Coax':
+        case 'VOO-Coax':
+            output += `
+Main:
+Speedtest: DOWN: ${testData.mainSpeedDown.value} Mbps/ UP: ${testData.mainSpeedUp.value} Mbps
+`
+            break;
+            //pxm lines
+        case 'VDSL':
+        case 'GPON':
+            output += `
+Main:
+Speedtest: DOWN: ${testData.mainSpeedDown.value} Mbps/ UP: ${testData.mainSpeedUp.value} Mbps
+`
+            break;
+
+            //mobiles
+        case '4G extern':
+        case '4G ZTE':
+        case '5G':
+            output += `
+Main:
+Speedtest: DOWN: ${testData.mainSpeedDown.value} Mbps/ UP: ${testData.mainSpeedUp.value} Mbps
+Signaal: ${testData.mainRsrp.value}b${testData.mainBand.value}
+`
+            break;
+    }
+    switch(backup){
+        case 'Geen':
+            break;
+        //pxm lines
+        case 'VDSL':
+        case 'GPON':
+            output += `
+Backup:
+Speedtest: DOWN: ${testData.backupSpeedDown.value} Mbps/ UP: ${testData.backupSpeedUp.value} Mbps
+Failover test: ${testData.failOver.value}
+`
+            break;
+
+        //mobiles
+        case '4G extern':
+        case '4G ZTE':
+        case '5G':
+            output += `
+Backup:
+Speedtest: DOWN: ${testData.backupSpeedDown.value} Mbps/ UP: ${testData.backupSpeedUp.value} Mbps
+Signaal: ${testData.backupRsrp.value}b${testData.backupBand.value}
+Failover test: ${testData.failOver.value}
+`
+            break;
+    }
     return output;
 }
 function dynaSouth(){
     let output = "";
-    output += " ";
+    const south = document.getElementById('main').value;
+    if(south !== "VOO-Coax"){output = ""}
+    else{
+        output += "-South";
+    }
     return output;
 }
