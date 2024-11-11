@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="made script.js &quot;ok&quot;">
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-    </list>
+    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="small bug in variable declaration in generateCFNCaselog()" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +75,7 @@
       <workItem from="1731328036904" duration="9475000" />
       <workItem from="1731338079922" duration="820000" />
       <workItem from="1731339528052" duration="2787000" />
-      <workItem from="1731342427780" duration="458000" />
+      <workItem from="1731342427780" duration="819000" />
     </task>
     <task id="LOCAL-00001" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
       <option name="closed" value="true" />
@@ -271,7 +269,39 @@
       <option name="project" value="LOCAL" />
       <updated>1731341329466</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added the &quot;fixed&quot; variables to the generateCFNCaselog Function.">
+      <option name="closed" value="true" />
+      <created>1731342942453</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1731342942453</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added the &quot;fixed&quot; variables to the generateCFNCaselog Function.">
+      <option name="closed" value="true" />
+      <created>1731342949668</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1731342949668</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added cfnToTXT and cfnToClipboard">
+      <option name="closed" value="true" />
+      <created>1731343165925</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1731343165925</updated>
+    </task>
+    <task id="LOCAL-00028" summary="small bug in variable declaration in generateCFNCaselog()">
+      <option name="closed" value="true" />
+      <created>1731343249960</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1731343249960</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +312,21 @@
     <MESSAGE value="added more dynamic questions to cfn form" />
     <MESSAGE value="trying to fix img stuff" />
     <MESSAGE value="made script.js &quot;ok&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="made script.js &quot;ok&quot;" />
+    <MESSAGE value="Added the &quot;fixed&quot; variables to the generateCFNCaselog Function." />
+    <MESSAGE value="Added cfnToTXT and cfnToClipboard" />
+    <MESSAGE value="small bug in variable declaration in generateCFNCaselog()" />
+    <option name="LAST_COMMIT_MESSAGE" value="small bug in variable declaration in generateCFNCaselog()" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/script.js</url>
+          <line>426</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
