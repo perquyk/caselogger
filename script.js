@@ -60,7 +60,6 @@ Modemtest:
 ${formData.modemtest}
     `;
 }
-
 function installToTXT() {
     let outputText = generateInstallCaselog();
     let date = setTodayDate();
@@ -127,7 +126,6 @@ Modemtest:
 ${formData.modemtest}
     `;
 }
-
 function repairToTXT() {
     let outputText = generateRepairCaselog();
     let date = setTodayDate();
