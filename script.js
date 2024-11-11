@@ -456,7 +456,7 @@ function generateCFNCaselog(){
         materiaal: document.getElementById('materiaal').value,
         resultaat: document.getElementById('resultaat').value,
         modemtest: document.getElementById('modemtest').value,
-        //dynamische vars
+        //dynamic vars
         mainSpeedDown: document.getElementById('mainSpeedDown'),
         mainSpeedUp: document.getElementById('mainSpeedUp'),
         backupSpeedDown: document.getElementById('backupSpeedDown'),
