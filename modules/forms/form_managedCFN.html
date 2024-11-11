@@ -45,7 +45,7 @@
         <div class="col mb-3">
             <div class="input-group">
                 <label class="input-group-text" for="main">Main</label>
-                <select id="main" name="main" class="form-select" onchange="dynamic()">
+                <select id="main" name="main" class="form-select" onchange="dynamics()">
                     <option value="Geen" selected>Geen</option>
                     <option value="TLN-Coax">Coax - Telenet</option>
                     <option value="VDSL">VDSL</option>
@@ -61,14 +61,14 @@
             <div class="input-group">
                 <label class="input-group-text" for="profiel">Profiel</label>
                 <select id="profiel" name="profiel" class="form-select">
-                    <!-- dynamicly filled in through dynamicProfiles() -->
+                    <!-- dynamically filled in through dynamicProfiles() -->
                 </select>
             </div>
         </div>
         <div class="col mb-3">
             <div class="input-group">
                 <label class="input-group-text" for="backup">Backup</label>
-                <select id="backup" name="backup" class="form-select" onchange="dynamic()">
+                <select id="backup" name="backup" class="form-select" onchange="dynamics()">
                     <option value="Geen" selected>Geen</option>
                     <option value="5G">5G Backup</option>
                     <option value="4G externe">Externe 4G Backup</option>
@@ -227,7 +227,7 @@
 
 <script>
     //cfn specific script
-    function dynamic(){
+    function dynamics(){
         dynamicProfiles();
         dynamicTests();
     }
@@ -295,9 +295,98 @@
     function dynamicTests(){
         let main = document.getElementById('main');
         let backup = document.getElementById('backup');
-        var outputMain = "";
-        var outputBackup = "";
-        if(main.value === "Geen" ){ outputMain = ""}
+        let testDiv = document.getElementById('tests');
+        let outputMain = "";
+        let outputBackup = "";
+        //main switch
+        switch(main.value){
+            case "Geen":
+                outputMain = "";
+                break;
+            case "TLN-Coax":
+            case "VDSL":
+            case "VOO-Coax":
+            case "GPON":
+                outputMain += `
+                    <div class="col mb-3">
+                        <div class="input-group">
+                            <label class="input-group-text" for="mainSpeedDown">Speedtest main</label>
+                            <input type="text" id="mainSpeedDown" name="mainSpeedDown" class="form-control" placeholder="down">
+                            <label for="mainSpeedUp"></label>
+                            <input type="text" id="mainSpeedUp" name="mainSpeedUp" class="form-control" placeholder="up">
+                        </div>
+                    </div>
+                    `;
+                break;
+        }
+        //backup switch
+        switch(backup.value){
+            case "Geen":
+                outputBackup = "";
+                break;
+            case "5G":
+            case "4G Externe":
+            case "ZTE":
+                outputBackup += `
+                    <div class="col mb-3">
+                        <div class="input-group">
+                            <label class="input-group-text" for="backupSpeedDown">Speedtest Back-up</label>
+                            <input type="text" id="backupSpeedDown" name="backupSpeedDown" class="form-control" placeholder="down">
+                            <input type="text" id="backupSpeedUp" name="backupSpeedUp" class="form-control" placeholder="up">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label class="input-group-text" for="failover">Failover test</label>
+                        <select id="failover" name="failover" class="form-select">
+                            <option value="" selected disabled>OK/NOK</option>
+                            <option value="OK">OK</option>
+                            <option value="NOK">NOK</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class=input-group">
+                            <label class="input-group-text" for="backupRsrp">Backup RSRP</label>
+                            <input class="form-control" type="text" id="backupRsrp" />
+                            <label class="input-group-text">dBm</label>
+                            <select class="form-select" id="band">
+                                <option value="20">b20</option>
+                                <option value="7">b7</option>
+                                <option value="3">b3</option>
+                                <option value="1">b1</option>
+                            </select>
+                        </div>
+                    </div>
+                `;
+                break;
+            default:
+                outputBackup += `
+                    <div class="col mb-3">
+                        <div class="input-group">
+                            <label class="input-group-text" for="backupSpeedDown">Speedtest Back-up</label>
+                            <input type="text" id="backupSpeedDown" name="backupSpeedDown" class="form-control" placeholder="down">
+                            <input type="text" id="backupSpeedUp" name="backupSpeedUp" class="form-control" placeholder="up">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label class="input-group-text" for="failover">Failover test</label>
+                        <select id="failover" name="failover" class="form-select">
+                            <option value="" selected disabled>OK/NOK</option>
+                            <option value="OK">OK</option>
+                            <option value="NOK">NOK</option>
+                        </select>
+                    </div>
+                    `;
+                break;}
+        testDiv.innerHTML = outputMain + outputBackup;
+    }
+
+    function OLDdynamicTests(){
+        let main = document.getElementById('main');
+        let backup = document.getElementById('backup');
+        let testDiv = document.getElementById('tests');
+        let outputMain = "";
+        let outputBackup = "";
+        if(main.value === "Geen" ){outputMain = ""}
         else{
             outputMain += `<div class="col mb-3">
             <div class="input-group">
@@ -324,7 +413,7 @@
                     </select>
                 </div>`; }
         console.log(outputMain+outputBackup);
-        testdiv.innerHTML = outputMain + outputBackup;
+        testDiv.innerHTML = outputMain + outputBackup;
         console.log(document.getElementById('tests'));
     }
     function testfunction() {
