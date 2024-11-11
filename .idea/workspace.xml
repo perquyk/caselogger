@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/forms/form_managedCFN.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/forms/form_managedCFN.html" afterDir="false" />
-    </list>
+    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="added more dynamic questions to cfn form" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1731328035452</updated>
       <workItem from="1731328036904" duration="9475000" />
-      <workItem from="1731338079922" duration="623000" />
+      <workItem from="1731338079922" duration="820000" />
     </task>
     <task id="LOCAL-00001" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
       <option name="closed" value="true" />
@@ -190,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731335407456</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added more dynamic questions to cfn form">
+      <option name="closed" value="true" />
+      <created>1731338904180</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1731338904180</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +203,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div" />
+    <MESSAGE value="added more dynamic questions to cfn form" />
+    <option name="LAST_COMMIT_MESSAGE" value="added more dynamic questions to cfn form" />
   </component>
 </project>
