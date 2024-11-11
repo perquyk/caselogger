@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="added dynaMat funtionality" />
+    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="added needed whitespace for materials as auto enter was appartently not a thing when using +=" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +75,7 @@
       <workItem from="1731328036904" duration="9475000" />
       <workItem from="1731338079922" duration="820000" />
       <workItem from="1731339528052" duration="2787000" />
-      <workItem from="1731342427780" duration="2259000" />
+      <workItem from="1731342427780" duration="2640000" />
     </task>
     <task id="LOCAL-00001" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
       <option name="closed" value="true" />
@@ -357,7 +357,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731344719664</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="fixed modem switch, checked against wrong value for marakele modem">
+      <option name="closed" value="true" />
+      <created>1731344839286</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1731344839286</updated>
+    </task>
+    <task id="LOCAL-00037" summary="added needed whitespace for materials as auto enter was appartently not a thing when using +=">
+      <option name="closed" value="true" />
+      <created>1731345000923</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1731345000923</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +393,9 @@
     <MESSAGE value="removed unused vars" />
     <MESSAGE value="added placeholder functions for dynamic form vars." />
     <MESSAGE value="added dynaMat funtionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="added dynaMat funtionality" />
+    <MESSAGE value="fixed modem switch, checked against wrong value for marakele modem" />
+    <MESSAGE value="added needed whitespace for materials as auto enter was appartently not a thing when using +=" />
+    <option name="LAST_COMMIT_MESSAGE" value="added needed whitespace for materials as auto enter was appartently not a thing when using +=" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
