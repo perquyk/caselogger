@@ -6,7 +6,7 @@
     <hr class="md-3">
     <h4>Changelog:</h4>
     <ul>
-        <li>2024/11/11 - Antscopy v3 is now also built-in to Frustrafix. Togglable within the options page. Please keep in mind to either disable the slider, or remove the antscopy v3 extension!</li>
+        <li>2024/11/11 - AntscopyV3 is now also built-in to Frustrafix. Togglable within the options page. Please keep in mind to either disable it, or remove the antscopyV3 extension!</li>
         <li>2024/11/09 - Added Antscopy manifest v3 to other stuff page.</li> 
         <li>2024/11/08 - Started work on CFN form.</li>  
         <li>2024/11/05 - Draft version of PSV KA form has been added.</li>
