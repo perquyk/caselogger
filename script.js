@@ -470,7 +470,8 @@ function generateCFNCaselog(){
         backupTests: "",
         mainTests: "",
         south: "",
-        dynaMateriaal:""
+        dynaMateriaal:"",
+        dynaTests: ""
     }
     return `
     Datum: ${formData.datum}
@@ -486,9 +487,7 @@ function generateCFNCaselog(){
     - filter-status bij aankomst: ${formData.filter}
     
     Testen:
-    ${formData.mainTests}
-    ${formData.backupTests}
-    ${formData.mobileTests}
+    ${formData.DynaTests}
     
     Acties:
     ${formData.acties}
