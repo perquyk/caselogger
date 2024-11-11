@@ -457,8 +457,7 @@ function generateCFNCaselog(){
         dynaMateriaal: dynaMat(),
         dynaTests: dynaTest()
     }
-    return `
-Datum: ${formData.datum}
+    return `Datum: ${formData.datum}
 Taaktype: ${formData.taaktype}
 WOLI: ${formData.woli}
 Adres: ${formData.adres}
