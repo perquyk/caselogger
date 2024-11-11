@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="fixed typo south var">
-      <change beforePath="$PROJECT_DIR$/modules/forms/form_managedCFN.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/forms/form_managedCFN.html" afterDir="false" />
+    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="added placeholder functions for dynamic form vars.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +78,7 @@
       <workItem from="1731328036904" duration="9475000" />
       <workItem from="1731338079922" duration="820000" />
       <workItem from="1731339528052" duration="2787000" />
-      <workItem from="1731342427780" duration="1212000" />
+      <workItem from="1731342427780" duration="1869000" />
     </task>
     <task id="LOCAL-00001" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
       <option name="closed" value="true" />
@@ -336,7 +336,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731343476828</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="removed unused vars">
+      <option name="closed" value="true" />
+      <created>1731343663954</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1731343663954</updated>
+    </task>
+    <task id="LOCAL-00034" summary="added placeholder functions for dynamic form vars.">
+      <option name="closed" value="true" />
+      <created>1731343892693</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1731343892693</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +369,9 @@
     <MESSAGE value="added dynaTests var" />
     <MESSAGE value="fixed typo dynaTests var" />
     <MESSAGE value="fixed typo south var" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed typo south var" />
+    <MESSAGE value="removed unused vars" />
+    <MESSAGE value="added placeholder functions for dynamic form vars." />
+    <option name="LAST_COMMIT_MESSAGE" value="added placeholder functions for dynamic form vars." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
