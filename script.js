@@ -435,7 +435,75 @@ function psvkaToClipboard(){
 
 //CFN
 function generateCFNCaselog(){
-
+    const formData = {
+        //non-dynamic vars
+        datum: setTodayDate(),
+        taaktype: 'WOLI Build - Managed CFN',
+        woli: document.getElementById('woli').value,
+        adres: document.getElementById('adres').value,
+        todo: document.getElementById('todo').value,
+        main: document.getElementById('main').value,
+        profiel: document.getElementById('profiel').value,
+        backup: document.getElementById('backup').value,
+        catsap: document.getElementById('testen_catsap').value,
+        filter: document.getElementById('testen_filter').value,
+        streetping: document.getElementById('testen_streetping').value,
+        acties: document.getElementById('testen_acties').value,
+        router: document.getElementById('router').value,
+        niu: document.getElementById('niu').value,
+        modemtype: document.getElementById('modemtype').value,
+        mac: document.getElementById('mac').value,
+        materiaal: document.getElementById('materiaal').value,
+        resultaat: document.getElementById('resultaat').value,
+        modemtest: document.getElementById('modemtest').value,
+        //dynamische vars
+        mainSpeedDown: document.getElementById('mainSpeedDown'),
+        mainSpeedUp: document.getElementById('mainSpeedUp'),
+        backupSpeedDown: document.getElementById('backupSpeedDown'),
+        backupSpeedUp: document.getElementById('backupSpeedUp'),
+        failOver: document.getElementById('failOver'),
+        backupRsrp: document.getElementById('backupRsrp'),
+        backupBand: document.getElementById('backupBand'),
+        mainRsrp: document.getElementById('mainRsrp'),
+        mainBand: document.getElementById('mainBand')
+    }
+    return `
+    Datum: ${formData.datum}
+    Taaktype: ${formData.taaktype}
+    WOLI: ${formData.woli}
+    Adres: ${formData.adres}
+    ____________________________________________________________
+    Omschrijving Taak:
+    Installatie Managed CFN ${formData.profiel}
+    - Main: ${formData.main}
+    - Backup: ${formData.backup}
+    - Catsap-status bij aankomst: ${formData.catsap}
+    - filter-status bij aankomst: ${formData.filter}
+    
+    Testen:
+    Speedtest Main: ${formData.mainSpeedDown}/${formData.mainSpeedUp}
+    Speedtest Backup: ${formData.backupSpeedDown}/${formData.backupSpeedUp}
+    Failovertest: ${formData.failOver}
+    
+    Acties:
+    ${formData.acties}
+    
+    Materiaal:
+    ${formData.modemtype}
+    $
+    Extra materiaal:
+    ${formData.materiaal}
+    
+    Resultaat:
+    ${formData.resultaat}
+    
+    Modemtest:
+    ${formData.modemtest}
+    
+    
+    
+    
+    `
 }
 function cfnToTXT(){
 
