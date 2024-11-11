@@ -1,36 +1,33 @@
-
-
-<form id="CFNForm">
-    <h1>Managed Corporate Fibernet</h1>
-    <div class="alert alert-warning" role="alert">
-        <p>Deze form is nog niet klaar. Functionaliteit kan niet gegarandeerd worden. Beter om het voorlopig nog niet te gebruiken.<br>Volg de vooruitgang op de homepage van deze website om te zien wanneer dit klaar is.</p>
-    </div>
-    <hr class="mb-3">
-    <!-- ROW 1 -->
-    <div class="row">
-        <h4 class="mt-3">Taak info</h4>
-        <!-- WOLI-nummer -->
-        <div class="col mb-3">
-            <div class="input-group mt-3">
-                <label class="input-group-text" for="woli">WOLI</label>
-                <input type="text" id="woli" name="woli" class="form-control" required>
-            </div>
+<h1>Managed Corporate Fibernet</h1>
+<div class="alert alert-warning" role="alert">
+    <p>Deze form is nog niet klaar. Functionaliteit kan niet gegarandeerd worden. Beter om het voorlopig nog niet te gebruiken.<br>Volg de vooruitgang op de homepage van deze website om te zien wanneer dit klaar is.</p>
+</div>
+<hr class="mb-3">
+<!-- ROW 1 -->
+<div class="row">
+    <h4 class="mt-3">Taak info</h4>
+    <!-- WOLI-nummer -->
+    <div class="col mb-3">
+        <div class="input-group mt-3">
+            <label class="input-group-text" for="woli">WOLI</label>
+            <input type="text" id="woli" name="woli" class="form-control" required>
         </div>
     </div>
-    <!-- ROW 2 -->
-    <div class="row">
-        <!-- Adres -->
-        <div class="col mb-3">
-            <div class="input-group">
-                <label class="input-group-text" for="adres">Adres</label>
-                <input type="text" id="adres" name="adres" class="form-control" required>
-            </div>
+</div>
+<!-- ROW 2 -->
+<div class="row">
+    <!-- Adres -->
+    <div class="col mb-3">
+        <div class="input-group">
+            <label class="input-group-text" for="adres">Adres</label>
+            <input type="text" id="adres" name="adres" class="form-control" required>
         </div>
     </div>
-    <hr class="mb-4">
-    <!-- ROW 3 -->
-    <div class="row">
-        <h4>Omschrijving Taak</h4>
+</div>
+<hr class="mb-4">
+<!-- ROW 3 -->
+<div class="row">
+    <h4>Omschrijving Taak</h4>
     <!-- Row 4 -->
     <div class="row">
         <div class="col mb-3">
@@ -69,7 +66,7 @@
             </div>
         </div>
     </div>
-
+</div>
 
     <!-- Row 5 -->
     <div class="row">
@@ -164,7 +161,7 @@
                     <option value="Nokia-5G">Nokia 5G</option>
                 </select>
                 <label for="mac"></label>
-                <input id="mac" name="mac" class="form-control" placeholder="MAC-adres" style="text-transform:uppercase" maxlength="17" onchange="macformat()">
+                <input id="mac" name="mac" class="form-control" placeholder="MAC-adres" style="text-transform:uppercase" maxlength="17" onchange="macFormat()">
             </div>
         </div>
     </div>
@@ -212,9 +209,8 @@
         <button type="button" class="btn btn-primary btn-lg me-2" onclick="cfnToTXT()"><i class="bi bi-file-earmark-arrow-down"></i> Download .txt-file</button>
         <button type="button" class="btn btn-primary btn-lg ms-2" id="copyBtn" onclick="cfnToClipboard()"><i class="bi bi-copy"></i> Copy to Clipboard</button>
     </div>
-</form>
 
-<script>
+    <script>
     //cfn specific script
     function dynamics(){
         dynamicProfiles();
@@ -391,48 +387,8 @@
                 break;}
         testDiv.innerHTML = outputMain + outputBackup;
     }
-
-    function OLDdynamicTests(){
-        let main = document.getElementById('main');
-        let backup = document.getElementById('backup');
-        let testDiv = document.getElementById('tests');
-        let outputMain = "";
-        let outputBackup = "";
-        if(main.value === "Geen" ){outputMain = ""}
-        else{
-            outputMain += `<div class="col mb-3">
-            <div class="input-group">
-                <span class="input-group-text">Speedtest main</span>
-                <input type="text" id="mainSpeedDown" name="mainSpeedDown" class="form-control" placeholder="down">
-                <input type="text" id="mainSpeedUp" name="mainSpeedUp" class="form-control" placeholder="up">
-            </div>
-        </div>`;}
-        if(backup.value === "Geen"){ outputBackup = ""}
-        else{
-            outputBackup += `<div class="col mb-3">
-                <div class="input-group">
-                        <span class="input-group-text">Speedtest backup</span>
-                        <input type="text" id="mainspeeddown" name="mainspeeddown" class="form-control" placeholder="down">
-                        <input type="text" id="mainspeedup" name="mainspeedup" class="form-control" placeholder="up">
-                    </div>
-                </div>
-                <div class="input-group">
-                    <span class="input-group-text">Failover test</span>
-                    <select id="failover" name="failover" class="form-select">
-                        <option value="" selected disabled>OK/NOK</option>
-                        <option value="OK">OK</option>
-                        <option value="NOK">NOK</option>
-                    </select>
-                </div>`; }
-        console.log(outputMain+outputBackup);
-        testDiv.innerHTML = outputMain + outputBackup;
-        console.log(document.getElementById('tests'));
-    }
-    function testfunction() {
-        console.log("testfunction has been triggered succesfully!");
-    }
-    function macformat(){
-        var mac = document.getElementById('mac');
+    function macFormat(){
+        let mac = document.getElementById('mac');
         console.log(mac.value);
 
         let inputString = document.getElementById('mac').value.toUpperCase();
@@ -444,10 +400,4 @@
         console.log(outputString);
         mac.value = outputString;
     }
-    function testBtn(){
-        var mac = document.getElementById('mac').value.toUpperCase();
-        var url = "http://ants.inet.telenet.be/tools/modems/modemtest/"
-        window.open(url+mac, '_blank');
-    }
-
 </script>
