@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/forms/form_install.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/forms/form_managedCFN.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/forms/form_projGsx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/forms/form_psvKA.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/forms/form_repair.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/forms/form_rfogInstall.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/forms/form_unhappyDrop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/modules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/pages/changelog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/pages/extra.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/pages/ipCalc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/android-chrome-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/android-chrome-512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/apple-touch-icon.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {}
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Plopkoekk/caselogger.git",
+    "accountId": "6201982b-4d96-432f-8079-1715a5448a08"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2ohi6hPQ14Xj1wblJHvbM3UmYOo" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.modules.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "fullJS",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\perqu\Documents\GitHub\caselogger\modules\pages" />
+      <recent name="C:\Users\perqu\Documents\GitHub\caselogger\modules\forms" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="" />
+      <created>1731328035452</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731328035452</updated>
+      <workItem from="1731328036904" duration="4670000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
+      <option name="closed" value="true" />
+      <created>1731332209733</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731332209733</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div" />
+  </component>
+</project>

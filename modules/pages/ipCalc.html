@@ -1,0 +1,62 @@
+<h2>IP Helper Tool</h2>
+<div class="alert alert-warning" role="alert">
+    <p>Deze form is nog niet klaar. Functionaliteit kan niet gegarandeerd worden. Beter om het voorlopig nog niet te gebruiken.<br>Volg de vooruitgang op de homepage van deze website om te zien wanneer dit klaar is.</p>
+</div>
+<hr class="mb-3" />
+<h4 class="mb-3">Info uit WOLI</h4>
+<div class="row">
+    <div class="col mb-3">
+        <div class="input-group">
+            <label class="input-group-text">Product Type</label>
+            <select id="product" class="form-select" onchange="productSelector()">
+                <option value="" selected></option>
+                <option value="CFN">CFN</option>
+                <option value="IPVPN">IP-VPN</option>
+                <option value="SIP">SIP</option>
+            </select>
+        </div>
+    </div>
+</div>
+<div class="row" id="productform">
+
+</div>
+
+
+
+<script>
+    function productSelector(){
+        var product = document.getElementById('product');
+        var output = "";
+        var div = document.getElementById('productform');
+        switch(product.value){
+            case "CFN":
+                console.log("CFN has been selected.");
+                output = `
+            <div class="row">
+                <div class="col mb-3">
+                    <div class="input-group">
+                        <label class="input-group-text">WAN</label>
+                        <input class="form-control" id="waninfo" placeholder="x.x.x.x/xx" />
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="input-group">
+                        <label class="input-group-text">LAN</label>
+                        <input class="form-control" id="laninfo" placeholder="x.x.x.x/xx" />
+                    </div>
+                </div>
+            </div>`;
+                break;
+            case "IPVPN":
+                console.log("IP-VPN has been selected.");
+                break;
+            case "SIP":
+                console.log("SIP has been selected.");
+                break;
+            case "":
+                break;
+        }
+        div.innerHTML = output;
+    }
+
+</script>
