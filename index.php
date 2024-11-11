@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body class="bg-body">
-    <nav class="navbar navbar-expand-lg bg-body-secondary fixed-top">
+    <nav class="navbar navbar-expand-lg bg-body-secondary sticky-top mb-4">
     <?php include('navbar.php');?>
     </nav>
 
-    <div class="container-md mt-4 p-3 border bg-body-tertiary rounded">
+    <div class="container-md mt-6 p-4 border bg-body-tertiary rounded">
     <?php include('page-switch.php');?>
     </div>
 
