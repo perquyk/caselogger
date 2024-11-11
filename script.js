@@ -480,7 +480,7 @@ function generateCFNCaselog(){
     Adres: ${formData.adres}
     ____________________________________________________________
     Omschrijving Taak:
-    Installatie Managed CFN${FormData.south} ${formData.profiel}
+    Installatie Managed CFN${formData.south} ${formData.profiel}
     - Main: ${formData.main}
     - Backup: ${formData.backup}
     - Catsap-status bij aankomst: ${formData.catsap}
