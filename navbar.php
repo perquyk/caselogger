@@ -51,9 +51,6 @@
             <li><a class="dropdown-item" href="#">Modem/NIU Swap [WIP]</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.php?page=extra">Other Stuff</a>
-        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Other Stuff
