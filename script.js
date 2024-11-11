@@ -531,7 +531,7 @@ function dynaMat(){
             break;
     }
     switch(modem){
-        case "Marakele":
+        case "D3.1ERT":
             output += "1x Marakele - " + mac;
             break;
         case "AMOD3":
