@@ -465,7 +465,11 @@ function generateCFNCaselog(){
         backupRsrp: document.getElementById('backupRsrp'),
         backupBand: document.getElementById('backupBand'),
         mainRsrp: document.getElementById('mainRsrp'),
-        mainBand: document.getElementById('mainBand')
+        mainBand: document.getElementById('mainBand'),
+        mobileTests: "",
+        backupTests: "",
+        mainTests: "",
+        south: ""
     }
     return `
     Datum: ${formData.datum}
@@ -474,23 +478,25 @@ function generateCFNCaselog(){
     Adres: ${formData.adres}
     ____________________________________________________________
     Omschrijving Taak:
-    Installatie Managed CFN ${formData.profiel}
+    Installatie Managed CFN${FormData.south} ${formData.profiel}
     - Main: ${formData.main}
     - Backup: ${formData.backup}
     - Catsap-status bij aankomst: ${formData.catsap}
     - filter-status bij aankomst: ${formData.filter}
     
     Testen:
-    Speedtest Main: ${formData.mainSpeedDown}/${formData.mainSpeedUp}
-    Speedtest Backup: ${formData.backupSpeedDown}/${formData.backupSpeedUp}
-    Failovertest: ${formData.failOver}
+    ${formData.mainTests}
+    ${formData.backupTests}
+    ${formData.mobileTests}
     
     Acties:
     ${formData.acties}
     
     Materiaal:
     ${formData.modemtype}
-    $
+    ${formData.router}
+    ${formData.niu}
+    
     Extra materiaal:
     ${formData.materiaal}
     
@@ -499,10 +505,6 @@ function generateCFNCaselog(){
     
     Modemtest:
     ${formData.modemtest}
-    
-    
-    
-    
     `
 }
 function cfnToTXT(){
