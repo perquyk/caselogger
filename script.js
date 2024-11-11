@@ -518,46 +518,58 @@ function dynaMat(){
     const mac = document.getElementById('mac').value;
     switch(router){
         case "HPE MSR2003":
-            output += "1x HPE MSR2003";
+            output += "1x HPE MSR2003" + `
+            `;
             break;
         case "HPE MSR3012":
-            output += "1x HPE MSR3012";
+            output += "1x HPE MSR3012" + `
+            `;
             break;
         case "HPE MSR958x":
-            output += "1x HPE MSR958x";
+            output += "1x HPE MSR958x" + `
+            `;
             break;
         case "TMC-R3305(L)":
-            output += "1x HPE TMC-R3305(L)";
+            output += "1x HPE TMC-R3305(L)" + `
+            `;
             break;
     }
     switch(modem){
         case "D3.1ERT":
-            output += "1x Marakele - " + mac;
+            output += "1x Marakele - " + mac + `
+            `;
             break;
         case "AMOD3":
-            output += "1x AMOD3 - " + mac;
+            output += "1x AMOD3 - " + mac + `
+            `;
             break;
         case "AMOD4":
-            output += "1x AMOD4 - " + mac;
+            output += "1x AMOD4 - " + mac + `
+            `;
             break;
         case "ZTE":
-            output += "1x ZTE Modem - " + mac;
+            output += "1x ZTE Modem - " + mac + `
+            `;
             break;
         case "Nokia-5G":
-            output += "1x Nokia 5G Modem - " + mac;
+            output += "1x Nokia 5G Modem - " + mac + `
+            `;
             break;
     }
     switch(niu){
         case "Onveranderd":
             break;
         case "85MHz 2-Data Mampaey":
-            output += "1x NIU 85MHz 2-Data Mampaey";
+            output += "1x NIU 85MHz 2-Data Mampaey" + `
+            `;
             break;
         case "65MHz 4-Data":
-            output += "1x NIU 65MHz 4-Data";
+            output += "1x NIU 65MHz 4-Data" + `
+            `;
             break;
         case "85MHz 4-Data":
-            output += "1x NIU 85MHz 4-Data";
+            output += "1x NIU 85MHz 4-Data" + `
+            `;
             break;
     }
     return output;
