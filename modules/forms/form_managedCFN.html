@@ -12,7 +12,7 @@
         <!-- WOLI-nummer -->
         <div class="col mb-3">
             <div class="input-group mt-3">
-                <span class="input-group-text">WOLI</span>
+                <label class="input-group-text" for="woli">WOLI</label>
                 <input type="text" id="woli" name="woli" class="form-control" required>
             </div>
         </div>
@@ -22,7 +22,7 @@
         <!-- Adres -->
         <div class="col mb-3">
             <div class="input-group">
-                <span class="input-group-text">Adres</span>
+                <label class="input-group-text" for="adres">Adres</label>
                 <input type="text" id="adres" name="adres" class="form-control" required>
             </div>
         </div>
@@ -34,7 +34,7 @@
         <!-- Omschrijving taak -->
         <div class="col mb-3">
             <div class="input-group">
-                <span class="input-group-text">Omschrijving</span>
+                <label class="input-group-text" for="todo">Omschrijving</label>
                 <textarea id="todo" name="todo" rows="3" class="form-control" required></textarea>
             </div>
         </div>
@@ -44,7 +44,7 @@
     <div class="row">
         <div class="col mb-3">
             <div class="input-group">
-                <span class="input-group-text">Main</span>
+                <label class="input-group-text" for="main">Main</label>
                 <select id="main" name="main" class="form-select" onchange="dynamic()">
                     <option value="Geen" selected>Geen</option>
                     <option value="TLN-Coax">Coax - Telenet</option>
@@ -59,7 +59,7 @@
         </div>
         <div class="col mb-3">
             <div class="input-group">
-                <span class="input-group-text">Profiel</span>
+                <label class="input-group-text" for="profiel">Profiel</label>
                 <select id="profiel" name="profiel" class="form-select">
                     <!-- dynamicly filled in through dynamicProfiles() -->
                 </select>
@@ -67,7 +67,7 @@
         </div>
         <div class="col mb-3">
             <div class="input-group">
-                <span class="input-group-text">Backup</span>
+                <label class="input-group-text" for="backup">Backup</label>
                 <select id="backup" name="backup" class="form-select" onchange="dynamic()">
                     <option value="Geen" selected>Geen</option>
                     <option value="5G">5G Backup</option>
@@ -85,7 +85,7 @@
         <!-- CATSAP -->
         <div class="col mb-3">
             <div class="input-group">
-                <label class="input-group-text">CATSAP</label>
+                <label class="input-group-text" for="testen_catsap">CATSAP</label>
                 <select id="testen_catsap" name="testen_catsap" class="form-select">
                     <option value="" disabled selected>Select CATSAP</option>
                     <option value="1">1 - Active Cable Customer</option>
@@ -101,7 +101,7 @@
         <!-- Filter -->
         <div class="col mb-3">
             <div class="input-group">
-                <label class="input-group-text">Filter</label>
+                <label class="input-group-text" for="testen_filterstatus">Filter</label>
                 <select id="testen_filterstatus" name="testen_filterstatus" class="form-select">
                     <option value="" disabled selected>Select FILTER-STATUS</option>
                     <option value="No Filter">No Filter</option>
@@ -118,7 +118,7 @@
         <!-- Streetping -->
         <div class="col mb-3">
             <div class="input-group">
-                <span class="input-group-text">Streetping</span>
+                <label class="input-group-text" for="testen_streetping">Streetping</label>
                 <input type="text" id="testen_streetping" name="testen_streetping" class="form-control">
             </div>
         </div>
@@ -130,7 +130,7 @@
         <!-- Acties -->
         <div class="col mb-3">
             <div class="input-group">
-                <span class="input-group-text">Acties</span>
+                <label class="input-group-text" for="acties">Acties</label>
                 <textarea id="acties" name="acties" rows="3" required class="form-control"></textarea>
             </div>
         </div>
@@ -138,7 +138,7 @@
     <div class="row">
         <div class="col mb-3">
             <div class="input-group">
-                <span class="input-group-text">Router</span>
+                <label class="input-group-text" for="router">Router</label>
                 <select id="router" name="router" class="form-select">
                     <option value="" selected disabled>Select router</option>
                     <option value="HPE MSR2003">HPE MSR2003</option>
@@ -150,7 +150,7 @@
         </div>
         <div class="col mb-3">
             <div class="input-group">
-                <span class="input-group-text">NIU</span>
+                <label class="input-group-text" for="niu">NIU</label>
                 <select id="niu" name="niu" class="form-select">
                     <option value="Onveranderd" selected>Onveranderd</option>
                     <option value="85MHz 2-Data Mampaey">85MHz 2-Data Mampaey</option>
@@ -163,7 +163,7 @@
     <div class="row">
         <div class="col mb-3">
             <div class="input-group">
-                <span class="input-group-text">Modem</span>
+                <label class="input-group-text" for="modemtype">Modem</label>
                 <select id="modemtype" class="form-select">
                     <option value="modemtype" selected disabled>Modem Type</option>
                     <option value="D3.1ERT">Marakele</option>
@@ -172,6 +172,7 @@
                     <option value="ZTE">ZTE</option>
                     <option value="Nokia-5G">Nokia 5G</option>
                 </select>
+                <label for="mac"></label>
                 <input id="mac" name="mac" class="form-control" placeholder="MAC-adres" style="text-transform:uppercase" maxlength="17" onchange="macformat()">
                 <button class="btn btn-outline-secondary" type="button" onclick="testBtn()">Modem-Test</button>
                 <button class="btn btn-outline-secondary" type="button" onclick="testfunction()">LineTest</button>
@@ -193,7 +194,7 @@
         <!-- Materiaal -->
         <div class="col mb-3">
             <div class="input-group">
-                <span class="input-group-text">Materiaal</span>
+                <label class="input-group-text" for="materiaal">Materiaal</label>
                 <textarea id="materiaal" name="materiaal" rows="3" class="form-control" required></textarea>
             </div>
         </div>
@@ -203,14 +204,14 @@
         <!-- resultaat -->
         <div class="col mb-3">
             <div class="input-group">
-                <span class="input-group-text">Resultaat</span>
+                <label class="input-group-text" for="resultaat">Resultaat</label>
                 <textarea id="resultaat" name="resultaat" rows="2" class="form-control" required></textarea>
             </div>
         </div>
         <!-- modemtest -->
         <div class="col mb-3">
             <div class="input-group">
-                <span class="input-group-text">Modemtest</span>
+                <label class="input-group-text" for="modemtest">Modemtest</label>
                 <textarea type="text" id="modemtest" name="modemtest" class="form-control" required></textarea>
             </div>
         </div>
