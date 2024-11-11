@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="added placeholder functions for dynamic form vars.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-    </list>
+    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="added dynaMat funtionality" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +75,7 @@
       <workItem from="1731328036904" duration="9475000" />
       <workItem from="1731338079922" duration="820000" />
       <workItem from="1731339528052" duration="2787000" />
-      <workItem from="1731342427780" duration="1869000" />
+      <workItem from="1731342427780" duration="2259000" />
     </task>
     <task id="LOCAL-00001" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
       <option name="closed" value="true" />
@@ -352,7 +349,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731343892693</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="added dynaMat funtionality">
+      <option name="closed" value="true" />
+      <created>1731344719664</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1731344719664</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,7 +376,8 @@
     <MESSAGE value="fixed typo south var" />
     <MESSAGE value="removed unused vars" />
     <MESSAGE value="added placeholder functions for dynamic form vars." />
-    <option name="LAST_COMMIT_MESSAGE" value="added placeholder functions for dynamic form vars." />
+    <MESSAGE value="added dynaMat funtionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="added dynaMat funtionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
