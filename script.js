@@ -487,7 +487,7 @@ function generateCFNCaselog(){
     - filter-status bij aankomst: ${formData.filter}
     
     Testen:
-    ${formData.DynaTests}
+    ${formData.dynaTests}
     
     Acties:
     ${formData.acties}
