@@ -325,7 +325,7 @@
                 outputBackup = "";
                 break;
             case "5G":
-            case "4G Externe":
+            case "4G externe":
             case "ZTE":
                 outputBackup += `
                     <div class="col mb-3">
@@ -335,7 +335,7 @@
                             <input type="text" id="backupSpeedUp" name="backupSpeedUp" class="form-control" placeholder="up">
                         </div>
                     </div>
-                    <div class="input-group">
+                    <div class="input-group mb-3">
                         <label class="input-group-text" for="failover">Failover test</label>
                         <select id="failover" name="failover" class="form-select">
                             <option value="" selected disabled>OK/NOK</option>
@@ -343,15 +343,19 @@
                             <option value="NOK">NOK</option>
                         </select>
                     </div>
-                    <div class="row mt-3">
                     <div class="input-group mb-3">
-                      <label class="input-group-text">test</label>
-                      <input type="text" class="form-control" aria-label="Username">
-                      <span class="input-group-text">dBm</span>
-                      <span class="input-group-text">Band</span>
-                      <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+                        <label class="input-group-text">Backup RSRP</label>
+                        <input type="text" class="form-control" aria-label="Username">
+                        <span class="input-group-text">dBm</span>
+                        <span class="input-group-text">Band</span>
+                        <select class="form-select" id="mobileBand">
+                            <option value="20">20</option>
+                            <option value="7">7</option>
+                            <option value="3">3</option>
+                            <option value="1">1</option>
+                        </select>
                     </div>
-                    </div>
+
                 `;
                 break;
             default:
