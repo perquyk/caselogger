@@ -469,7 +469,8 @@ function generateCFNCaselog(){
         mobileTests: "",
         backupTests: "",
         mainTests: "",
-        south: ""
+        south: "",
+        dynaMateriaal:""
     }
     return `
     Datum: ${formData.datum}
@@ -493,9 +494,7 @@ function generateCFNCaselog(){
     ${formData.acties}
     
     Materiaal:
-    ${formData.modemtype}
-    ${formData.router}
-    ${formData.niu}
+    ${formData.dynaMateriaal}
     
     Extra materiaal:
     ${formData.materiaal}
@@ -508,9 +507,23 @@ function generateCFNCaselog(){
     `
 }
 function cfnToTXT(){
-
+    let outputText = generateCFNCaselog();
+    let date = setTodayDate();
+    let klantnummer = trimWoli();
+    let filename = date+'_'+klantnummer+'_'+"CFN";
+    // Create a .txt file download
+    const blob = new Blob([outputText], { type: 'text/plain' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = filename+'.txt';
+    link.click();
 }
 function cfnToClipboard(){
-    
+    let outputText = generateCFNCaselog();
+    navigator.clipboard.writeText(outputText).then(() => {
+        console.log('Form data copied to clipboard!');
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
 }
 
