@@ -448,7 +448,7 @@ function generateCFNCaselog(){
         catsap: document.getElementById('testen_catsap').value,
         filter: document.getElementById('testen_filterstatus').value,
         streetping: document.getElementById('testen_streetping').value,
-        acties: document.getElementById('testen_acties').value,
+        acties: document.getElementById('acties').value,
         router: document.getElementById('router').value,
         niu: document.getElementById('niu').value,
         modemtype: document.getElementById('modemtype').value,
