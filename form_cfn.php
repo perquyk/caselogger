@@ -2,6 +2,9 @@
 
 <form id="CFNForm">
     <h1>Managed Corporate Fibernet</h1>
+    <div class="alert alert-warning" role="alert">
+        <p>Deze form is nog niet klaar. Functionaliteit kan niet gegarandeerd worden. Beter om het voorlopig nog niet te gebruiken.<br>Volg de vooruitgang op de homepage van deze website om te zien wanneer dit klaar is.</p>
+    </div>
     <hr class="mb-1">
     <!-- ROW 1 -->
     <div class="row">
