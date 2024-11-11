@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body class="bg-body">
-    <nav class="navbar navbar-expand-lg bg-body-secondary">
+    <nav class="navbar navbar-expand-lg bg-body-secondary fixed-top">
     <?php include('navbar.php');?>
     </nav>
 
