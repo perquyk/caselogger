@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
-      <change beforePath="$PROJECT_DIR$/modules/forms/form_projGsx.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/forms/form_projGsx.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/pages/extra.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/pages/extra.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/pages/ipCalc.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/pages/ipCalc.html" afterDir="false" />
-    </list>
+    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731328035452</updated>
-      <workItem from="1731328036904" duration="6532000" />
+      <workItem from="1731328036904" duration="7183000" />
     </task>
     <task id="LOCAL-00001" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
       <option name="closed" value="true" />
@@ -126,7 +122,55 @@
       <option name="project" value="LOCAL" />
       <updated>1731334014505</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
+      <option name="closed" value="true" />
+      <created>1731335101112</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731335101112</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
+      <option name="closed" value="true" />
+      <created>1731335150665</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731335150665</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
+      <option name="closed" value="true" />
+      <created>1731335205810</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1731335205810</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
+      <option name="closed" value="true" />
+      <created>1731335257678</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731335257678</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
+      <option name="closed" value="true" />
+      <created>1731335286316</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1731335286316</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
+      <option name="closed" value="true" />
+      <created>1731335306738</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1731335306738</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
