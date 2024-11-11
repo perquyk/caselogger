@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="">
+    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="Fixed closing div of a row">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/forms/form_managedCFN.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/forms/form_managedCFN.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/modules.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/modules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +81,7 @@
       <workItem from="1731338079922" duration="820000" />
       <workItem from="1731339528052" duration="2787000" />
       <workItem from="1731342427780" duration="7874000" />
-      <workItem from="1731354796369" duration="307000" />
+      <workItem from="1731354796369" duration="4161000" />
     </task>
     <task id="LOCAL-00001" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
       <option name="closed" value="true" />
@@ -416,7 +419,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731349390365</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="removed unused code">
+      <option name="closed" value="true" />
+      <created>1731355247464</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1731355247464</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Fixed closing div of a row">
+      <option name="closed" value="true" />
+      <created>1731355448514</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1731355448514</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,6 +461,8 @@
     <MESSAGE value="Fixed general whitespace issue." />
     <MESSAGE value="Added full functionality to cfn form and functions." />
     <MESSAGE value="added unecessary whitespace in script.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="added unecessary whitespace in script.js" />
+    <MESSAGE value="removed unused code" />
+    <MESSAGE value="Fixed closing div of a row" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed closing div of a row" />
   </component>
 </project>

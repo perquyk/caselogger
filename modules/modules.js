@@ -60,6 +60,11 @@ function pageSwitch(page){
                 $("#contentDiv").load("modules/pages/ipCalc.html");
             });
             break;
+        case "cfn":
+            $(function(){
+                $("#contentDiv").load("modules/forms/form_cfn.html");
+            });
+            break;
         case "projSwap":
         default:
             $(function(){
