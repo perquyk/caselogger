@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="small bug in variable declaration in generateCFNCaselog()" />
+    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="fixed typo south var">
+      <change beforePath="$PROJECT_DIR$/modules/forms/form_managedCFN.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/forms/form_managedCFN.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +78,7 @@
       <workItem from="1731328036904" duration="9475000" />
       <workItem from="1731338079922" duration="820000" />
       <workItem from="1731339528052" duration="2787000" />
-      <workItem from="1731342427780" duration="819000" />
+      <workItem from="1731342427780" duration="1212000" />
     </task>
     <task id="LOCAL-00001" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
       <option name="closed" value="true" />
@@ -301,7 +304,39 @@
       <option name="project" value="LOCAL" />
       <updated>1731343249960</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="small bug in variable declaration in generateCFNCaselog()">
+      <option name="closed" value="true" />
+      <created>1731343302661</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1731343302661</updated>
+    </task>
+    <task id="LOCAL-00030" summary="added dynaTests var">
+      <option name="closed" value="true" />
+      <created>1731343389801</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1731343389801</updated>
+    </task>
+    <task id="LOCAL-00031" summary="fixed typo dynaTests var">
+      <option name="closed" value="true" />
+      <created>1731343430461</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1731343430461</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fixed typo south var">
+      <option name="closed" value="true" />
+      <created>1731343476828</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1731343476828</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,7 +350,10 @@
     <MESSAGE value="Added the &quot;fixed&quot; variables to the generateCFNCaselog Function." />
     <MESSAGE value="Added cfnToTXT and cfnToClipboard" />
     <MESSAGE value="small bug in variable declaration in generateCFNCaselog()" />
-    <option name="LAST_COMMIT_MESSAGE" value="small bug in variable declaration in generateCFNCaselog()" />
+    <MESSAGE value="added dynaTests var" />
+    <MESSAGE value="fixed typo dynaTests var" />
+    <MESSAGE value="fixed typo south var" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed typo south var" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
