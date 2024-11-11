@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="Fixed general whitespace issue.">
-      <change beforePath="$PROJECT_DIR$/modules/forms/form_managedCFN.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/forms/form_managedCFN.html" afterDir="false" />
-    </list>
+    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="added unecessary whitespace in script.js" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +75,7 @@
       <workItem from="1731328036904" duration="9475000" />
       <workItem from="1731338079922" duration="820000" />
       <workItem from="1731339528052" duration="2787000" />
-      <workItem from="1731342427780" duration="6502000" />
+      <workItem from="1731342427780" duration="6885000" />
     </task>
     <task id="LOCAL-00001" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
       <option name="closed" value="true" />
@@ -399,7 +397,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731348774537</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Added full functionality to cfn form and functions.">
+      <option name="closed" value="true" />
+      <created>1731349182008</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1731349182008</updated>
+    </task>
+    <task id="LOCAL-00042" summary="added unecessary whitespace in script.js">
+      <option name="closed" value="true" />
+      <created>1731349390365</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1731349390365</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,18 +437,8 @@
     <MESSAGE value="added needed whitespace for materials as auto enter was appartently not a thing when using +=" />
     <MESSAGE value="fixed whitespace issue" />
     <MESSAGE value="Fixed general whitespace issue." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed general whitespace issue." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/script.js</url>
-          <line>654</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added full functionality to cfn form and functions." />
+    <MESSAGE value="added unecessary whitespace in script.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="added unecessary whitespace in script.js" />
   </component>
 </project>
