@@ -646,6 +646,7 @@ Failover test: ${testData.failOver.value}
 Backup:
 Speedtest: DOWN: ${testData.backupSpeedDown.value} Mbps/ UP: ${testData.backupSpeedUp.value} Mbps
 Signaal: ${testData.backupRsrp.value}b${testData.backupBand.value}
+
 Failover test: ${testData.failOver.value}
 `
             break;

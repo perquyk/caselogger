@@ -318,6 +318,29 @@
                     </div>
                     `;
                 break;
+            case "5G":
+            case "4G extern":
+            case "ZTE":
+                outputMain += `                  <div class="col mb-3">
+                        <div class="input-group">
+                            <label class="input-group-text" for="mainSpeedDown">Speedtest Main</label>
+                            <input type="text" id="mainSpeedDown" name="mainSpeedDown" class="form-control" placeholder="down">
+                            <input type="text" id="mainSpeedUp" name="mainSpeedUp" class="form-control" placeholder="up">
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text">Main RSRP</label>
+                        <input type="text" class="form-control" id="mainRsrp">
+                        <span class="input-group-text">dBm</span>
+                        <span class="input-group-text">Band</span>
+                        <select class="form-select" id="mainBand">
+                            <option value="20">20</option>
+                            <option value="7">7</option>
+                            <option value="3">3</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>`
+                break;
         }
         //backup switch
         switch(backup.value){
