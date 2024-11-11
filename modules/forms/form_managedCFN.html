@@ -249,6 +249,7 @@
         }
         var main = document.getElementById('main');
         var select = document.getElementById('profiel');
+        let output = "";
         console.log(main.value);
         switch(main.value){
             case 'TLN-Coax':
@@ -261,12 +262,12 @@
                 `
                 break;
             case 'VDSL':
-                var output = `
+                output = `
                     <option value="${profile.vdsl}">${profile.vdsl}</option>
                 `
                 break;
             case 'VOO-Coax':
-                var output = `
+                output = `
                     <option value="" selected disabled>Selecteer profiel</option>
                     <option value="${profile.voo400}">${profile.voo400}</option>
                     <option value="${profile.voo200}">${profile.voo200}</option>
@@ -274,14 +275,14 @@
                     `
                 break;
             case 'GPON':
-                var output = `
+                output = `
                     <option value="${profile.gpon}">${profile.gpon}</option>
                 `
                 break;
             case '4G extern':
             case '4G ZTE':
             case '5G':
-                var output = `
+                output = `
                     <option value="" selected disabled>Selecteer profiel</option>
                     <option value="${profile.mobXL}">${profile.mobXL}</option>
                     <option value="${profile.mobL}">${profile.mobL}</option>
