@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/forms/form_install.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/forms/form_managedCFN.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/forms/form_projGsx.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/forms/form_psvKA.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/forms/form_repair.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/forms/form_rfogInstall.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/forms/form_unhappyDrop.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/modules.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/pages/changelog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/pages/extra.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/pages/ipCalc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/img/android-chrome-192x192.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/img/android-chrome-512x512.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/img/apple-touch-icon.png" beforeDir="false" />
@@ -65,6 +52,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -89,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731328035452</updated>
-      <workItem from="1731328036904" duration="4670000" />
+      <workItem from="1731328036904" duration="5097000" />
     </task>
     <task id="LOCAL-00001" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
       <option name="closed" value="true" />
@@ -99,7 +87,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731332209733</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
+      <option name="closed" value="true" />
+      <created>1731332990041</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731332990041</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
