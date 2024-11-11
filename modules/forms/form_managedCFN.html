@@ -30,16 +30,7 @@
     <hr class="mb-4">
     <!-- ROW 3 -->
     <div class="row">
-        <h4>Situatie</h4>
-        <!-- Omschrijving taak -->
-        <div class="col mb-3">
-            <div class="input-group">
-                <label class="input-group-text" for="todo">Omschrijving</label>
-                <textarea id="todo" name="todo" rows="3" class="form-control" required></textarea>
-            </div>
-        </div>
-    </div>
-
+        <h4>Omschrijving Taak</h4>
     <!-- Row 4 -->
     <div class="row">
         <div class="col mb-3">
@@ -164,7 +155,7 @@
         <div class="col mb-3">
             <div class="input-group">
                 <label class="input-group-text" for="modemtype">Modem</label>
-                <select id="modemtype" class="form-select">
+                <select id="modemtype" class="form-select" >
                     <option value="modemtype" selected disabled>Modem Type</option>
                     <option value="D3.1ERT">Marakele</option>
                     <option value="AMOD3">AMOD3</option>
@@ -174,8 +165,6 @@
                 </select>
                 <label for="mac"></label>
                 <input id="mac" name="mac" class="form-control" placeholder="MAC-adres" style="text-transform:uppercase" maxlength="17" onchange="macformat()">
-                <button class="btn btn-outline-secondary" type="button" onclick="testBtn()">Modem-Test</button>
-                <button class="btn btn-outline-secondary" type="button" onclick="testfunction()">LineTest</button>
             </div>
         </div>
     </div>
