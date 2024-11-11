@@ -74,7 +74,7 @@
       <updated>1731328035452</updated>
       <workItem from="1731328036904" duration="9475000" />
       <workItem from="1731338079922" duration="820000" />
-      <workItem from="1731339528052" duration="693000" />
+      <workItem from="1731339528052" duration="1083000" />
     </task>
     <task id="LOCAL-00001" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
       <option name="closed" value="true" />
@@ -220,7 +220,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731340084623</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="trying to fix img stuff">
+      <option name="closed" value="true" />
+      <created>1731340267363</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1731340267363</updated>
+    </task>
+    <task id="LOCAL-00020" summary="trying to fix img stuff">
+      <option name="closed" value="true" />
+      <created>1731340423862</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1731340423862</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
