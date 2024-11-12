@@ -439,7 +439,6 @@ function generateCFNCaselog(){
         taaktype: 'WOLI Build - Managed CFN',
         woli: document.getElementById('woli').value,
         adres: document.getElementById('adres').value,
-        todo: document.getElementById('todo').value,
         main: document.getElementById('main').value,
         profiel: document.getElementById('profiel').value,
         backup: document.getElementById('backup').value,
