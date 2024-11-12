@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col mb-3">
+        <div class="input-group">
+            <label for="main" class="input-group-text">Main</label>
+            <select id="main" class="form-select" onchange="profileSelector()">
+                <option value="">Select Main</option>
+                <option value="TLN-Coax">Telenet Coax</option>
+                <option value="VOO">VOO Coax</option>
+                <option value="GPON">GPON</option>
+                <option value="VDSL">VDSL</option>
+            </select>
+        </div>
+    </div>
+    <div class="col mb-3">
+        <div class="input-group">
+            <label for="profiel" class="input-group-text">Profiel</label>
+            <select id="profiel" class="form-select">
+                <!-- dynamically add through JS -->
+            </select>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function profileSelector(){
+    let profiel = document.getElementById('profiel');
+    profiel.innerHTML = "";
+    let main = document.getElementById('main');
+    switch(main.value){
+        case "VDSL":
+        case "GPON":
+            profiel.innerHTML = `<option value="nvt" selected>NVT</option>`;
+            break;
+        case "TLN-Coax":
+    }
+}
+</script>
