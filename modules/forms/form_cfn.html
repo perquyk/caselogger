@@ -19,8 +19,13 @@
         </div>
     </div>
 </div>
-<div id="unmanagedOrManagedDiv">
-    <!-- div for managed/unmanaged vars, determined by managedToggle() function -->
+<div class="row">
+    <div id="unmanagedOrManagedDiv">
+        <!-- div for managed/unmanaged vars, determined by managedToggle() function -->
+    </div>
+    <div class="col mb-3" id="backupDiv">
+        <!-- if managed: fill this div, otherwise leave empty :) -->
+    </div>
 </div>
 <div class="row" id="TodoTestDiv">
     <script>
@@ -29,6 +34,9 @@
         });
     </script>
 </div>
+
+
+
 <div id="finishingUp">
 <script>
     $(function(){
@@ -43,27 +51,28 @@
     managedToggle();
 
     //dynamic form functions
+
 function managedToggle(){
-    let output = "";
     let managed = document.getElementById('man').checked;
-    let managedDiv = document.getElementById('managedDiv');
     switch(managed){
         case true:
-            managedInstall();
+            managedTodo();
             break;
         case false:
-            unmanagedInstall();
+            unmanagedTodo();
             break;
     }
 }
-function managedInstall(){
+function managedTodo(){
         $(function(){
-            $("#unmanagedOrManagedDiv").load("modules/forms/formParts/module_cfn_managed_todo.html");
+            $("#unmanagedOrManagedDiv").load("modules/forms/formParts/main.html");
+            $("#backupDiv").load("modules/forms/formParts/part_build_backup.html");
         });
 }
-function unmanagedInstall(){
+function unmanagedTodo(){
     $(function(){
-        $("#unmanagedOrManagedDiv").load("modules/forms/formParts/module_cfn_unmanaged_todo.html");
+        $("#unmanagedOrManagedDiv").load("modules/forms/formParts/part_build_main.html");
+
     });
 }
 
