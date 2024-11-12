@@ -2,19 +2,12 @@
 <h1>Corporate Fibernet</h1>
 <hr class="mb-3">
 <h4>Taak info</h4>
-<div class="row">
-    <div class="col mb-3">
-        <div class="input-group mb-3">
-            <label for="woli" class="input-group-text">WOLI</label>
-            <input type="text" class="form-control" id="woli"/>
-        </div>
-        <div class="input-group">
-            <label for="adres1" class="input-group-text">Adres</label>
-            <input type="text" class="form-control" id="adres1" placeholder="Straat nr/bus"/>
-            <label for="adres2"></label>
-            <input type="text" class="form-control" id="adres2" placeholder="1234 Stad" />
-        </div>
-    </div>
+<div class="row" id="woliHeader">
+ <script>
+     $(function(){
+         $("#woliHeader").load("modules/forms/formParts/part_woli_header.html");
+     });
+ </script>
 </div>
 <hr class="mb-3">
 <h4>Omschrijving taak</h4>
@@ -30,50 +23,18 @@
     <!-- changes depending on managed/unmanaged installation -->
 </div>
 <div class="row" id="testDiv">
-    <div class="col mb-3">
-        <div class="input-group">
-            <label for="catsap" class="input-group-text">CATSAP</label>
-            <select id="catsap" class="form-select">
-                <option value="" disabled selected>Select CATSAP</option>
-                <option value="1">1 - Active Cable Customer</option>
-                <option value="2">2 - Former Cable Customer</option>
-                <option value="3">3 - No Drop (Cable in street)</option>
-                <option value="4">4 - No Service</option>
-                <option value="5">5 - Rijgnet</option>
-                <option value="6">6 - Dropcable finished (Ready for connection)</option>
-                <option value="7">7 - Dropcable Placed (Not ready for connection)</option>
-            </select>
-        </div>
-    </div>
-    <div class="col mb-3">
-        <div class="input-group">
-            <label for="filter" class="input-group-text">Filter</label>
-            <select id="filter" class="form-select">
-                <option value="" disabled selected>Select FILTER-STATUS</option>
-                <option value="No Filter">No Filter</option>
-                <option value="Anti-dief">Anti-dief</option>
-                <option value="TOF-ITC">TOF-ITC</option>
-                <option value="TOF 5-117">TOF 5-117</option>
-                <option value="HP47">HP47</option>
-                <option value="HP86">HP86</option>
-                <option value="HP110">HP110</option>
-                <option value="RPA12">RPA12</option>
-            </select>
-        </div>
-    </div>
-    <div class="col mb-3">
-        <div class="input-group">
-            <label for="streetping" class="input-group-text">Streetping</label>
-            <input type="text" class="form-control" id="streetping"/>
-        </div>
-    </div>
+    <script>
+        $(function(){
+            $("#testDiv").load("modules/forms/formParts/part_catsap_filter_streetping.html");
+        });
+    </script>
 </div>
 <div class="row">
     <div class="col mb-3">
         <div class="input-group">
             <label for="main" class="input-group-text">Main</label>
             <select id="main" class="form-select" onchange="profileSelector()">
-                <option vlaue="">Select Main</option>
+                <option value="">Select Main</option>
                 <option value="TLN-Coax">Telenet Coax</option>
                 <option value="VOO">VOO Coax</option>
                 <option value="GPON">GPON</option>
