@@ -10,7 +10,7 @@
  </script>
 </div>
 <hr class="mb-3">
-<h4>Omschrijving taak</h4>
+<h4>Omschrijving Taak</h4>
 <div class="row">
     <div class="col mb-3">
         <div class="form-check form-switch">
@@ -19,20 +19,13 @@
         </div>
     </div>
 </div>
-<div class="row" id="managedDiv">
-    <!-- changes depending on managed/unmanaged installation -->
-</div>
-<div class="row" id="testDiv">
-    <script>
-        $(function(){
-            $("#testDiv").load("modules/forms/formParts/part_catsap_filter_streetping.html");
-        });
-    </script>
-</div>
 <div id="unmanagedOrManagedDiv">
+    <!-- div for managed/unmanaged vars, determined by managedToggle() function -->
+</div>
+<div class="row" id="TodoTestDiv">
     <script>
         $(function(){
-            $("#unmanagedOrManagedDiv").load("modules/forms/formParts/module_cfn_unmanaged.html");
+            $("#TodoTestDiv").load("modules/forms/formParts/part_catsap_filter_streetping.html");
         });
     </script>
 </div>
@@ -56,23 +49,22 @@ function managedToggle(){
     let managedDiv = document.getElementById('managedDiv');
     switch(managed){
         case true:
-            output = managedInstall();
+            managedInstall();
             break;
         case false:
-            output = unmanagedInstall();
+            unmanagedInstall();
             break;
     }
-    managedDiv.innerHTML = output;
 }
 function managedInstall(){
-    return `
-
-    `;
+        $(function(){
+            $("#unmanagedOrManagedDiv").load("modules/forms/formParts/module_cfn_managed_todo.html");
+        });
 }
 function unmanagedInstall(){
-    return `
-
-    `
+    $(function(){
+        $("#unmanagedOrManagedDiv").load("modules/forms/formParts/module_cfn_unmanaged_todo.html");
+    });
 }
 
 
