@@ -4,8 +4,9 @@
     Vul daarna de template in en druk op de copy of download knop.<br>
     easy-peasy.</p>
     <hr class="md-3">
-    <h4>Changelog:</h4>
+    <h4>Changelog/News:</h4>
     <ul>
+        <li>2024/11/15 - Started making forms modular in backend. This to combat manual typing and any layout mistakes that would happen. This is still in testing and is not deployed yet.</li>
         <li>2024/11/11 - AntscopyV3 is now also built-in to Frustrafix. Togglable within the options page. Please keep in mind to either disable it, or remove the antscopyV3 extension!</li>
         <li>2024/11/09 - Added Antscopy manifest v3 to other stuff page.</li> 
         <li>2024/11/08 - Started work on CFN form.</li>  
