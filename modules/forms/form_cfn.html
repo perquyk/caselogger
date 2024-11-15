@@ -1,0 +1,80 @@
+
+<h1>Corporate Fibernet</h1>
+<hr class="mb-3">
+<h4>Taak info</h4>
+<div class="row" id="woliHeader">
+ <script>
+     $(function(){
+         $("#woliHeader").load("modules/forms/formParts/part_woli_header.html");
+     });
+ </script>
+</div>
+<hr class="mb-3">
+<h4>Omschrijving Taak</h4>
+<div class="row">
+    <div class="col mb-3">
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="man" onchange="managedToggle()">
+            <label class="form-check-label" for="man">Managed?</label>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div id="unmanagedOrManagedDiv">
+        <!-- div for managed/unmanaged vars, determined by managedToggle() function -->
+    </div>
+    <div class="col mb-3" id="backupDiv">
+        <!-- if managed: fill this div, otherwise leave empty :) -->
+    </div>
+</div>
+<div class="row" id="TodoTestDiv">
+    <script>
+        $(function(){
+            $("#TodoTestDiv").load("modules/forms/formParts/part_catsap_filter_streetping.html");
+        });
+    </script>
+</div>
+
+
+
+<div id="finishingUp">
+<script>
+    $(function(){
+        $("#finishingUp").load("modules/forms/formParts/part_finishingUp.html");
+    });
+</script>
+</div>
+
+
+<script>
+    //runs when page has loaded
+    managedToggle();
+
+    //dynamic form functions
+
+function managedToggle(){
+    let managed = document.getElementById('man').checked;
+    switch(managed){
+        case true:
+            managedTodo();
+            break;
+        case false:
+            unmanagedTodo();
+            break;
+    }
+}
+function managedTodo(){
+        $(function(){
+            $("#unmanagedOrManagedDiv").load("modules/forms/formParts/main.html");
+            $("#backupDiv").load("modules/forms/formParts/part_build_backup.html");
+        });
+}
+function unmanagedTodo(){
+    $(function(){
+        $("#unmanagedOrManagedDiv").load("modules/forms/formParts/part_build_main.html");
+
+    });
+}
+
+
+</script>

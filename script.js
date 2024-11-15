@@ -5,13 +5,11 @@ function setTodayDate() {
     const yyyy = today.getFullYear();
     const mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
     const dd = String(today.getDate()).padStart(2, '0');
-    const formattedDate = `${yyyy}-${mm}-${dd}`; // Format: YYYY-MM-DD
-    return formattedDate;
+    return `${yyyy}-${mm}-${dd}`;
 }
 function trimWoli(){
     let woli = document.getElementById('woli').value;
-    let woliNew = woli.split(" ").join("");
-    return woliNew; 
+    return woli.split(" ").join("");
 }
 
 //function that generates the output for the install form
@@ -33,7 +31,7 @@ function generateInstallCaselog() {
     };
 
     // Generate the output text
-    const outputText = `
+    return `
 Datum: ${formData.datum}
 Taaktype: ${formData.taaktype}
 Task: ${formData.task}
@@ -61,14 +59,12 @@ ${formData.resultaat}
 Modemtest: 
 ${formData.modemtest}
     `;
-return outputText;
 }
-
 function installToTXT() {
-    var outputText = generateInstallCaselog();
-    var date = setTodayDate();
-    var klantnummer = document.getElementById('klantnummer').value;
-    var filename = date+'_'+klantnummer+'_'+"install";
+    let outputText = generateInstallCaselog();
+    let date = setTodayDate();
+    let klantnummer = document.getElementById('klantnummer').value;
+    let filename = date+'_'+klantnummer+'_'+"install";
     // Create a .txt file download
     const blob = new Blob([outputText], { type: 'text/plain' });
     const link = document.createElement('a');
@@ -77,7 +73,7 @@ function installToTXT() {
     link.click();
 }
 function installToClipboard() {
-    var outputText = generateInstallCaselog();
+    let outputText = generateInstallCaselog();
     navigator.clipboard.writeText(outputText).then(() => {
         console.log('Form data copied to clipboard!');
     }).catch(err => {
@@ -103,7 +99,7 @@ function generateRepairCaselog(){
     };
 
     // Generate the output text
-    const outputText = `
+    return `
 Datum: ${formData.datum}
 Taaktype: ${formData.taaktype}
 Task: ${formData.task}
@@ -129,14 +125,12 @@ ${formData.resultaat}
 Modemtest: 
 ${formData.modemtest}
     `;
-return outputText;
 }
-
 function repairToTXT() {
-    var outputText = generateRepairCaselog();
-    var date = setTodayDate();
-    var klantnummer = document.getElementById('klantnummer').value;
-    var filename = date+'_'+klantnummer+'_'+"repair";
+    let outputText = generateRepairCaselog();
+    let date = setTodayDate();
+    let klantnummer = document.getElementById('klantnummer').value;
+    let filename = date+'_'+klantnummer+'_'+"repair";
     // Create a .txt file download
     const blob = new Blob([outputText], { type: 'text/plain' });
     const link = document.createElement('a');
@@ -145,7 +139,7 @@ function repairToTXT() {
     link.click();
 }
 function repairToClipboard() {
-    var outputText = generateRepairCaselog();
+    let outputText = generateRepairCaselog();
     navigator.clipboard.writeText(outputText).then(() => {
         console.log('Form data copied to clipboard!');
     }).catch(err => {
@@ -173,7 +167,7 @@ function generateRfogInstallCaselog() {
     };
 
     // Generate the output text
-    const outputText = `
+    return `
 Datum: ${formData.datum}
 Taaktype: ${formData.taaktype}
 Task: ${formData.task}
@@ -200,13 +194,12 @@ Patch informatie:
 Modemtest: 
 ${formData.modemtest}
     `;
-return outputText;
 }
 function rfogInstallToTXT() {
-    var outputText = generateRfogInstallCaselog();
-    var date = setTodayDate();
-    var klantnummer = document.getElementById('klantnummer').value;
-    var filename = date+'_'+klantnummer+'_'+"RFOGinstall";
+    let outputText = generateRfogInstallCaselog();
+    let date = setTodayDate();
+    let klantnummer = document.getElementById('klantnummer').value;
+    let filename = date+'_'+klantnummer+'_'+"RFOGinstall";
     // Create a .txt file download
     const blob = new Blob([outputText], { type: 'text/plain' });
     const link = document.createElement('a');
@@ -215,7 +208,7 @@ function rfogInstallToTXT() {
     link.click();
 }
 function rfogInstallToClipboard() {
-    var outputText = generateRfogInstallCaselog();
+    let outputText = generateRfogInstallCaselog();
     navigator.clipboard.writeText(outputText).then(() => {
         console.log('Form data copied to clipboard!');
     }).catch(err => {
@@ -254,7 +247,7 @@ function generateProjectUnhappyDropCaselog() {
     };
 
     // Generate the output text
-    const outputText = `
+    return `
 Datum: ${formData.datum}
 Taaktype: ${formData.taaktype}
 Task: ${formData.task}
@@ -290,13 +283,12 @@ ${formData.pnmAfter}
 Resultaat:
 ${formData.resultaat}
     `;
-return outputText;
 }
 function projectUnhappyDropToTXT() {
-    var outputText = generateProjectUnhappyDropCaselog();
-    var date = setTodayDate();
-    var klantnummer = document.getElementById('klantnummer').value;
-    var filename = date+'_'+klantnummer+'_'+"Proj_UnhappyDrop";
+    let outputText = generateProjectUnhappyDropCaselog();
+    let date = setTodayDate();
+    let klantnummer = document.getElementById('klantnummer').value;
+    let filename = date+'_'+klantnummer+'_'+"Proj_UnhappyDrop";
     // Create a .txt file download
     const blob = new Blob([outputText], { type: 'text/plain' });
     const link = document.createElement('a');
@@ -305,7 +297,7 @@ function projectUnhappyDropToTXT() {
     link.click();
 }
 function projectUnhappyDropToClipboard() {
-    var outputText = generateProjectUnhappyDropCaselog();
+    let outputText = generateProjectUnhappyDropCaselog();
     navigator.clipboard.writeText(outputText).then(() => {
         console.log('Form data copied to clipboard!');
     }).catch(err => {
@@ -314,7 +306,7 @@ function projectUnhappyDropToClipboard() {
 
 }
 
-//GSX migraite functies
+//GSX migratie functies
 function generateGsxCaselog() {
     const formData = {
         datum: setTodayDate(),
@@ -333,7 +325,7 @@ function generateGsxCaselog() {
     };
 
     // Generate the output text
-    const outputText = `
+    return `
 Datum: ${formData.datum}
 Taaktype: ${formData.taaktype}
 WOLI: ${formData.woli}
@@ -361,13 +353,12 @@ Modemtest:
 ${formData.modemtest}
 
     `;
-return outputText;
 }
 function gsxToTXT() {
-    var outputText = generateGsxCaselog();
-    var date = setTodayDate();
-    var klantnummer = trimWoli();
-    var filename = date+'_'+klantnummer+'_'+"GSX";
+    let outputText = generateGsxCaselog();
+    let date = setTodayDate();
+    let klantnummer = trimWoli();
+    let filename = date+'_'+klantnummer+'_'+"GSX";
     // Create a .txt file download
     const blob = new Blob([outputText], { type: 'text/plain' });
     const link = document.createElement('a');
@@ -376,7 +367,7 @@ function gsxToTXT() {
     link.click();
 }
 function gsxToClipboard() {
-    var outputText = generateGsxCaselog();
+    let outputText = generateGsxCaselog();
     navigator.clipboard.writeText(outputText).then(() => {
         console.log('Form data copied to clipboard!');
     }).catch(err => {
@@ -399,7 +390,7 @@ function generatePsvKaCaselog(){
     };
 
     // Generate the output text
-    const outputText = `
+    return `
 Datum: ${formData.datum}
 Taaktype: ${formData.taaktype}
 WOLI: ${formData.woli}
@@ -418,13 +409,12 @@ Resultaat:
 ${formData.resultaat}
 
     `;
-return outputText;
 }
 function psvkaToTXT(){
-    var outputText = generatePsvKaCaselog();
-    var date = setTodayDate();
-    var klantnummer = trimWoli();
-    var filename = date+'_'+klantnummer+'_'+"PSV-KA";
+    let outputText = generatePsvKaCaselog();
+    let date = setTodayDate();
+    let klantnummer = trimWoli();
+    let filename = date+'_'+klantnummer+'_'+"PSV-KA";
     // Create a .txt file download
     const blob = new Blob([outputText], { type: 'text/plain' });
     const link = document.createElement('a');
@@ -433,7 +423,7 @@ function psvkaToTXT(){
     link.click();
 }
 function psvkaToClipboard(){
-    var outputText = generatePsvKaCaselog();
+    let outputText = generatePsvKaCaselog();
     navigator.clipboard.writeText(outputText).then(() => {
         console.log('Form data copied to clipboard!');
     }).catch(err => {
@@ -443,12 +433,229 @@ function psvkaToClipboard(){
 
 //CFN
 function generateCFNCaselog(){
+    const formData = {
+        //non-dynamic vars
+        datum: setTodayDate(),
+        taaktype: 'WOLI Build - Managed CFN',
+        woli: document.getElementById('woli').value,
+        adres: document.getElementById('adres').value,
+        main: document.getElementById('main').value,
+        profiel: document.getElementById('profiel').value,
+        backup: document.getElementById('backup').value,
+        catsap: document.getElementById('testen_catsap').value,
+        filter: document.getElementById('testen_filterstatus').value,
+        streetping: document.getElementById('testen_streetping').value,
+        acties: document.getElementById('acties').value,
+        materiaal: document.getElementById('materiaal').value,
+        resultaat: document.getElementById('resultaat').value,
+        modemtest: document.getElementById('modemtest').value,
+        //dynamic vars
+        dynaSouth: dynaSouth(),
+        dynaMateriaal: dynaMat(),
+        dynaTests: dynaTest()
+    }
+    return `Datum: ${formData.datum}
+Taaktype: ${formData.taaktype}
+WOLI: ${formData.woli}
+Adres: ${formData.adres}
+____________________________________________________________
+Omschrijving Taak:
+Installatie Managed CFN${formData.dynaSouth} ${formData.profiel}
+- Main: ${formData.main}
+- Backup: ${formData.backup}
+- Catsap-status bij aankomst: ${formData.catsap}
+- filter-status bij aankomst: ${formData.filter}
 
+Testen:
+${formData.dynaTests}
+
+Acties:
+${formData.acties}
+
+Materiaal:
+${formData.dynaMateriaal}
+
+Extra materiaal:
+${formData.materiaal}
+
+Resultaat:
+${formData.resultaat}
+
+Modemtest:
+${formData.modemtest}
+`
 }
 function cfnToTXT(){
-
+    let outputText = generateCFNCaselog();
+    let date = setTodayDate();
+    let klantnummer = trimWoli();
+    let filename = date+'_'+klantnummer+'_'+"CFN";
+    // Create a .txt file download
+    const blob = new Blob([outputText], { type: 'text/plain' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = filename+'.txt';
+    link.click();
 }
 function cfnToClipboard(){
-    
+    let outputText = generateCFNCaselog();
+    navigator.clipboard.writeText(outputText).then(() => {
+        console.log('Form data copied to clipboard!');
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
 }
+//functions that add value to dynamic vars in CFN caselog
+function dynaMat(){
+    let output = "";
+    const router = document.getElementById('router').value;
+    const modem = document.getElementById('modemtype').value;
+    const niu = document.getElementById('niu').value;
+    const mac = document.getElementById('mac').value;
+    switch(router){
+        case "HPE MSR2003":
+            output += "- 1x HPE MSR2003";
+            output += `
+`;
+            break;
+        case "HPE MSR3012":
+            output += "- 1x HPE MSR3012";
+            output += `
+`;
+            break;
+        case "HPE MSR958x":
+            output += "- 1x HPE MSR958x";
+            output += `
+`;
+            break;
+        case "TMC-R3305(L)":
+            output += "- 1x HPE TMC-R3305(L)";
+            output += `
+`;
+            break;
+    }
+    switch(modem){
+        case "D3.1ERT":
+            output += "- 1x CBN CV8560E (Marakele) - " + mac;
+            output += `
+`;
+            break;
+        case "AMOD3":
+            output += "- 1x Technicolor TG546Bv A-MOD 3 - " + mac;
+            output += `
+`;
+            break;
+        case "AMOD4":
+            output += "- 1x Sagemcom CS50001 A-MOD 4 - " + mac;
+            output += `
+`;
+            break;
+        case "ZTE":
+            output += "- 1x ZTE MF281 LTE modem - " + mac;
+            output += `
+`;
+            break;
+        case "Nokia-5G":
+            output += "- 1x Nokia 5G26-A - " + mac;
+            output += `
+`;
+            break;
+    }
+    switch(niu){
+        case "Onveranderd":
+            break;
+        case "85MHz 2-Data Mampaey":
+            output += "- 1x Mampaey – NIU-85/105 – Versterker – Garage NIU 85MHz upstream – 2CM + lifeline";
+            break;
+        case "65MHz 4-Data":
+            output += "- 1x DINH - NIU-65/88 - Versterker - 4CM NIU 65 MHz upstream";
+            break;
+        case "85MHz 4-Data":
+            output += "- 1x Teleste – NIU-85/105 – Versterker – 4CM NIU 85MHz upstream";
+            break;
+    }
+    return output;
+}
+function dynaTest(){
+    let output = "";
+    const testData = {
+        mainSpeedDown: document.getElementById('mainSpeedDown'),
+        mainSpeedUp: document.getElementById('mainSpeedUp'),
+        mainRsrp: document.getElementById('mainRsrp'),
+        mainBand: document.getElementById('mainBand'),
+        backupSpeedDown: document.getElementById('backupSpeedDown'),
+        backupSpeedUp: document.getElementById('backupSpeedUp'),
+        backupRsrp: document.getElementById('backupRsrp'),
+        backupBand: document.getElementById('backupBand'),
+        failOver: document.getElementById('failOver')
+    }
+    const main = document.getElementById('main').value;
+    const backup = document.getElementById('backup').value;
+    switch(main){
+        case 'Geen':
+            break;
+            //coax lines
+        case 'TLN-Coax':
+        case 'VOO-Coax':
+            output += `
+Main:
+Speedtest: DOWN: ${testData.mainSpeedDown.value} Mbps/ UP: ${testData.mainSpeedUp.value} Mbps
+`
+            break;
+            //pxm lines
+        case 'VDSL':
+        case 'GPON':
+            output += `
+Main:
+Speedtest: DOWN: ${testData.mainSpeedDown.value} Mbps/ UP: ${testData.mainSpeedUp.value} Mbps
+`
+            break;
 
+            //mobiles
+        case '4G extern':
+        case '4G ZTE':
+        case '5G':
+            output += `
+Main:
+Speedtest: DOWN: ${testData.mainSpeedDown.value} Mbps/ UP: ${testData.mainSpeedUp.value} Mbps
+Signaal: ${testData.mainRsrp.value}b${testData.mainBand.value}
+`
+            break;
+    }
+    switch(backup){
+        case 'Geen':
+            break;
+        //pxm lines
+        case 'VDSL':
+        case 'GPON':
+            output += `
+Backup:
+Speedtest: DOWN: ${testData.backupSpeedDown.value} Mbps/ UP: ${testData.backupSpeedUp.value} Mbps
+Failover test: ${testData.failOver.value}
+`
+            break;
+
+        //mobiles
+        case '4G extern':
+        case '4G ZTE':
+        case '5G':
+            output += `
+Backup:
+Speedtest: DOWN: ${testData.backupSpeedDown.value} Mbps/ UP: ${testData.backupSpeedUp.value} Mbps
+Signaal: ${testData.backupRsrp.value}b${testData.backupBand.value}
+
+Failover test: ${testData.failOver.value}
+`
+            break;
+    }
+    return output;
+}
+function dynaSouth(){
+    let output = "";
+    const south = document.getElementById('main').value;
+    if(south !== "VOO-Coax"){output = ""}
+    else{
+        output += "-South";
+    }
+    return output;
+}

@@ -1,0 +1,403 @@
+<h1>Managed Corporate Fibernet</h1>
+<div class="alert alert-warning" role="alert">
+    <p>Deze form is nog niet 100% klaar. Functionaliteit kan niet gegarandeerd worden.<br>Het kan in principe gebruikt worden maar er kunnen nog wat foutjes in zitten.<br>Mocht je een probleem tegenkomen, let me know.</p>
+</div>
+<hr class="mb-3">
+<!-- ROW 1 -->
+<div class="row">
+    <h4 class="mt-3">Taak info</h4>
+    <!-- WOLI-nummer -->
+    <div class="col mb-3">
+        <div class="input-group mt-3">
+            <label class="input-group-text" for="woli">WOLI</label>
+            <input type="text" id="woli" name="woli" class="form-control" required>
+        </div>
+    </div>
+</div>
+<!-- ROW 2 -->
+<div class="row">
+    <!-- Adres -->
+    <div class="col mb-3">
+        <div class="input-group">
+            <label class="input-group-text" for="adres">Adres</label>
+            <input type="text" id="adres" name="adres" class="form-control" required>
+        </div>
+    </div>
+</div>
+<hr class="mb-4">
+<!-- ROW 3 -->
+<div class="row">
+    <h4>Omschrijving Taak</h4>
+</div>
+    <!-- Row 4 -->
+<div class="row">
+    <div class="col mb-3">
+        <div class="input-group">
+            <label class="input-group-text" for="main">Main</label>
+            <select id="main" name="main" class="form-select" onchange="dynamics()">
+                <option value="Geen" selected>Geen</option>
+                <option value="TLN-Coax">Coax - Telenet</option>
+                <option value="VDSL">VDSL</option>
+                <option value="VOO-Coax">Coax - VOO</option>
+                <option value="GPON">GPON</option>
+                <option value="4G extern">4G met ext. antenne</option>
+                <option value="4G ZTE">4G met ZTE</option>
+                <option value="5G">5G</option>
+            </select>
+        </div>
+    </div>
+    <div class="col mb-3">
+        <div class="input-group">
+            <label class="input-group-text" for="profiel">Profiel</label>
+            <select id="profiel" name="profiel" class="form-select">
+                <!-- dynamically filled in through dynamicProfiles() -->
+            </select>
+        </div>
+    </div>
+    <div class="col mb-3">
+        <div class="input-group">
+            <label class="input-group-text" for="backup">Backup</label>
+            <select id="backup" name="backup" class="form-select" onchange="dynamics()">
+                <option value="Geen" selected>Geen</option>
+                <option value="5G">5G Backup</option>
+                <option value="4G externe">Externe 4G Backup</option>
+                <option value="ZTE">4G met ZTE modem</option>
+                <option value="VDSL">VDSL</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+    <!-- Row 5 -->
+<div class="row">
+    <!-- CATSAP -->
+    <div class="col mb-3">
+        <div class="input-group">
+            <label class="input-group-text" for="testen_catsap">CATSAP</label>
+            <select id="testen_catsap" name="testen_catsap" class="form-select">
+                <option value="" disabled selected>Select CATSAP</option>
+                <option value="1">1 - Active Cable Customer</option>
+                <option value="2">2 - Former Cable Customer</option>
+                <option value="3">3 - No Drop (Cable in street)</option>
+                <option value="4">4 - No Service</option>
+                <option value="5">5 - Rijgnet</option>
+                <option value="6">6 - Dropcable finished (Ready for connection)</option>
+                <option value="7">7 - Dropcable Placed (Not ready for connection)</option>
+            </select>
+        </div>
+    </div>
+    <!-- Filter -->
+    <div class="col mb-3">
+        <div class="input-group">
+            <label class="input-group-text" for="testen_filterstatus">Filter</label>
+            <select id="testen_filterstatus" name="testen_filterstatus" class="form-select">
+                <option value="" disabled selected>Select FILTER-STATUS</option>
+                <option value="No Filter">No Filter</option>
+                <option value="Anti-dief">Anti-dief</option>
+                <option value="TOF-ITC">TOF-ITC</option>
+                <option value="TOF 5-117">TOF 5-117</option>
+                <option value="HP47">HP47</option>
+                <option value="HP86">HP86</option>
+                <option value="HP110">HP110</option>
+                <option value="RPA12">RPA12</option>
+            </select>
+        </div>
+    </div>
+    <!-- Streetping -->
+    <div class="col mb-3">
+        <div class="input-group">
+            <label class="input-group-text" for="testen_streetping">Streetping</label>
+            <input type="text" id="testen_streetping" name="testen_streetping" class="form-control">
+        </div>
+    </div>
+</div>
+<hr class="mb-4">
+<!-- Row 6 -->
+<div class="row">
+    <h4 class="mb-3">Uitvoering</h4>
+    <!-- Acties -->
+    <div class="col mb-3">
+        <div class="input-group">
+            <label class="input-group-text" for="acties">Acties</label>
+            <textarea id="acties" name="acties" rows="3" required class="form-control"></textarea>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col mb-3">
+        <div class="input-group">
+            <label class="input-group-text" for="router">Router</label>
+            <select id="router" name="router" class="form-select">
+                <option value="" selected disabled>Select router</option>
+                <option value="HPE MSR2003">HPE MSR2003</option>
+                <option value="HPE MSR3012">HPE MSR3012</option>
+                <option value="HPE MSR958x">HPE MSR958x</option>
+                <option value="TMC-R3305(L)">TMC-R3305(L)</option>
+            </select>
+        </div>
+    </div>
+    <div class="col mb-3">
+        <div class="input-group">
+            <label class="input-group-text" for="niu">NIU</label>
+            <select id="niu" name="niu" class="form-select">
+                <option value="Onveranderd" selected>Onveranderd</option>
+                <option value="85MHz 2-Data Mampaey">85MHz 2-Data Mampaey</option>
+                <option value="65MHz 4-Data">65MHz 4-Data</option>
+                <option value="85MHz 4-Data">85MHz 4-Data</option>
+            </select>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col mb-3">
+        <div class="input-group">
+            <label class="input-group-text" for="modemtype">Modem</label>
+            <select id="modemtype" class="form-select" >
+                <option value="modemtype" selected disabled>Modem Type</option>
+                <option value="D3.1ERT">Marakele</option>
+                <option value="AMOD3">AMOD3</option>
+                <option value="AMOD4">AMOD4</option>
+                <option value="ZTE">ZTE</option>
+                <option value="Nokia-5G">Nokia 5G</option>
+            </select>
+            <label for="mac"></label>
+            <input id="mac" name="mac" class="form-control" placeholder="MAC-adres" style="text-transform:uppercase" maxlength="17" onchange="macFormat()">
+        </div>
+    </div>
+</div>
+<hr class="mb-4">
+<!-- row 7 -->
+<div class="row">
+    <h4 class="mb-3">Testen</h4>
+</div>
+<div class="row" id="tests">
+    <!-- dynamically add needed tests -->
+</div>
+<hr class="mb-4">
+<!-- Row 8 -->
+<div class="row">
+    <h4 class="mb-3">Finishing up</h4>
+    <!-- Materiaal -->
+    <div class="col mb-3">
+        <div class="input-group">
+            <label class="input-group-text" for="materiaal">Extra Materiaal</label>
+            <textarea id="materiaal" name="materiaal" rows="3" class="form-control" required></textarea>
+        </div>
+    </div>
+</div>
+<!-- ROW 9 -->
+<div class="row">
+    <!-- resultaat -->
+    <div class="col mb-3">
+        <div class="input-group">
+            <label class="input-group-text" for="resultaat">Resultaat</label>
+            <textarea id="resultaat" name="resultaat" rows="2" class="form-control" required></textarea>
+        </div>
+    </div>
+    <!-- modemtest -->
+    <div class="col mb-3">
+        <div class="input-group">
+            <label class="input-group-text" for="modemtest">Modemtest</label>
+            <textarea type="text" id="modemtest" name="modemtest" class="form-control" required></textarea>
+        </div>
+    </div>
+</div>
+<!-- ROW 9 -->
+
+<!-- Buttons -->
+<div class="mt-4 text-center">
+    <button type="button" class="btn btn-primary btn-lg me-2" onclick="cfnToTXT()"><i class="bi bi-file-earmark-arrow-down"></i> Download .txt-file</button>
+    <button type="button" class="btn btn-primary btn-lg ms-2" id="copyBtn" onclick="cfnToClipboard()"><i class="bi bi-copy"></i> Copy to Clipboard</button>
+</div>
+
+<script>
+//cfn specific script
+function dynamics(){
+    dynamicProfiles();
+    dynamicTests();
+}
+function dynamicProfiles(){
+    const profile = {
+        tln1000: '1G/75M',
+        tln750: '750M/75M',
+        tln500: '500M/50M',
+        tln240: '240M/40M',
+        voo400: '400M/20M',
+        voo200: '200M/20M',
+        voo150: '150M/10M',
+        vdsl: 'VDSL',
+        gpon: 'GPON',
+        mobXL: '1G/75M',
+        mobL: '500M/50M',
+        mobM: '240M/40M',
+        mobS: '90M/20M',
+    }
+    let main = document.getElementById('main');
+    let select = document.getElementById('profiel');
+    let output = "";
+    console.log(main.value);
+    switch(main.value){
+        case 'TLN-Coax':
+            output = `
+                <option value="" selected disabled>Selecteer profiel</option>
+                <option value="${profile.tln1000}">${profile.tln1000}</option>
+                <option value="${profile.tln750}">${profile.tln750}</option>
+                <option value="${profile.tln500}">${profile.tln500}</option>
+                <option value="${profile.tln240}">${profile.tln240}</option>
+            `
+            break;
+        case 'VDSL':
+            output = `
+                <option value="${profile.vdsl}">${profile.vdsl}</option>
+            `
+            break;
+        case 'VOO-Coax':
+            output = `
+                <option value="" selected disabled>Selecteer profiel</option>
+                <option value="${profile.voo400}">${profile.voo400}</option>
+                <option value="${profile.voo200}">${profile.voo200}</option>
+                <option value="${profile.voo150}">${profile.voo150}</option>
+                `
+            break;
+        case 'GPON':
+            output = `
+                <option value="${profile.gpon}">${profile.gpon}</option>
+            `
+            break;
+        case '4G extern':
+        case '4G ZTE':
+        case '5G':
+            output = `
+                <option value="" selected disabled>Selecteer profiel</option>
+                <option value="${profile.mobXL}">${profile.mobXL}</option>
+                <option value="${profile.mobL}">${profile.mobL}</option>
+                <option value="${profile.mobM}">${profile.mobM}</option>
+                <option value="${profile.mobS}">${profile.mobS}</option>
+                `
+    }
+    select.innerHTML = output;
+}
+function dynamicTests(){
+    let main = document.getElementById('main');
+    let backup = document.getElementById('backup');
+    let testDiv = document.getElementById('tests');
+    let outputMain = "";
+    let outputBackup = "";
+    //main switch
+    switch(main.value){
+        case "Geen":
+            outputMain = "";
+            break;
+        case "TLN-Coax":
+        case "VDSL":
+        case "VOO-Coax":
+        case "GPON":
+            outputMain += `
+                <div class="col mb-3">
+                    <div class="input-group">
+                        <label class="input-group-text" for="mainSpeedDown">Speedtest main</label>
+                        <input type="text" id="mainSpeedDown" name="mainSpeedDown" class="form-control" placeholder="down">
+                        <label for="mainSpeedUp"></label>
+                        <input type="text" id="mainSpeedUp" name="mainSpeedUp" class="form-control" placeholder="up">
+                    </div>
+                </div>
+                `;
+            break;
+        case "5G":
+        case "4G extern":
+        case "ZTE":
+            outputMain += `                  <div class="col mb-3">
+                    <div class="input-group">
+                        <label class="input-group-text" for="mainSpeedDown">Speedtest Main</label>
+                        <input type="text" id="mainSpeedDown" name="mainSpeedDown" class="form-control" placeholder="down">
+                        <input type="text" id="mainSpeedUp" name="mainSpeedUp" class="form-control" placeholder="up">
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text">Main RSRP</label>
+                    <input type="text" class="form-control" id="mainRsrp">
+                    <span class="input-group-text">dBm</span>
+                    <span class="input-group-text">Band</span>
+                    <select class="form-select" id="mainBand">
+                        <option value="20">20</option>
+                        <option value="7">7</option>
+                        <option value="3">3</option>
+                        <option value="1">1</option>
+                    </select>
+                </div>`
+            break;
+    }
+    //backup switch
+    switch(backup.value){
+        case "Geen":
+            outputBackup = "";
+            break;
+        case "5G":
+        case "4G externe":
+        case "ZTE":
+            outputBackup += `
+                <div class="col mb-3">
+                    <div class="input-group">
+                        <label class="input-group-text" for="backupSpeedDown">Speedtest Back-up</label>
+                        <input type="text" id="backupSpeedDown" name="backupSpeedDown" class="form-control" placeholder="down">
+                        <input type="text" id="backupSpeedUp" name="backupSpeedUp" class="form-control" placeholder="up">
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="failOver">Failover test</label>
+                    <select id="failOver" name="failOver" class="form-select">
+                        <option value="" selected disabled>OK/NOK</option>
+                        <option value="OK">OK</option>
+                        <option value="NOK">NOK</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text">Backup RSRP</label>
+                    <input type="text" class="form-control" id="backupRsrp">
+                    <span class="input-group-text">dBm</span>
+                    <span class="input-group-text">Band</span>
+                    <select class="form-select" id="backupBand">
+                        <option value="20">20</option>
+                        <option value="7">7</option>
+                        <option value="3">3</option>
+                        <option value="1">1</option>
+                    </select>
+                </div>
+
+            `;
+            break;
+        default:
+            outputBackup += `
+                <div class="col mb-3">
+                    <div class="input-group">
+                        <label class="input-group-text" for="backupSpeedDown">Speedtest Back-up</label>
+                        <input type="text" id="backupSpeedDown" name="backupSpeedDown" class="form-control" placeholder="down">
+                        <input type="text" id="backupSpeedUp" name="backupSpeedUp" class="form-control" placeholder="up">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label class="input-group-text" for="failover">Failover test</label>
+                    <select id="failover" name="failover" class="form-select">
+                        <option value="" selected disabled>OK/NOK</option>
+                        <option value="OK">OK</option>
+                        <option value="NOK">NOK</option>
+                    </select>
+                </div>
+                `;
+            break;}
+    testDiv.innerHTML = outputMain + outputBackup;
+}
+function macFormat(){
+    let mac = document.getElementById('mac');
+    console.log(mac.value);
+
+    let inputString = document.getElementById('mac').value.toUpperCase();
+    let n = 2;
+    let insertChar = ":";
+    let outputString = inputString.split("").reduce(function(acc, val, i) {
+        return i % n === 0 && i !== 0 ? acc + insertChar + val : acc + val;
+    }, "");
+    console.log(outputString);
+    mac.value = outputString;
+}
+</script>
