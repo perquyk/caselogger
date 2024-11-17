@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="testing form modulation">
-      <change beforePath="$PROJECT_DIR$/modules/forms/form_managedCFN.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/forms/form_managedCFN.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/pages/changelog.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/pages/changelog.html" afterDir="false" />
-    </list>
+    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,23 +88,7 @@
       <workItem from="1731354796369" duration="6236000" />
       <workItem from="1731427804056" duration="3937000" />
       <workItem from="1731802874958" duration="1018000" />
-      <workItem from="1731835861030" duration="926000" />
-    </task>
-    <task id="LOCAL-00001" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
-      <option name="closed" value="true" />
-      <created>1731332209733</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1731332209733</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
-      <option name="closed" value="true" />
-      <created>1731332990041</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1731332990041</updated>
+      <workItem from="1731835861030" duration="1522000" />
     </task>
     <task id="LOCAL-00003" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
       <option name="closed" value="true" />
@@ -470,15 +450,45 @@
       <option name="project" value="LOCAL" />
       <updated>1731429837826</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Removed &quot;not ready&quot; dropdown from navbar">
+      <option name="closed" value="true" />
+      <created>1731837916569</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1731837916569</updated>
+    </task>
+    <task id="LOCAL-00049" summary="adjusted changelog">
+      <option name="closed" value="true" />
+      <created>1731837924725</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1731837924725</updated>
+    </task>
+    <task id="LOCAL-00050" summary="added known issue to alert on top of form">
+      <option name="closed" value="true" />
+      <created>1731837937063</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1731837937064</updated>
+    </task>
+    <task id="LOCAL-00051" summary=".">
+      <option name="closed" value="true" />
+      <created>1731837955575</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1731837955575</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div" />
-    <MESSAGE value="added more dynamic questions to cfn form" />
     <MESSAGE value="trying to fix img stuff" />
     <MESSAGE value="made script.js &quot;ok&quot;" />
     <MESSAGE value="Added the &quot;fixed&quot; variables to the generateCFNCaselog Function." />
@@ -500,6 +510,10 @@
     <MESSAGE value="Fixed closing div of a row" />
     <MESSAGE value="made prep for general cfn file" />
     <MESSAGE value="testing form modulation" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing form modulation" />
+    <MESSAGE value="Removed &quot;not ready&quot; dropdown from navbar" />
+    <MESSAGE value="adjusted changelog" />
+    <MESSAGE value="added known issue to alert on top of form" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
