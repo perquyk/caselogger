@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="." />
+    <list default="true" id="80d4580c-3498-4700-9e11-6bc83f4ec496" name="Changes" comment="removed calling of onChange event in hfc mac input.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +20,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -25,7 +32,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Plopkoekk/caselogger.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/perquyk/caselogger.git&quot;,
     &quot;accountId&quot;: &quot;6201982b-4d96-432f-8079-1715a5448a08&quot;
   }
 }</component>
@@ -48,6 +55,7 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Node.js.modules.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -69,7 +77,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
       </set>
     </attachedChunks>
   </component>
@@ -89,14 +97,8 @@
       <workItem from="1731427804056" duration="3937000" />
       <workItem from="1731802874958" duration="1018000" />
       <workItem from="1731835861030" duration="1522000" />
-    </task>
-    <task id="LOCAL-00003" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
-      <option name="closed" value="true" />
-      <created>1731333207428</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1731333207428</updated>
+      <workItem from="1732388877303" duration="494000" />
+      <workItem from="1732389679077" duration="1000" />
     </task>
     <task id="LOCAL-00004" summary="Added all forms that were present in PHP version.&#10;Added Page Switching function.&#10;Added dynamic content loading for navbar and content div">
       <option name="closed" value="true" />
@@ -482,14 +484,21 @@
       <option name="project" value="LOCAL" />
       <updated>1731837955575</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="removed calling of onChange event in hfc mac input.">
+      <option name="closed" value="true" />
+      <created>1732389139995</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1732389139995</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="trying to fix img stuff" />
     <MESSAGE value="made script.js &quot;ok&quot;" />
     <MESSAGE value="Added the &quot;fixed&quot; variables to the generateCFNCaselog Function." />
     <MESSAGE value="Added cfnToTXT and cfnToClipboard" />
@@ -514,6 +523,7 @@
     <MESSAGE value="adjusted changelog" />
     <MESSAGE value="added known issue to alert on top of form" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="removed calling of onChange event in hfc mac input." />
+    <option name="LAST_COMMIT_MESSAGE" value="removed calling of onChange event in hfc mac input." />
   </component>
 </project>
