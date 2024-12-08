@@ -13,16 +13,17 @@ export const useFormStore = defineStore('formStore', {
         materiaal: '',
         resultaat: '',
         modemtest: '',
+        aankomstPNM: '',
+        sleutelvast: '',
+        conn: '',
+        cmVervangen: '',
+        tdrDone: '',
+        vp: '',
+        connTapReplace: '',
+        connNIUReplace: '',
+        verlengReplace: '',
+        dropReplace: '',
+        hpReplace: '',
+        ingress: '',
     }),
-    actions: {
-        updateKlantnummer(value) {
-            this.klantnummer = value
-        },
-        updateTask(value) {
-            this.task = value
-        },
-        updateAdres(value) {
-            this.adres = value
-        },
-    },
 })
