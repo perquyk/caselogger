@@ -40,7 +40,13 @@
     </div>
 </template>
 <script setup>
-const inhomeLinks = [[{ label: 'Install', to: '/forms/inhome/install' }]]
+const inhomeLinks = [
+    [
+        { label: 'Install', to: '/forms/inhome/install' },
+        { label: 'Repair', to: '/forms/inhome/repair' },
+    ],
+    [{ label: 'Project Unhappy Drop', to: '/forms/inhome/unhappy-drop' }],
+]
 const ftthLinks = [[{ label: 'RFoG Install', to: '/forms/ftth/rfog-install' }]]
 const b2bLinks = [[{ label: 'CFN', to: '/forms/b2b/cfn' }]]
 const b2bProjectLinks = [[{ label: 'GSX', to: '/forms/b2b/projects/gsx' }]]
