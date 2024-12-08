@@ -3,7 +3,7 @@
         <ContainerSection>
             <p>
                 inhome install en repair forms zijn klaar. rest is nog altijd
-                WIP. :)
+                WIP :)
             </p>
             <br />
             <p>
