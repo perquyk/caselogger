@@ -1,6 +1,7 @@
 <template>
-    <h3>Situatie bij aankomst:</h3>
-    <div class="grid grid-cols-12">
+    <div class="grid">
+        <h3 class="px-5 text-xl">Situatie bij aankomst:</h3>
+
         <FormTextArea
             label="Omschrijving taak"
             class="col-span-12"
@@ -12,6 +13,7 @@
             class="col-span-4"
             v-model="formStore.catsap"
         />
+
         <FormSelect
             label="Filter"
             :options="filterStore.options"
