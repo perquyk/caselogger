@@ -12,4 +12,7 @@ export default defineNuxtConfig({
     colorMode: {
         preference: 'dark',
     },
+    nitro: {
+        preset: 'node-server',
+    },
 })
