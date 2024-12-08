@@ -18,8 +18,6 @@
     </div>
 </template>
 <script setup>
-import Input from '~/components/Form/Input.vue'
-
 const formStore = useFormStore()
 defineProps({
     label: {
