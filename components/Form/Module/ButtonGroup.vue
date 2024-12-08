@@ -1,7 +1,7 @@
 <template>
     <div class="flex items-center justify-center gap-10">
         <FormButtonCopy @click="useCopy(formData)" />
-        <FormButtonDownload @click="useDownload(formData, task, taskType)" /> />
+        <FormButtonDownload @click="useDownload(formData, task, taskType)" />
     </div>
 </template>
 <script setup>
