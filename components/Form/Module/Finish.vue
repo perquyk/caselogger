@@ -1,6 +1,7 @@
 <template>
-    <h3>Finishing up</h3>
-    <div class="grid grid-cols-12">
+    <div class="mb-3 grid grid-cols-12">
+        <h3 class="col-span-12 px-5 text-xl">Finishing up</h3>
+
         <FormTextArea
             v-model="formStore.materiaal"
             label="Materiaal"

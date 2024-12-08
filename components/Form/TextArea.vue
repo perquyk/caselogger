@@ -1,6 +1,6 @@
 <template>
     <div
-        class="mx-3 my-2 flex items-center justify-normal gap-2 rounded-md border border-gray-900"
+        class="m-3 flex items-center justify-normal gap-2 rounded-md border border-gray-900"
     >
         <label
             class="w-fit py-2 pl-3 text-center text-sm text-gray-300"

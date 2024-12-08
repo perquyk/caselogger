@@ -1,18 +1,24 @@
 <template>
-    <div class="mx-auto my-3 w-9/12 rounded-lg bg-gray-800 p-3">
-        <h2 class="text-2xl">inHome Install</h2>
-        <FormModuleKlantInfo />
-        <FormModuleInstallSituatie />
-        <FormModuleInhomeActies />
-        <FormModuleFinish />
-        <FormModuleButtonGroup
-            :formData="formData"
-            :task="formStore.task"
-            taskType="install"
-        />
-    </div>
+    <MainContainer title="inHome Install">
+        <ContainerSection>
+            <FormModuleKlantInfo />
+            <ContDivider />
+            <FormModuleInstallSituatie />
+            <ContDivider />
+            <FormModuleInhomeActies />
+            <ContDivider />
+            <FormModuleFinish />
+            <FormModuleButtonGroup
+                :formData="formData"
+                :task="formStore.task"
+                taskType="install"
+            />
+        </ContainerSection>
+    </MainContainer>
 </template>
 <script setup>
+import ContDivider from '~/components/ContDivider.vue'
+
 const formStore = useFormStore()
 const formData = () => {
     return `Taaktype: inHome Install

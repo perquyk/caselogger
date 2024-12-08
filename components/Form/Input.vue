@@ -1,6 +1,8 @@
 <template>
-    <div class="mx-3 my-2 flex gap-2 rounded-md border border-gray-900">
-        <label class="py-2 pl-3 text-sm text-gray-300" :for="label">{{
+    <div
+        class="mx-3 my-2 flex justify-between gap-2 rounded-md border border-gray-900"
+    >
+        <label class="px-3 py-2 text-sm text-gray-300" :for="label">{{
             label
         }}</label>
         <input
