@@ -5,6 +5,7 @@ export const useFormStore = defineStore('formStore', {
         task: '',
         adres: '',
         omschrijving: '',
+        testen: '',
         catsap: '',
         filter: '',
         streetping: '',
