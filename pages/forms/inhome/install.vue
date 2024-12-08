@@ -5,7 +5,11 @@
         <FormModuleInstallSituatie />
         <FormModuleInhomeActies />
         <FormModuleFinish />
-        <FormModuleFormButtons />
+        <FormModuleButtonGroup
+            :formData="formData"
+            :task="formStore.task"
+            taskType="install"
+        />
     </div>
 </template>
 <script setup>

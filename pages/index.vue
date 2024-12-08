@@ -1,5 +1,5 @@
 <template>
-    <MainContainer title="Caselogger" logo="/Logo32.png">
+    <MainContainer title="Caselogger" logo="Logo32.png">
         <ContainerSection>
             <p>
                 Kies Bovenaan de gewenste template.<br />
