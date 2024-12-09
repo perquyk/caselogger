@@ -1,5 +1,7 @@
 <template>
-    <div class="flex items-center justify-between bg-gray-800 px-5 py-3">
+    <div
+        class="sticky top-0 flex items-center justify-between bg-gray-800 px-5 py-3"
+    >
         <!--left side-->
         <div class="text-xl">
             <NuxtLink to="/" class="flex items-center justify-start gap-2"
@@ -36,6 +38,9 @@
             <UButton variant="ghost" color="white" to="/extra"
                 >Other Tools</UButton
             >
+            <UButton variant="outline" to="/forms/inhome/newInstall"
+                >TEST INSTALL</UButton
+            >
         </div>
     </div>
 </template>
@@ -50,4 +55,5 @@ const inhomeLinks = [
 const ftthLinks = [[{ label: 'RFoG Install', to: '/forms/ftth/rfog-install' }]]
 const b2bLinks = [[{ label: 'CFN', to: '/forms/b2b/cfn' }]]
 const b2bProjectLinks = [[{ label: 'GSX', to: '/forms/b2b/projects/gsx' }]]
+const testLinks = [[{ label: 'newInstall', to: '/forms/inhome/newInstall' }]]
 </script>
