@@ -1,6 +1,6 @@
 <template>
     <div class="grid">
-        <h3 class="col-span-12 px-5 text-xl">Situatie bij aankomst:</h3>
+        <h3 class="col-span-12 px-5 text-xl">Situatie bij aankomst</h3>
 
         <FormTextArea
             label="Omschrijving taak"
