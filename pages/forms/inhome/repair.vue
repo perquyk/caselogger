@@ -1,22 +1,30 @@
 <template>
-    <MainContainer title="inHome Repair">
-        <ContainerSection>
+    <div class="mx-auto grid w-9/12 grid-cols-12 gap-3 p-3">
+        <FormDiv title="inHome Repair"/>
+
+        <FormDiv header="Klant Info">
             <FormModuleKlantInfo />
-            <ContDivider />
+        </FormDiv>
+        <FormDiv header="Situatie">
             <FormModuleRepairSituatie />
-            <ContDivider />
+        </FormDiv>
+        <FormDiv header="Testen">
             <FormModuleRepairTesten />
-            <ContDivider />
+        </FormDiv>
+        <FormDiv header="Acties">
             <FormModuleInhomeActies />
-            <ContDivider />
+        </FormDiv>
+        <FormDiv header="Finishing Up">
             <FormModuleFinish />
+        </FormDiv>
+        <FormDiv>
             <FormModuleButtonGroup
                 :formData="formData"
                 :task="formStore.task"
                 taskType="repair"
             />
-        </ContainerSection>
-    </MainContainer>
+        </FormDiv>
+    </div>
 </template>
 <script setup>
 const formStore = useFormStore()
