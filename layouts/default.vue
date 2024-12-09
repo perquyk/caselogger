@@ -1,4 +1,4 @@
 <template>
-    <Navbar />
+    <Navbar class="sticky" />
     <slot />
 </template>
