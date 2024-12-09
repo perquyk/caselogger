@@ -25,5 +25,10 @@ export const useFormStore = defineStore('formStore', {
         dropReplace: '',
         hpReplace: '',
         ingress: '',
+        tapniulength: '',
+        niutaplength: '',
+        tapniuevents: '',
+        niutapevents: '',
+        vertrekPnm: '',
     }),
 })

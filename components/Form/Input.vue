@@ -13,6 +13,12 @@
             :modelValue="label"
             @input="$emit('update:modelValue', $event.target.value)"
         />
+        <label
+            v-if="suffix"
+            class="self-center px-3 py-2 text-sm text-gray-300"
+            :for="suffix"
+            >{{ suffix }}</label
+        >
     </div>
 </template>
 <script setup>
@@ -24,6 +30,11 @@ defineProps({
     modelValue: {
         type: String,
         default: '',
+    },
+    suffix: {
+        type: String,
+        Boolean,
+        default: false,
     },
 })
 </script>

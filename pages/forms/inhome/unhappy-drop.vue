@@ -6,6 +6,12 @@
             <FormModulePnmAankomst />
             <ContDivider />
             <FormModuleUnhappySmallCheck />
+            <ContDivider />
+            <FormModuleTdrMeting />
+            <ContDivider />
+            <FormModuleActiesDrop />
+            <ContDivider />
+            <FormModuleUnhappyEnd />
             <FormModuleButtonGroup
                 :formData="formData"
                 :task="formStore.task"
@@ -26,28 +32,29 @@ PNM bij aankomst:
 ${formStore.aankomstPNM}
 
 Tijdens Interventie:
-Sleutelvast?:
-Connectoren?:
-Coax-Snoer vervangen?:
+Sleutelvast?: ${formStore.aankomstPNM}
+Connectoren?: ${formStore.conn}
+Coax-Snoer vervangen?: ${formStore.cmVervangen}
 
 TDR-meting drop:
-Meting uitgevoerd?:
-Vp:
-Lengte/events TAP > NIU: meter / events:
-Lengte/events NIU > TAP: meter / events:
+Meting uitgevoerd?: ${formStore.tdrDone}
+Vp: ${formStore.vp}
+Lengte/events TAP > NIU: ${formStore.tapniulength} meter / events: ${formStore.tapniuevents}
+Lengte/events NIU > TAP: ${formStore.niutaplength} meter / events: ${formStore.niutapevents}
 
 Acties drop:
-F-conn TAP vervangen?:
-F-conn NIU vervangen?:
-Verlengstuk vervangen?:
-Drop vervangen?:
-HP47 vervangen?:
-Ingress nadien gemeten?:
+F-conn TAP vervangen?: ${formStore.connTapReplace}
+F-conn NIU vervangen?: ${formStore.connNIUReplace}
+Verlengstuk vervangen?: ${formStore.verlengReplace}
+Drop vervangen?: ${formStore.dropReplace}
+HP47 vervangen?: ${formStore.hpReplace}
+Ingress nadien gemeten?: ${formStore.ingress}
 
 PNM bij vertrek:
+${formStore.vertrekPnm}
 
 Resultaat:
-
+${formStore.resultaat}
 `
 }
 </script>
