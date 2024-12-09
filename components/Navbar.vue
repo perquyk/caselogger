@@ -38,9 +38,6 @@
             <UButton variant="ghost" color="white" to="/extra"
                 >Other Tools</UButton
             >
-            <UButton variant="outline" to="/forms/inhome/newInstall"
-                >TEST INSTALL</UButton
-            >
         </div>
     </div>
 </template>
