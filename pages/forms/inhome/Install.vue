@@ -1,19 +1,19 @@
 <template>
-    <div class="mx-auto grid w-9/12 grid-cols-12 gap-5 p-3">
+    <div class="mx-auto grid w-9/12 grid-cols-12 gap-3 p-3">
         <FormDiv title="inHome Install" />
-        <FormDiv>
+        <FormDiv header="Klant Info">
             <FormModuleKlantInfo />
         </FormDiv>
-        <FormDiv cols="12">
+        <FormDiv header="Situatie bij aankomst" cols="12">
             <FormModuleInstallSituatie />
         </FormDiv>
-        <FormDiv>
+        <FormDiv header="Acties" cols="12">
             <FormModuleInhomeActies />
         </FormDiv>
-        <FormDiv>
+        <FormDiv header="Finishing up">
             <FormModuleFinish />
         </FormDiv>
-        <FormDiv>
+        <FormDiv header="">
             <FormModuleButtonGroup
                 :formData="formData"
                 :task="formStore.task"
