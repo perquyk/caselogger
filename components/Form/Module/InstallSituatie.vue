@@ -1,7 +1,4 @@
 <template>
-    <div class="grid">
-        <h3 class="col-span-12 px-5 text-xl">Situatie bij aankomst</h3>
-
         <FormTextArea
             label="Omschrijving taak"
             class="col-span-12"
@@ -25,7 +22,6 @@
             class="col-span-4"
             v-model="formStore.streetping"
         />
-    </div>
 </template>
 <script setup>
 const filterStore = useFilterStore()

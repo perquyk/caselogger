@@ -1,11 +1,12 @@
 <template>
     <div :class="className">
         <div v-if="props.title">
-            <h2 class="text-2xl">{{ title }}</h2>
+            <h2 class="p-3 text-2xl">{{ title }}</h2>
         </div>
 
-        <div v-else>
-            <slot />
+        <div v-else >
+            <div v-if="props.header" class="bg-gray-700/25 px-3 py-2 rounded-t-lg">{{header}}</div>
+            <div class="p-3 grid"><slot /></div>
         </div>
     </div>
 </template>
@@ -24,6 +25,11 @@ const props = defineProps({
         Boolean,
         default: false,
     },
+    header: {
+        type: String,
+        Boolean,
+        default: false,
+    },
 })
-const className = `col-span-${props.cols} row-span-${props.rows} rounded-lg bg-gray-800 p-5`
+const className = `col-span-${props.cols} row-span-${props.rows} bg-gray-800 rounded-lg`
 </script>
