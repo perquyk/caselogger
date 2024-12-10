@@ -13,7 +13,7 @@
         <FormDiv header="Finishing up">
             <FormModuleFinish />
         </FormDiv>
-        <FormDiv header="">
+        <FormDiv>
             <FormModuleButtonGroup
                 :formData="formData"
                 :task="formStore.task"
