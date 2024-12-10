@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-export const useFilterStore = defineStore('filterStore', {
+export const useSelectStore = defineStore('selectStore', {
     state: () => ({
         patchLengthOptions: [
             { value: 'nvt', description: 'nvt' },
