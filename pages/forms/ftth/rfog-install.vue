@@ -26,18 +26,13 @@
 <script setup>
 const formStore = useFormStore()
 const formData = () => {
-    return `Taaktype: inHome Install
+    return `Taaktype: FTTH - RFoG Install
 TaakID: ${formStore.task}
 Klantnummer: ${formStore.klantnummer}
 Adres: ${formStore.adres}
 ------------------------------
 Omschrijving Taak:
 ${formStore.omschrijving}
-
-Testen bij aankomst:
-Catsap: ${formStore.catsap}
-Filter: ${formStore.filter}
-Streetping: ${formStore.streetping}
 
 Acties:
 ${formStore.acties}
@@ -47,6 +42,10 @@ ${formStore.materiaal}
 
 Resultaat:
 ${formStore.resultaat}
+
+Patch informatie:
+- lengte patchsnoer: ${formStore.patchlength}
+- patchpositie: ${formStore.mdrpos} - ${formStore.rechtspos}
 
 Modemtest:
 ${formStore.modemtest}
