@@ -53,5 +53,27 @@ export const useSelectStore = defineStore('selectStore', {
             { value: 'OK', description: 'OK' },
             { value: 'NOK', description: 'NOK' },
         ],
+        vp: [
+            { value: '', description: '' },
+            { value: '0.66', description: '0.66' },
+            { value: '0.85', description: '0.85' },
+        ],
+        janee: [
+            { value: '', description: '' },
+            { value: 'Ja', description: 'Ja' },
+            { value: 'Nee', description: 'Nee' },
+        ],
+        janeenvt: [
+            { value: '', description: '' },
+            { value: 'Ja', description: 'Ja' },
+            { value: 'Nee', description: 'Nee' },
+            { value: 'NVT', description: 'NVT' },
+        ],
+        hpReplace: [
+            { value: '', description: '' },
+            { value: 'Niet aanwezig', description: 'Niet aanwezig' },
+            { value: 'Verwijderd', description: 'Verwijderd' },
+            { value: 'Niet verwijderd', description: 'Niet verwijderd' },
+        ],
     }),
 })

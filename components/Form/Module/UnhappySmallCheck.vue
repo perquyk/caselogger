@@ -3,19 +3,19 @@
         <h3 class="col-span-12 px-5 text-xl">Tijdens Interventie</h3>
         <FormSelect
             label="CM-Snoer sleutelvast?"
-            :options="unhappyStore.sleutelvast"
+            :options="selectStore.oknok"
             class="col-span-4"
             v-model="formStore.sleutelvast"
         />
         <FormSelect
             label="Connectoren OK??"
-            :options="unhappyStore.conn"
+            :options="selectStore.oknok"
             class="col-span-4"
             v-model="formStore.conn"
         />
         <FormSelect
             label="CM-snoer vervangen?"
-            :options="unhappyStore.cmVervangen"
+            :options="selectStore.janee"
             class="col-span-4"
             v-model="formStore.cmVervangen"
         />
@@ -23,5 +23,5 @@
 </template>
 <script setup>
 const formStore = useFormStore()
-const unhappyStore = useUnhappyStore()
+const selectStore = useSelectStore()
 </script>
