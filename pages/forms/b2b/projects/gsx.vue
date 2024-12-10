@@ -7,8 +7,9 @@
         <FormDiv header="Installatie Info">
             <FormModuleGsxInstallInfo />
         </FormDiv>
-        <FormDiv header="Testen">testen</FormDiv>
-        <FormDiv header="Finishing Up">finishing up</FormDiv>
+        <FormDiv header="Testen"><FormModuleIadTest /></FormDiv>
+        <FormDiv header="Extra Materiaal"> Not yet implemented </FormDiv>
+        <FormDiv header="Finishing Up"><FormModuleWoliFinish /></FormDiv>
         <FormDiv>
             <FormModuleButtonGroup
                 :formData="formData"

@@ -37,5 +37,8 @@ export const useFormStore = defineStore('formStore', {
         gsxOldSetup: '',
         hfc: '',
         voip: '',
+        IadTestArgus: '',
+        IadTestPBX: '',
+        remarks: '',
     }),
 })
