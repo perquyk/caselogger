@@ -4,9 +4,14 @@
             <h2 class="p-3 text-2xl">{{ title }}</h2>
         </div>
 
-        <div v-else >
-            <div v-if="props.header" class="bg-gray-700/25 px-3 py-2 rounded-t-lg">{{header}}</div>
-            <div class="p-3 grid"><slot /></div>
+        <div v-else>
+            <div
+                v-if="props.header"
+                class="rounded-t-lg bg-gray-700/25 px-3 py-2"
+            >
+                {{ header }}
+            </div>
+            <div class="grid grid-cols-12 p-3"><slot /></div>
         </div>
     </div>
 </template>
