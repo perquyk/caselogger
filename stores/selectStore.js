@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 export const useSelectStore = defineStore('selectStore', {
     state: () => ({
         patchLengthOptions: [
+            { value: '', description: '' },
             { value: 'nvt', description: 'nvt' },
             { value: 'SC-LC 2m', description: 'SC-LC 2m' },
             { value: 'SC-LC 3m', description: 'SC-LC 3m' },
@@ -15,10 +16,12 @@ export const useSelectStore = defineStore('selectStore', {
             { value: 'PRA', description: 'PRA' },
         ],
         gsxOldsetup: [
+            { value: '', description: '' },
             { value: 'oneAccess', description: 'oneAccess' },
             { value: 'AudioCodes', description: 'AudioCodes' },
         ],
         oknok: [
+            { value: '', description: '' },
             { value: 'OK', description: 'OK' },
             { value: 'NOK', desription: 'NOK' },
         ],
