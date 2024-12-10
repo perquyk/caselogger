@@ -24,27 +24,30 @@
 const formStore = useFormStore()
 const formData = () => {
     return `Taaktype: Project GSX-Migration
-WOLI:
-Adres:
+WOLI: ${formStore.task}
+Adres: ${formStore.adres}
 ------------------------------
 Omschrijving Taak:
 Project GSX Migratie
-- Aanwezige IAD-type: 
+- Aanwezige IAD-type: ${formStore.gsxOldSetup}
 
 Testen:
-Testcalls Argus/Phonerlite:
-Testcalls PaBX:
+Testcalls Argus/Phonerlite: ${formStore.IadTestArgus}
+Testcalls PaBX: ${formStore.IadTestPBX}
 
 Issues/Remarks:
-
+${formStore.remarks}
 
 Materiaal:
-1x Marakele - 
-1x Audiocode - 
+1x Marakele - ${formStore.hfc}
+1x Audiocode ${formStore.gsxInstallType} - ${formStore.voip}
+
 
 Resultaat:
+${formStore.resultaat}
 
-
-Modemtest:`
+Modemtest:
+${formStore.modemtest}
+`
 }
 </script>
