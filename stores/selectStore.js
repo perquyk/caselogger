@@ -10,6 +10,7 @@ export const useSelectStore = defineStore('selectStore', {
             { value: 'SC-SC 1m', description: 'SC-SC 1m' },
         ],
         gsxInstallType: [
+            { value: '', description: '' },
             { value: 'SIP', description: 'SIP' },
             { value: 'ISDN', description: 'ISDN' },
             { value: 'ISDN-BRI', description: 'ISDN-BRI' },
