@@ -3,37 +3,37 @@
         <h3 class="col-span-12 px-5 text-xl">Acties Drop</h3>
         <FormSelect
             label="Connector tap vervangen?"
-            :options="unhappyStore.connTapReplace"
+            :options="selectStore.janee"
             class="col-span-4"
             v-model="formStore.connTapReplace"
         />
         <FormSelect
             label="Connector NIU vervangen?"
-            :options="unhappyStore.connNIUReplace"
+            :options="selectStore.janee"
             class="col-span-4"
             v-model="formStore.connNIUReplace"
         />
         <FormSelect
             label="Verlengstuk vervangen?"
-            :options="unhappyStore.verlengReplace"
+            :options="selectStore.janeenvt"
             class="col-span-4"
             v-model="formStore.verlengReplace"
         />
         <FormSelect
             label="Drop vervangen?"
-            :options="unhappyStore.dropReplace"
+            :options="selectStore.janeenvt"
             class="col-span-4"
             v-model="formStore.dropReplace"
         />
         <FormSelect
             label="HP47?"
-            :options="unhappyStore.hpReplace"
+            :options="selectStore.hpReplace"
             class="col-span-4"
             v-model="formStore.hpReplace"
         />
         <FormSelect
             label="Ingress nadien gemeten?"
-            :options="unhappyStore.ingress"
+            :options="selectStore.janeenvt"
             class="col-span-4"
             v-model="formStore.ingress"
         />
@@ -41,5 +41,5 @@
 </template>
 <script setup>
 const formStore = useFormStore()
-const unhappyStore = useUnhappyStore()
+const selectStore = useSelectStore()
 </script>

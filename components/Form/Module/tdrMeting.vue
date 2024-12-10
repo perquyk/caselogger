@@ -4,7 +4,7 @@
 
         <FormSelect
             label="TDR-meting uitgevoerd?"
-            :options="unhappyStore.tdrDone"
+            :options="selectStore.janee"
             class="col-span-4"
             v-model="formStore.tdrDone"
         />
@@ -22,7 +22,7 @@
 
         <FormSelect
             label="Vp"
-            :options="unhappyStore.vp"
+            :options="selectStore.vp"
             class="col-span-4"
             v-model="formStore.vp"
         />
@@ -41,5 +41,5 @@
 </template>
 <script setup>
 const formStore = useFormStore()
-const unhappyStore = useUnhappyStore()
+const selectStore = useSelectStore()
 </script>
