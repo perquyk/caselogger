@@ -83,7 +83,7 @@ const allLinks = [
         { label: 'Repair', to: '/forms/inhome/repair' },
         {
             label: 'Project Unhappy Drop',
-            description: '/forms/inhome/unhappy-drop',
+            to: '/forms/inhome/unhappy-drop',
         },
     ],
     [
