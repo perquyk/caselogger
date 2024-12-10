@@ -38,10 +38,12 @@
             <UButton variant="ghost" color="white" to="/extra"
                 >Other Tools</UButton
             >
+            <UButton v-if="testEnabled" to="/test">TEST</UButton>
         </div>
     </div>
 </template>
 <script setup>
+const testEnabled = false
 const inhomeLinks = [
     [
         { label: 'Install', to: '/forms/inhome/install' },
@@ -52,5 +54,5 @@ const inhomeLinks = [
 const ftthLinks = [[{ label: 'RFoG Install', to: '/forms/ftth/rfog-install' }]]
 const b2bLinks = [[{ label: 'CFN', to: '/forms/b2b/cfn' }]]
 const b2bProjectLinks = [[{ label: 'GSX', to: '/forms/b2b/projects/gsx' }]]
-const testLinks = [[{ label: 'newInstall', to: '/forms/inhome/newInstall' }]]
+const testLinks = [[{ label: 'newInstall', to: '/test' }]]
 </script>

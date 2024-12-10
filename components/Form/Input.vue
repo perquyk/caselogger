@@ -2,12 +2,14 @@
     <div
         class="mx-3 my-2 flex justify-between gap-2 rounded-md border border-gray-900"
     >
-        <label class="px-3 py-2 text-sm text-gray-300" :for="label">{{
-            label
-        }}</label>
+        <label
+            class="px-3 py-2 text-center text-sm text-gray-300"
+            :for="label"
+            >{{ label }}</label
+        >
         <input
             type="text"
-            class="w-full rounded-r-md bg-gray-900 px-2"
+            class="w-full flex-1 rounded-r-md bg-gray-900 px-2"
             :name="label"
             :id="label"
             :modelValue="label"
@@ -15,7 +17,7 @@
         />
         <label
             v-if="suffix"
-            class="self-center px-3 py-2 text-sm text-gray-300"
+            class="self-center px-3 py-2 text-center text-sm text-gray-300"
             :for="suffix"
             >{{ suffix }}</label
         >
