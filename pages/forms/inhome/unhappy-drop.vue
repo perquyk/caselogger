@@ -32,7 +32,7 @@ PNM bij aankomst:
 ${formStore.aankomstPNM}
 
 Tijdens Interventie:
-Sleutelvast?: ${formStore.aankomstPNM}
+Sleutelvast?: ${formStore.sleutelvast}
 Connectoren?: ${formStore.conn}
 Coax-Snoer vervangen?: ${formStore.cmVervangen}
 
