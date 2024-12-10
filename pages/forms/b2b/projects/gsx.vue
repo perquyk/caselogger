@@ -4,7 +4,9 @@
         <FormDiv header="Woli Info" cols="12">
             <FormModuleWoliInfo />
         </FormDiv>
-        <FormDiv header="Installatie Info">install info</FormDiv>
+        <FormDiv header="Installatie Info">
+            <FormModuleGsxInstallInfo />
+        </FormDiv>
         <FormDiv header="Testen">testen</FormDiv>
         <FormDiv header="Finishing Up">finishing up</FormDiv>
         <FormDiv>
