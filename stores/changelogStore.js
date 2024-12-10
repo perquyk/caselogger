@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 export const useChangeStore = defineStore('changeStore', {
     state: () => ({
         changes: [
+            { date: '10/12/2024', description: 'Added RFoG and GSX Forms' },
             {
                 date: '9/12/2024',
                 description: 'Added Project Unhappy Dropcable form',
