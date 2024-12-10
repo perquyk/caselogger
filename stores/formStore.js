@@ -30,5 +30,8 @@ export const useFormStore = defineStore('formStore', {
         tapniuevents: '',
         niutapevents: '',
         vertrekPnm: '',
+        patchlength: '',
+        mdrpos: '',
+        rechtspos: '',
     }),
 })

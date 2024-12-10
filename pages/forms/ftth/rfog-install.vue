@@ -5,7 +5,7 @@
             <FormModuleKlantInfo />
         </FormDiv>
         <FormDiv header="Situatie bij aankomst" cols="12">
-            <FormModuleInstallSituatie />
+            <FormModuleRfogSituatie />
         </FormDiv>
         <FormDiv header="Acties" cols="12">
             <FormModuleInhomeActies />
