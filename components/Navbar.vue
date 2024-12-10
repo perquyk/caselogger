@@ -52,7 +52,12 @@ const inhomeLinks = [
     [{ label: 'Project Unhappy Drop', to: '/forms/inhome/unhappy-drop' }],
 ]
 const ftthLinks = [[{ label: 'RFoG Install', to: '/forms/ftth/rfog-install' }]]
-const b2bLinks = [[{ label: 'CFN', to: '/forms/b2b/cfn' }]]
+const b2bLinks = [
+    [
+        { label: 'CFN', to: '/forms/b2b/cfn' },
+        { label: 'PSV KA', to: '/forms/b2b/psv-ka' },
+    ],
+]
 const b2bProjectLinks = [[{ label: 'GSX', to: '/forms/b2b/projects/gsx' }]]
 const testLinks = [[{ label: 'newInstall', to: '/test' }]]
 </script>
