@@ -6,7 +6,7 @@
     />
     <FormSelect
         label="Catsap"
-        :options="catsapStore.options"
+        :options="selectStore.catsapOptions"
         class="col-span-4"
         v-model="formStore.catsap"
     />
@@ -25,6 +25,5 @@
 </template>
 <script setup>
 const selectStore = useSelectStore()
-const catsapStore = useCatsapStore()
 const formStore = useFormStore()
 </script>
