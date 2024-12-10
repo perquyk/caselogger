@@ -24,7 +24,7 @@ export const useSelectStore = defineStore('selectStore', {
         oknok: [
             { value: '', description: '' },
             { value: 'OK', description: 'OK' },
-            { value: 'NOK', desription: 'NOK' },
+            { value: 'NOK', description: 'NOK' },
         ],
     }),
 })
