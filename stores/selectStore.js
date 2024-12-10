@@ -1,7 +1,19 @@
 import { defineStore } from 'pinia'
 export const useSelectStore = defineStore('selectStore', {
     state: () => ({
+        filterOptions: [
+            { value: '', description: '' },
+            { value: 'No Filter', description: 'No Filter' },
+            { value: 'Anti-Dief', description: 'Anti-Dief' },
+            { value: 'TOF-ITC', description: 'TOF-ITC' },
+            { value: 'TOF 5-117', description: 'TOF 5-117' },
+            { value: 'HP47', description: 'HP47' },
+            { value: 'HP86', description: 'HP86' },
+            { value: 'HP110', description: 'HP110' },
+            { value: 'RPA12', description: 'RPA12' },
+        ],
         catsapOptions: [
+            { value: '', description: '' },
             { value: 1, description: '1 - Active Cable Customer' },
             { value: 2, description: '2 - Former Cable Customer' },
             { value: 3, description: '3 - No Dropcable (cable in street)' },
