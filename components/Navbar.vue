@@ -11,39 +11,56 @@
 
         <!--Right side-->
         <div>
-            <UDropdown
-                :items="inhomeLinks"
-                :popper="{ placement: 'bottom-start' }"
-                mode="click"
-                ><UButton label="inHome" variant="ghost" color="white"
-            /></UDropdown>
-            <UDropdown
-                :items="ftthLinks"
-                :popper="{ placement: 'bottom-start' }"
-                mode="click"
-                ><UButton label="FTTH" variant="ghost" color="white"
-            /></UDropdown>
-            <UDropdown
-                :items="b2bLinks"
-                :popper="{ placement: 'bottom-start' }"
-                mode="click"
-                ><UButton label="B2B" variant="ghost" color="white"
-            /></UDropdown>
-            <UDropdown
-                :items="b2bProjectLinks"
-                :popper="{ placement: 'bottom-start' }"
-                mode="click"
-                ><UButton label="B2B Projects" variant="ghost" color="white"
-            /></UDropdown>
-            <UButton variant="ghost" color="white" to="/extra"
-                >Other Tools</UButton
-            >
-            <UButton v-if="testEnabled" to="/test">TEST</UButton>
+            <div class="hidden lg:block">
+                <UDropdown
+                    :items="inhomeLinks"
+                    :popper="{ placement: 'bottom-start' }"
+                    mode="click"
+                    ><UButton label="inHome" variant="ghost" color="white"
+                /></UDropdown>
+                <UDropdown
+                    :items="ftthLinks"
+                    :popper="{ placement: 'bottom-start' }"
+                    mode="click"
+                    ><UButton label="FTTH" variant="ghost" color="white"
+                /></UDropdown>
+                <UDropdown
+                    :items="b2bLinks"
+                    :popper="{ placement: 'bottom-start' }"
+                    mode="click"
+                    ><UButton label="B2B" variant="ghost" color="white"
+                /></UDropdown>
+                <UDropdown
+                    :items="b2bProjectLinks"
+                    :popper="{ placement: 'bottom-start' }"
+                    mode="click"
+                    ><UButton
+                        label="B2B Projects"
+                        variant="ghost"
+                        color="white"
+                /></UDropdown>
+                <UButton variant="ghost" color="white" to="/extra"
+                    >Other Tools</UButton
+                >
+            </div>
+            <div class="lg:hidden">
+                <UDropdown
+                    :items="allLinks"
+                    :popper="{ placement: 'bottom-start' }"
+                    mode="click"
+                >
+                    <UButton
+                        variant="outline"
+                        color="primary"
+                        icon="i-pajamas-hamburger"
+                        size="xl"
+                    />
+                </UDropdown>
+            </div>
         </div>
     </div>
 </template>
 <script setup>
-const testEnabled = false
 const inhomeLinks = [
     [
         { label: 'Install', to: '/forms/inhome/install' },
@@ -59,5 +76,32 @@ const b2bLinks = [
     ],
 ]
 const b2bProjectLinks = [[{ label: 'GSX', to: '/forms/b2b/projects/gsx' }]]
-const testLinks = [[{ label: 'newInstall', to: '/test' }]]
+const allLinks = [
+    [
+        { label: 'inHome', disabled: true },
+        { label: 'Install', to: '/forms/inhome/install' },
+        { label: 'Repair', to: '/forms/inhome/repair' },
+        {
+            label: 'Project Unhappy Drop',
+            description: '/forms/inhome/unhappy-drop',
+        },
+    ],
+    [
+        { label: 'FTTH', disabled: true },
+        { label: 'RFoG Install', to: '/forms/ftth/rfog-install' },
+    ],
+    [
+        { label: 'B2B', disabled: true },
+        { label: 'CFN', to: '/forms/b2b/cfn' },
+        { label: 'PSV KA', to: '/forms/b2b/psv-ka' },
+    ],
+    [
+        { label: 'B2B Projects', disabled: true },
+        { label: 'GSX', to: '/forms/b2b/projects/gsx' },
+    ],
+    [
+        { label: 'Other Stuff', disabled: true },
+        { label: 'Extra Tools', to: '/extra' },
+    ],
+]
 </script>
