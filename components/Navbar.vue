@@ -71,7 +71,7 @@ const inhomeLinks = [
 const ftthLinks = [[{ label: 'RFoG Install', to: '/forms/ftth/rfog-install' }]]
 const b2bLinks = [
     [
-        { label: 'CFN (OLD)', to: 'https://old.perquyk.org/' },
+        { label: 'CFN', to: '/forms/b2b/cfn' },
         { label: 'PSV KA', to: '/forms/b2b/psv-ka' },
     ],
 ]
@@ -92,7 +92,7 @@ const allLinks = [
     ],
     [
         { label: 'B2B', disabled: true },
-        { label: 'CFN (OLD)', to: 'https://old.perquyk.org/' },
+        { label: 'CFN', to: '/forms/b2b/cfn' },
         { label: 'PSV KA', to: '/forms/b2b/psv-ka' },
     ],
     [
