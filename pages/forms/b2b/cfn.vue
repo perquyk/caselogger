@@ -5,7 +5,29 @@
             <FormModuleWoliInfo />
         </FormDiv>
         <!-- Dynamic CFN Chooser -->
-        <FormDiv> checkbox needs to be put here </FormDiv>
+        <FormDiv header="Managed or UnManaged">
+            Managed = Main, Profiel, Backup, Catsap, Filter, Streetping <br />
+            Unmanaged = Main, Profiel, Catsap, Filter, Streetping
+        </FormDiv>
+
+        <FormDiv header="Uitvoering">
+            Managed = Acties, Router, NIU, Modemtype, hfc <br />
+            Unmanaged = Acties, NIU, Modemtype, hfc
+        </FormDiv>
+
+        <FormDiv header="Testen">
+            Managed = speedtest <br />
+            unmanaged = speedtest <br />
+            + backup = speed + ping
+        </FormDiv>
+
+        <FormDiv header="Mobile Info">
+            MSISDN: <br />
+            if ZTE/nokia: IMEI nummer external LTE modem:<br />
+            Externe antenne: ja/nee<br />
+            Behaalde dekking (RSRP waarde) op de router:<br />
+        </FormDiv>
+
         <FormDiv header="Finishing Up">
             <FormModuleWoliFinish />
         </FormDiv>
