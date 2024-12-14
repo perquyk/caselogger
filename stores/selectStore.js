@@ -146,7 +146,7 @@ export const useSelectStore = defineStore('selectStore', {
             mob: [
                 { value: 'ZTE', description: 'ZTE' },
                 { value: 'Nokia 5G', description: 'Nokia 5G' },
-                { value: 'Coiler/NGIS' },
+                { value: 'Coiler/NGIS', description: 'Coiler/NGIS' },
             ],
         },
     }),
