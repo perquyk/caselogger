@@ -10,8 +10,7 @@
         </FormDiv>
         <FormDiv header="Uitvoering"> <FormModuleCFNUitvoering /></FormDiv>
         <FormDiv header="Uitvoering">
-            Managed = Acties, Router, NIU, Modemtype, hfc <br />
-            Unmanaged = Acties, NIU, Modemtype, hfc
+            <FormModuleCFNUitvoering2 />
         </FormDiv>
 
         <FormDiv header="Testen">
