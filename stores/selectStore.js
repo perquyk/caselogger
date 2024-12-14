@@ -122,5 +122,32 @@ export const useSelectStore = defineStore('selectStore', {
             { value: 'Nokia 5g', description: 'Nokia 5G' },
             { value: 'VDSL', description: 'VDSL' },
         ],
+        niu: [
+            { value: 'Onveranderd', description: 'Onveranderd' },
+            { value: '85MHz 2-Data', description: '85MHz 2-Data' },
+            { value: '85MHz 4-Data', description: '85MHz 4-Data' },
+            { value: '65MHz 4-Data', description: '65MHz 4-Data' },
+        ],
+        router: [
+            { value: '', description: '' },
+            { value: 'HPE MSR2003', description: 'HPE MSR2003' },
+            { value: 'HPE MSR3012', description: 'HPE MSR3012' },
+            { value: 'HPE MSR 985x', description: 'HPE MSR 985x' },
+            { value: 'Telco', description: 'Telco' },
+        ],
+        modemtype: {
+            tlnCoax: [{ value: 'D3.1 ERT', description: 'D3.1 ERT' }],
+            vdsl: [
+                { value: 'AMOD 3', description: 'AMOD 3' },
+                { value: 'AMOD 4', description: 'AMOD 4' },
+            ],
+            gpon: [{ value: 'nvt', description: 'nvt' }],
+            vooCoax: [{ value: 'nvt', decription: 'nvt' }],
+            mob: [
+                { value: 'ZTE', description: 'ZTE' },
+                { value: 'Nokia 5G', description: 'Nokia 5G' },
+                { value: 'Coiler/NGIS' },
+            ],
+        },
     }),
 })

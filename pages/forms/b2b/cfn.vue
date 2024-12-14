@@ -8,11 +8,7 @@
         <FormDiv header="Product Selector">
             <FormModuleCFNTypeSelector />
         </FormDiv>
-        <FormDiv header="Managed or UnManaged">
-            Managed = Main, Profiel, Backup, Catsap, Filter, Streetping <br />
-            Unmanaged = Main, Profiel, Catsap, Filter, Streetping
-        </FormDiv>
-
+        <FormDiv header="Uitvoering"> <FormModuleCFNUitvoering /></FormDiv>
         <FormDiv header="Uitvoering">
             Managed = Acties, Router, NIU, Modemtype, hfc <br />
             Unmanaged = Acties, NIU, Modemtype, hfc

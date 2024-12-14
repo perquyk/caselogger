@@ -41,5 +41,8 @@ export const useFormStore = defineStore('formStore', {
         IadTestPBX: '',
         remarks: '',
         managed: '',
+        niu: '',
+        router: '',
+        modemtype: '',
     }),
 })
