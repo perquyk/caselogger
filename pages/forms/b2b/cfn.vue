@@ -8,9 +8,8 @@
         <FormDiv header="Product Selector">
             <FormModuleCFNTypeSelector />
         </FormDiv>
-        <FormDiv header="Uitvoering"> <FormModuleCFNUitvoering /></FormDiv>
         <FormDiv header="Uitvoering">
-            <FormModuleCFNUitvoering2 />
+            <FormModuleCFNUitvoering />
         </FormDiv>
 
         <FormDiv header="Testen">
