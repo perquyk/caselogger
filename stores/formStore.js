@@ -40,5 +40,6 @@ export const useFormStore = defineStore('formStore', {
         IadTestArgus: '',
         IadTestPBX: '',
         remarks: '',
+        managed: '',
     }),
 })

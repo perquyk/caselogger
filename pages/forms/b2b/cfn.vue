@@ -5,6 +5,9 @@
             <FormModuleWoliInfo />
         </FormDiv>
         <!-- Dynamic CFN Chooser -->
+        <FormDiv header="Product Selector">
+            <FormModuleCFNTypeSelector />
+        </FormDiv>
         <FormDiv header="Managed or UnManaged">
             Managed = Main, Profiel, Backup, Catsap, Filter, Streetping <br />
             Unmanaged = Main, Profiel, Catsap, Filter, Streetping

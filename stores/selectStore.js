@@ -75,5 +75,52 @@ export const useSelectStore = defineStore('selectStore', {
             { value: 'Verwijderd', description: 'Verwijderd' },
             { value: 'Niet verwijderd', description: 'Niet verwijderd' },
         ],
+        managed: [
+            { value: '', description: '' },
+            { value: 'Managed', description: 'Managed' },
+            { value: 'Unmanaged', description: 'Unmanaged' },
+        ],
+        //still to populate
+        main: [
+            { value: '', description: '' },
+            { value: 'Telenet Coax', description: 'Telenet Coax' },
+            { value: 'VDSL', description: 'VDSL' },
+            { value: 'GPON', description: 'GPON' },
+            { value: 'VOO Coax', description: 'VOO Coax' },
+            { value: 'Mobile', description: 'Mobile' },
+        ],
+        profiel: {
+            tlnCoax: [
+                { value: '', description: '' },
+                { value: '1000/100', description: '1000/100' },
+                { value: '750/75', description: '750/75' },
+                { value: '500/50', description: '500/50' },
+                { value: '240/40', description: '240/40' },
+            ],
+            vooCoax: [
+                { value: '', description: '' },
+                { value: '400/20', description: '400/20' },
+                { value: '200/20', description: '200/20' },
+                { value: '150/10', description: '150/10' },
+            ],
+            mob: [
+                { value: '', description: '' },
+                { value: '1000/100', description: '1000/100' },
+                { value: '500/50', description: '500/50' },
+                { value: '240/40', description: '240/40' },
+                { value: '90/20', description: '90/20' },
+            ],
+
+            vdsl: [{ value: 'VDSL', description: 'VDSL' }],
+            gpon: [{ value: 'GPON', description: 'GPON' }],
+        },
+
+        backup: [
+            { value: '', description: '' },
+            { value: 'ZTE', description: 'ZTE' },
+            { value: 'Ext. Antenne + SIC', description: 'Ext. Antenne + SIC' },
+            { value: 'Nokia 5g', description: 'Nokia 5G' },
+            { value: 'VDSL', description: 'VDSL' },
+        ],
     }),
 })
