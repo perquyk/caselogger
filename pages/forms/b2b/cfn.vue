@@ -46,7 +46,14 @@
 <script setup>
 const formStore = useFormStore()
 const formData = () => {
-    return woliInfo() + situatie() + uitvoering() + testen() + materiaal()
+    return (
+        woliInfo() +
+        situatie() +
+        uitvoering() +
+        testen() +
+        materiaal() +
+        resultaat()
+    )
 }
 const woliInfo = () => {
     return `Taaktype: ${formStore.managed} Corporate Fibernet
@@ -146,7 +153,7 @@ const materiaal = () => {
 Materiaal:`
     if (formStore.modemtype != '') {
         output += `
-- ${formStore.modemtype}`
+${formStore.modemtype}`
         if (
             formStore.hfc != '' &&
             formStore.modemtype != 'VDSL' &&
@@ -158,11 +165,11 @@ Materiaal:`
     }
     if (formStore.router != '') {
         output += `
-- ${formStore.router}`
+${formStore.router}`
     }
     if (formStore.niu != '' && formStore.niu != 'Onveranderd') {
         output += `
-- ${formStore.niu}`
+${formStore.niu}`
     }
     if (
         formStore.backup != '' &&
@@ -170,13 +177,14 @@ Materiaal:`
         formStore.backup != 'VDSL'
     ) {
         output += `
-- ${formStore.backup} - ${formStore.backupIMEI}`
+${formStore.backup} - ${formStore.backupIMEI}`
     }
     if (formStore.backup == 'VDSL') {
         output += `
-- AMOD 4`
+AMOD 4`
     }
-
+    output += `
+${formStore.materiaal}`
     return output
 }
 const resultaat = () => {
