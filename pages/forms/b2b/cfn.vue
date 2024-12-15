@@ -15,6 +15,17 @@
         <FormDiv header="Testen">
             <FormModuleCFNTesten />
         </FormDiv>
+        <FormDiv
+            header="Mobile Info"
+            v-if="
+                formStore.main == 'Mobile' ||
+                formStore.backup == 'ZTE' ||
+                formStore.backup == 'Nokia 5G' ||
+                formStore.backup == 'Ext. Antennte + SIC'
+            "
+        >
+            <FormModuleCFNMobile />
+        </FormDiv>
         <FormDiv header="Mobile Info">
             MSISDN: <br />
             if ZTE/nokia: IMEI nummer external LTE modem:<br />

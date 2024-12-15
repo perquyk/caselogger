@@ -51,5 +51,8 @@ export const useFormStore = defineStore('formStore', {
         failover: '',
         main: '',
         backup: '',
+        msisdn: '',
+        backupIMEI: '',
+        rsrp: '',
     }),
 })

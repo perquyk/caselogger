@@ -119,7 +119,7 @@ export const useSelectStore = defineStore('selectStore', {
             { value: '', description: '' },
             { value: 'ZTE', description: 'ZTE' },
             { value: 'Ext. Antenne + SIC', description: 'Ext. Antenne + SIC' },
-            { value: 'Nokia 5g', description: 'Nokia 5G' },
+            { value: 'Nokia 5G', description: 'Nokia 5G' },
             { value: 'VDSL', description: 'VDSL' },
         ],
         niu: [
