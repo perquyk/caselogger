@@ -7,6 +7,9 @@ on:
     branches:
       - master # Change to your specific branch
       # - deployprod  # Additional branch for deployment
+  pull_request:
+    branches:
+      - master
 
 jobs:
   deploy:
