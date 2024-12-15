@@ -1,0 +1,53 @@
+# Update to match your values: branch_name, app_name, SSH key name on GitHub from previous step if changed, server ip, username, port, and server Node pathname (using 'which pm2' on server to get path)
+
+name: Deploy Next.js App
+
+on:
+  push:
+    branches:
+      - branch_name # Change to your specific branch
+      # - deployprod  # Additional branch for deployment
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Check Node.js version
+        run: node -v
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.1
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Deploy to ProxMox
+        env:
+          HOST: 193.186.4.113
+          USERNAME: root
+          TARGET_DIR: /var/www/caselogger-nuxt-v2
+          APP_NAME: caselogger #should match the name of the server block
+          PORT: 3000
+        run: |
+          ssh -o StrictHostKeyChecking=no $USERNAME@$HOST << EOF
+            export PATH=/root/.nvm/versions/node/v20.12.0/bin:$PATH #'which pm2' command on terminal will give the right path
+            cd $TARGET_DIR
+            git pull origin ${GITHUB_REF#refs/heads/}
+            npm install
+            npm run build
+            if pm2 list | grep -q $APP_NAME; then
+              echo "Restarting application: $APP_NAME"
+              pm2 restart $APP_NAME
+            else
+              echo "Starting application: $APP_NAME"
+              pm2 start --name $APP_NAME -- /var/www/caselogger-nuxt-v2/.output/server/index.mjs -- --port=$PORT
+            fi            
+            pm2 save
+          EOF
