@@ -1,1 +1,2 @@
 ## Caselogger tool
+tet deploy
