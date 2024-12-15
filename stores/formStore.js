@@ -44,5 +44,12 @@ export const useFormStore = defineStore('formStore', {
         niu: '',
         router: '',
         modemtype: '',
+        mainSpeedDown: '',
+        mainSpeedUp: '',
+        buSpeedDown: '',
+        buSpeedUp: '',
+        failover: '',
+        main: '',
+        backup: '',
     }),
 })
