@@ -46,9 +46,71 @@
 <script setup>
 const formStore = useFormStore()
 const formData = () => {
-    woliInfo()
+    return woliInfo() + situatie() + uitvoering()
 }
 const woliInfo = () => {
-    return 'test'
+    return `Taaktype: ${formStore.managed} Corporate Fibernet
+WOLI: ${formStore.task}
+Adres: ${formStore.adres}
+--------------------------------------`
+}
+
+const situatie = () => {
+    let output = `
+Omschrijving Taak:
+Installatie ${formStore.managed} Corporate Fibernet
+
+Main: ${formStore.main}
+Profiel: ${formStore.profiel}`
+    if (formStore.managed == 'Managed') {
+        if (formStore.backup != '') {
+            output += `
+Backup: ${formStore.backup}`
+        }
+    }
+
+    output += `
+
+Catsap-status bij aankomst: ${formStore.catsap}
+Filter-status bij aankomst: ${formStore.filter}
+Streetping bij aankomst: ${formStore.streetping}`
+
+    return output
+}
+const uitvoering = () => {
+    let output = `
+
+Acties:
+${formStore.acties}
+
+`
+    if (formStore.managed == 'Managed') {
+        output += `
+Geinstalleerde Router: ${formStore.router}`
+    }
+    if (formStore.main == 'Telenet Coax') {
+        output += `
+Geinstalleerde Modem: ${formStore.modemtype} - ${formStore.hfc}`
+    }
+    if (formStore.main == 'VDSL') {
+        output += `
+Geinstalleerde Modem: ${formStore.modemtype}
+CID: ${formStore.hfc}`
+    }
+    if (formStore.main == 'GPON') {
+        output += `
+CID: ${formStore.hfc}`
+    }
+    if (formStore.main == 'Mobile') {
+        if (formStore.modemtype == 'ZTE' || formStore.modemtype == 'Nokia 5G') {
+            output += `
+Geinstalleerde Modem: ${formStore.modemtype}
+IMEI: ${formStore.hfc}`
+        } else if (formStore.modemtype == 'Coiler/NGIS') {
+            output += `Backup geplaatst via Externe Antenne`
+        }
+    }
+
+    return output
 }
 </script>
