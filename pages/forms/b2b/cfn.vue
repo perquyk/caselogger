@@ -37,7 +37,7 @@
             <FormModuleButtonGroup
                 :formData="formData"
                 :task="formStore.task"
-                taskType="PSV-KA"
+                taskType="CFN"
             />
         </FormDiv>
     </div>
@@ -46,6 +46,9 @@
 <script setup>
 const formStore = useFormStore()
 const formData = () => {
-    return ''
+    woliInfo()
+}
+const woliInfo = () => {
+    return 'test'
 }
 </script>
