@@ -15,13 +15,6 @@
         <FormDiv header="Testen">
             <FormModuleCFNTesten />
         </FormDiv>
-
-        <FormDiv header="Testen">
-            Managed = speedtest <br />
-            unmanaged = speedtest <br />
-            + backup = speed + ping
-        </FormDiv>
-
         <FormDiv header="Mobile Info">
             MSISDN: <br />
             if ZTE/nokia: IMEI nummer external LTE modem:<br />
