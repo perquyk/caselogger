@@ -5,7 +5,7 @@ name: Deploy Next.js App
 on:
   push:
     branches:
-      - master # Change to your specific branch
+      - branch_name # Change to your specific branch
       # - deployprod  # Additional branch for deployment
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Check Node.js version
         run: node -v
@@ -26,9 +26,9 @@ jobs:
       - name: Set up SSH
         uses: webfactory/ssh-agent@v0.5.1
         with:
-          ssh-private-key: ${{ secrets.DO_SSH_KEY }}
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Deploy to ProxMox
+      - name: Deploy to DigitalOcean
         env:
           HOST: 213.118.209.124
           USERNAME: root
@@ -37,7 +37,7 @@ jobs:
           PORT: 3000
         run: |
           ssh -o StrictHostKeyChecking=no $USERNAME@$HOST << EOF
-            export PATH=/root/.nvm/versions/node/v20.12.0/bin:$PATH
+            export PATH=/root/.nvm/versions/node/v20.12.0/bin:$PATH #'which pm2' command on terminal will give the right path
             cd $TARGET_DIR
             git pull origin ${GITHUB_REF#refs/heads/}
             npm install
@@ -47,7 +47,7 @@ jobs:
               pm2 restart $APP_NAME
             else
               echo "Starting application: $APP_NAME"
-              pm2 start --name $APP_NAME -- /var/www/caselogger-nuxt-v2/.output/server/index.mjs
+              pm2 start npm --name $APP_NAME -- start -- --port=$PORT
             fi            
             pm2 save
           EOF
