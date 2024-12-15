@@ -30,7 +30,7 @@ jobs:
 
       - name: Deploy to ProxMox
         env:
-          HOST: 193.186.4.113
+          HOST: 213.118.209.124
           USERNAME: root
           TARGET_DIR: /var/www/caselogger-nuxt-v2
           APP_NAME: caselogger #should match the name of the server block
