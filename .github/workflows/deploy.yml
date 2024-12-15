@@ -5,7 +5,7 @@ name: Deploy Next.js App
 on:
   push:
     branches:
-      - main # Change to your specific branch
+      - master # Change to your specific branch
       # - deployprod  # Additional branch for deployment
 
 jobs:
