@@ -26,12 +26,6 @@
         >
             <FormModuleCFNMobile />
         </FormDiv>
-        <FormDiv header="Mobile Info">
-            MSISDN: <br />
-            if ZTE/nokia: IMEI nummer external LTE modem:<br />
-            Externe antenne: ja/nee<br />
-            Behaalde dekking (RSRP waarde) op de router:<br />
-        </FormDiv>
 
         <FormDiv header="Finishing Up">
             <p class="col-span-12 px-3 text-xs text-gray-400">
