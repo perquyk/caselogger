@@ -46,7 +46,7 @@
 <script setup>
 const formStore = useFormStore()
 const formData = () => {
-    return woliInfo() + situatie() + uitvoering()
+    return woliInfo() + situatie() + uitvoering() + testen() + materiaal()
 }
 const woliInfo = () => {
     return `Taaktype: ${formStore.managed} Corporate Fibernet
@@ -82,7 +82,6 @@ const uitvoering = () => {
 
 Acties:
 ${formStore.acties}
-
 `
     if (formStore.managed == 'Managed') {
         output += `
@@ -111,6 +110,83 @@ IMEI: ${formStore.hfc}`
         }
     }
 
+    return output
+}
+const testen = () => {
+    let output = `
+
+Testen:
+    `
+    if (formStore.main != '') {
+        output += `
+Speedtest Main: ${formStore.mainSpeedDown}/${formStore.mainSpeedUp}`
+    }
+    if (formStore.backup != '') {
+        output += `
+Speedtest Backup: ${formStore.buSpeedDown}/${formStore.buSpeedUp}
+Fail-over Test" ${formStore.failover}`
+    }
+    if (
+        formStore.main == 'Mobile' ||
+        formStore.backup == 'ZTE' ||
+        formStore.backup == 'Nokia 5G' ||
+        formStore.backup == 'Coiler/NGIS'
+    ) {
+        output += `
+        
+        RSRP: ${formStore.rsrp}
+        MSISDN: ${formStore.msisdn}`
+    }
+
+    return output
+}
+const materiaal = () => {
+    let output = `
+
+Materiaal:`
+    if (formStore.modemtype != '') {
+        output += `
+- ${formStore.modemtype}`
+        if (
+            formStore.hfc != '' &&
+            formStore.modemtype != 'VDSL' &&
+            formStore.modemtype != 'GPON' &&
+            formStore.modemtype != 'Coiler/NGIS'
+        ) {
+            output += ` - ${formStore.hfc}`
+        }
+    }
+    if (formStore.router != '') {
+        output += `
+- ${formStore.router}`
+    }
+    if (formStore.niu != '' && formStore.niu != 'Onveranderd') {
+        output += `
+- ${formStore.niu}`
+    }
+    if (
+        formStore.backup != '' &&
+        formStore.backup != 'Coiler/NGIS' &&
+        formStore.backup != 'VDSL'
+    ) {
+        output += `
+- ${formStore.backup} - ${formStore.backupIMEI}`
+    }
+    if (formStore.backup == 'VDSL') {
+        output += `
+- AMOD 4`
+    }
+
+    return output
+}
+const resultaat = () => {
+    const output = `
+
+Resultaat:
+${formStore.resultaat}
+
+Modemtest:
+${formStore.modemtest}`
     return output
 }
 </script>

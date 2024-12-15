@@ -136,14 +136,19 @@ export const useSelectStore = defineStore('selectStore', {
             { value: 'Telco', description: 'Telco' },
         ],
         modemtype: {
-            tlnCoax: [{ value: 'D3.1 ERT', description: 'D3.1 ERT' }],
+            tlnCoax: [
+                { value: '', description: '' },
+                { value: 'D3.1 ERT', description: 'D3.1 ERT' },
+            ],
             vdsl: [
+                { value: '', description: '' },
                 { value: 'AMOD 3', description: 'AMOD 3' },
                 { value: 'AMOD 4', description: 'AMOD 4' },
             ],
             gpon: [{ value: 'nvt', description: 'nvt' }],
             vooCoax: [{ value: 'nvt', decription: 'nvt' }],
             mob: [
+                { value: '', description: '' },
                 { value: 'ZTE', description: 'ZTE' },
                 { value: 'Nokia 5G', description: 'Nokia 5G' },
                 { value: 'Coiler/NGIS', description: 'Coiler/NGIS' },
