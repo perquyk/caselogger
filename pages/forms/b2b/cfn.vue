@@ -78,6 +78,7 @@ Backup: ${formStore.backup}`
 
     output += `
 
+Situatie bij aankomst:
 Catsap-status bij aankomst: ${formStore.catsap}
 Filter-status bij aankomst: ${formStore.filter}
 Streetping bij aankomst: ${formStore.streetping}`
