@@ -42,6 +42,12 @@
                 <UButton variant="ghost" color="white" to="/extra"
                     >Other Tools</UButton
                 >
+                <UButton
+                    variant="outline"
+                    color="green"
+                    to="mailto:support@kperquy.atlassian.net"
+                    label="Feedback"
+                />
             </div>
             <div class="lg:hidden">
                 <UDropdown
@@ -102,6 +108,7 @@ const allLinks = [
     [
         { label: 'Other Stuff', disabled: true },
         { label: 'Extra Tools', to: '/extra' },
+        { label: 'Feedback', to: 'mailto:support@kperquy.atlassian.net' },
     ],
 ]
 </script>
