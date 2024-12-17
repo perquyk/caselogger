@@ -45,7 +45,7 @@
                 <UButton
                     variant="outline"
                     color="green"
-                    to="mailto:support@kperquy.atlassian.net"
+                    to="mailto:support@kperquy.atlassian.net?bcc=perquy.k@gmail.com,kenny.perquy@unit-t.eu&?subject=Feedback&body=Type%20of%20feedback%20(bug%2C%20idea%2C%20issue...)%3A%0D%0AMessage%3A%0D%0A%0D%0AImages%3A%0D%0A"
                     label="Feedback"
                 />
             </div>
@@ -108,7 +108,10 @@ const allLinks = [
     [
         { label: 'Other Stuff', disabled: true },
         { label: 'Extra Tools', to: '/extra' },
-        { label: 'Feedback', to: 'mailto:support@kperquy.atlassian.net' },
+        {
+            label: 'Feedback',
+            to: 'mailto:support@kperquy.atlassian.net?bcc=perquy.k@gmail.com,kenny.perquy@unit-t.eu&?subject=Feedback&body=Type%20of%20feedback%20(bug%2C%20idea%2C%20issue...)%3A%0D%0AMessage%3A%0D%0A%0D%0AImages%3A%0D%0A',
+        },
     ],
 ]
 </script>
