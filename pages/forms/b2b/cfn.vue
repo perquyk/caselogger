@@ -132,7 +132,7 @@ Speedtest Main: ${formStore.mainSpeedDown}/${formStore.mainSpeedUp}`
     if (formStore.backup != '') {
         output += `
 Speedtest Backup: ${formStore.buSpeedDown}/${formStore.buSpeedUp}
-Fail-over Test" ${formStore.failover}`
+Fail-over Test: ${formStore.failover}`
     }
     if (
         formStore.main == 'Mobile' ||
