@@ -45,7 +45,7 @@
                 <UButton
                     variant="outline"
                     color="green"
-                    to="mailto:support@kperquy.atlassian.net?bcc=perquy.k@gmail.com,kenny.perquy@unit-t.eu&?subject=Feedback&body=Type%20of%20feedback%20(bug%2C%20idea%2C%20issue...)%3A%0D%0AMessage%3A%0D%0A%0D%0AImages%3A%0D%0A"
+                    to="mailto:support@kperquy.atlassian.net?cc=perquy.k@gmail.com,kenny.perquy@unit-t.eu&subject=Caselogger%20-%20Feedback&body=Type%20of%20feedback%20(bug%2C%20idea%2C%20issue...)%3A%0D%0A%0D%0AMessage%3A%0D%0A%0D%0AImages%3A"
                     label="Feedback"
                 />
             </div>
@@ -110,7 +110,7 @@ const allLinks = [
         { label: 'Extra Tools', to: '/extra' },
         {
             label: 'Feedback',
-            to: 'mailto:support@kperquy.atlassian.net?bcc=perquy.k@gmail.com,kenny.perquy@unit-t.eu&?subject=Feedback&body=Type%20of%20feedback%20(bug%2C%20idea%2C%20issue...)%3A%0D%0AMessage%3A%0D%0A%0D%0AImages%3A%0D%0A',
+            to: 'mailto:support@kperquy.atlassian.net?cc=perquy.k@gmail.com,kenny.perquy@unit-t.eu&subject=Caselogger%20-%20Feedback&body=Type%20of%20feedback%20(bug%2C%20idea%2C%20issue...)%3A%0D%0A%0D%0AMessage%3A%0D%0A%0D%0AImages%3A',
         },
     ],
 ]
