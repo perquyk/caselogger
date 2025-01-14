@@ -1,5 +1,6 @@
 <template>
     <div class="mx-auto grid w-9/12 grid-cols-12 gap-3 p-3">
+        <FormDiv title="Project Unhappy Dropcable" />
         <FormDiv header="Klant Info">
             <FormModuleKlantInfo />
         </FormDiv>
