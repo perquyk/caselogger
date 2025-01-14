@@ -30,15 +30,6 @@ export const useAppStore = defineStore('applist', {
                 icon: 'i-lineicons-chrome',
                 img: '/antscopy-logo.png',
             },
-            {
-                name: 'Caselogger OLD',
-                author: 'Kenny Perquy',
-                description: 'Oude versie van deze tool.',
-                action: 'Go to Caselogger',
-                url: 'https://perquyk.org',
-                icon: 'i-pepicons-pop-leave',
-                img: 'Logo128.png',
-            },
         ],
     }),
 })
