@@ -1,24 +1,31 @@
 <template>
-    <MainContainer title="Project Unhappy Dropcable">
-        <ContainerSection>
+    <div class="mx-auto grid w-9/12 grid-cols-12 gap-3 p-3">
+        <FormDiv header="Klant Info">
             <FormModuleKlantInfo />
-            <ContDivider />
-            <FormModulePnmAankomst />
-            <ContDivider />
-            <FormModuleUnhappySmallCheck />
-            <ContDivider />
-            <FormModuleTdrMeting />
-            <ContDivider />
-            <FormModuleActiesDrop />
-            <ContDivider />
-            <FormModuleUnhappyEnd />
+        </FormDiv>
+        <FormDiv cols="12" header="Aankomst">
+            <FormModulePnmAankomst class="col-span-12" />
+        </FormDiv>
+        <FormDiv header="Tijdens Interventie">
+            <FormModuleUnhappySmallCheck class="col-span-12" />
+        </FormDiv>
+        <FormDiv header="TDR-meting">
+            <FormModuleTdrMeting class="col-span-12" />
+        </FormDiv>
+        <FormDiv header="Acties Drop">
+            <FormModuleActiesDrop class="col-span-12" />
+        </FormDiv>
+        <FormDiv header="Bij Vertrek">
+            <FormModuleUnhappyEnd class="col-span-12" />
+        </FormDiv>
+        <FormDiv>
             <FormModuleButtonGroup
                 :formData="formData"
                 :task="formStore.task"
                 taskType="install"
             />
-        </ContainerSection>
-    </MainContainer>
+        </FormDiv>
+    </div>
 </template>
 <script setup>
 const formStore = useFormStore()

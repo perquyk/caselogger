@@ -1,6 +1,5 @@
 <template>
     <div class="grid grid-cols-12">
-        <h3 class="col-span-12 px-5 text-xl">Tijdens Interventie</h3>
         <FormSelect
             label="CM-Snoer sleutelvast?"
             :options="selectStore.oknok"

@@ -1,7 +1,5 @@
 <template>
     <div class="grid grid-cols-12">
-        <h3 class="col-span-12 px-5 text-xl">TDR-meting</h3>
-
         <FormSelect
             label="TDR-meting uitgevoerd?"
             :options="selectStore.janee"
