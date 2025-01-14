@@ -8,10 +8,5 @@
             </p>
         </ContainerSection>
     </MainContainer>
-    <MainContainer title="Changelog">
-        <ContainerSection>
-            <Changelog />
-        </ContainerSection>
-    </MainContainer>
 </template>
 <script setup></script>
