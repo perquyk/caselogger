@@ -1,6 +1,5 @@
 <template>
-    <div class="grid">
-        <h3 class="col-span-12 px-5 text-xl">Acties Drop</h3>
+    <div class="grid grid-cols-12">
         <FormSelect
             label="Connector tap vervangen?"
             :options="selectStore.janee"
