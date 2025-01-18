@@ -72,7 +72,8 @@ const inhomeLinks = [
         { label: 'Install', to: '/forms/inhome/install' },
         { label: 'Repair', to: '/forms/inhome/repair' },
     ],
-    [{ label: 'Project Unhappy Drop', to: '/forms/inhome/unhappy-drop' }],
+    [{ label: 'Project Unhappy Drop', to: '/forms/inhome/unhappy-drop' },
+        {label: 'Project Filter on Tap', to: '/forms/inhome/hp47' }],
 ]
 const ftthLinks = [[{ label: 'RFoG Install', to: '/forms/ftth/rfog-install' }]]
 const b2bLinks = [
@@ -91,6 +92,7 @@ const allLinks = [
             label: 'Project Unhappy Drop',
             to: '/forms/inhome/unhappy-drop',
         },
+        {label: 'Project Filter on Tap', to: '/forms/inhome/hp47' },
     ],
     [
         { label: 'FTTH', disabled: true },
