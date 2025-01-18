@@ -18,9 +18,10 @@
         </FormDiv>
         <FormDiv header="Uitgevoerde Acties">
             <FormModuleInhomeActies />
+            <FormModuleProjHPActies />
+
         </FormDiv>
         <FormDiv header="Finishing up">
-            <FormModuleProjHPFinish />
             <FormModuleFinish />
         </FormDiv>
         <FormDiv>
@@ -35,12 +36,6 @@
 <script setup>
 const formStore = useFormStore()
 const formData = () => {
-    let output = ``
-    output += situatie()
-    return output
-}
-
-const situatie = () => {
     return `Taaktype: Project Filter on Tap
 Klantnummer: ${formStore.klantnummer}
 Task: ${formStore.task}
@@ -48,6 +43,7 @@ Adres: ${formStore.adres}
 --------------------------------------
 Omschrijving Taak:
 Project Filter on Tap. Klant zijn installatie zou ingress veroorzaken op het net.
+Technieker is ter plaatse om de ingress te localiseren en op te lossen.
 
 Situatie bij aankomst:
 Filter aanwezig op tap: ${formStore.hpReplace}
@@ -60,8 +56,16 @@ Ingress vastgesteld na acties: ${formStore.ingressEnd}
 
 Acties:
 ${formStore.acties}
+${hpActions()}
 
-PM verstuurd voor verwijdering HP: ${pmSent()}
+Materiaal:
+${formStore.materiaal}
+
+Resultaat:
+${formStore.resultaat}
+
+Modemtest:
+${formStore.modemtest}
 `
 }
 
@@ -69,15 +73,28 @@ const tdr = () => {
     if (!formStore.tdrCheckbox) {
         return ``
     } else {
-        return `tdr meting uitgevoerd!`
+        return `TDR-meting uitgevoerd:
+- Vp: ${formStore.vp}
+- Tap > NIU: ${formStore.tapniulength} meter - Events: ${formStore.tapniuevents}
+- NIU > Tap: ${formStore.niutaplength} meter - Events: ${formStore.niutapevents}
+`
     }
 }
-const pmSent = () => {
-    if (formStore.pmSent) {
-        return 'Ja'
+const hpActions = () => {
+    let output = ``;
+    if (formStore.hpRemove === 'false'){
+        output += `HP verwijderd: Nee`
     } else {
-        return 'Nee'
+        output +=  `HP verwijderd: Ja
+PM verstuurd: ${pmSent()}`
     }
+    return output
+}
+
+const pmSent = () => {
+    if (!formStore.pmSent) {
+        return `Nee`
+    }else{return `Ja`}
 }
 </script>
 <style scoped></style>

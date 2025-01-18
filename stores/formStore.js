@@ -58,5 +58,6 @@ export const useFormStore = defineStore('formStore', {
         ingressEnd: '',
         tdrCheckbox: false,
         pmSent: false,
+        hpRemove: false,
     }),
 })
