@@ -17,7 +17,7 @@
             <FormModuleButtonGroup
                 :formData="formData"
                 :task="formStore.task"
-                taskType="install"
+                taskType="rfog-install"
             />
         </FormDiv>
     </div>
