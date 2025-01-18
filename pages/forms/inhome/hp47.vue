@@ -25,7 +25,7 @@
         </FormDiv>
         <FormDiv>
             <FormModuleButtonGroup
-                :formDate="formData"
+                :formData="formData"
                 :task="formStore.task"
                 tasktype="project-hp47"
             />
@@ -35,7 +35,49 @@
 <script setup>
 const formStore = useFormStore()
 const formData = () => {
-    return `not yet implemented`
+    let output = ``
+    output += situatie()
+    return output
+}
+
+const situatie = () => {
+    return `Taaktype: Project Filter on Tap
+Klantnummer: ${formStore.klantnummer}
+Task: ${formStore.task}
+Adres: ${formStore.adres}
+--------------------------------------
+Omschrijving Taak:
+Project Filter on Tap. Klant zijn installatie zou ingress veroorzaken op het net.
+
+Situatie bij aankomst:
+Filter aanwezig op tap: ${formStore.hpReplace}
+Klant heeft powerlines: ${formStore.pwl}
+
+Testen:
+Ingress vastgesteld bij aankomst: ${formStore.ingress}
+${tdr()}
+Ingress vastgesteld na acties: ${formStore.ingressEnd}
+
+Acties:
+${formStore.acties}
+
+PM verstuurd voor verwijdering HP: ${pmSent()}
+`
+}
+
+const tdr = () => {
+    if (!formStore.tdrCheckbox) {
+        return ``
+    } else {
+        return `tdr meting uitgevoerd!`
+    }
+}
+const pmSent = () => {
+    if (formStore.pmSent) {
+        return 'Ja'
+    } else {
+        return 'Nee'
+    }
 }
 </script>
 <style scoped></style>
