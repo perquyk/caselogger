@@ -54,5 +54,9 @@ export const useFormStore = defineStore('formStore', {
         msisdn: '',
         backupIMEI: '',
         rsrp: '',
+        pwl: '',
+        ingressEnd: '',
+        tdrCheckbox: false,
+        pmSent: false,
     }),
 })
