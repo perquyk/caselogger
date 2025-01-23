@@ -82,7 +82,12 @@ const b2bLinks = [
         { label: 'PSV KA', to: '/forms/b2b/psv-ka' },
     ],
 ]
-const b2bProjectLinks = [[{ label: 'GSX', to: '/forms/b2b/projects/gsx' }]]
+const b2bProjectLinks = [
+    [
+        { label: 'GSX', to: '/forms/b2b/projects/gsx'},
+        { label: "Modem/NIU Swap", to: "/forms/b2b/projects/swap" }
+    ],
+]
 const allLinks = [
     [
         { label: 'inHome', disabled: true },
@@ -106,7 +111,8 @@ const allLinks = [
     [
         { label: 'B2B Projects', disabled: true },
         { label: 'GSX', to: '/forms/b2b/projects/gsx' },
-    ],
+        {label: "Modem/NIU Swap", to: "/forms/b2b/projects/swap"},
+],
     [
         { label: 'Other Stuff', disabled: true },
         { label: 'Extra Tools', to: '/extra' },
