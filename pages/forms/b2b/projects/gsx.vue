@@ -13,7 +13,7 @@
         <FormDiv>
             <FormModuleButtonGroup
                 :formData="formData"
-                :task="useFormStore.task"
+                :task="formStore.task"
                 taskType="GSX-Migration"
             />
         </FormDiv>
