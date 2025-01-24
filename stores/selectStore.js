@@ -1,6 +1,19 @@
 import { defineStore } from 'pinia'
 export const useSelectStore = defineStore('selectStore', {
     state: () => ({
+        coaxModems: [
+            { value: '', description: '' },
+            { value: 'D3.1 ERT', description: 'D3.1 ERT' },
+            { value: 'D3.1 HGW', description: 'D3.1 HGW' },
+            { value: 'D3.1 WIFI6', description: 'D3.1 WIFI6' },
+            { value: 'D3.0 HGW', description: 'D3.0 HGW' },
+        ],
+        niuTypes: [
+            { value: '', description: '' },
+            { value: 'Mampaey - 85MHz Garage 2-Data', description: 'Mampaey - 85MHz Garage 2-Data' },
+            { value: 'Wall Outlet 85MHz', description: 'Wall Outlet 85MHz' },
+            { value: '85MHz 4-Data', description: '85MHz 4-Data' },
+        ],
         filterOptions: [
             { value: '', description: '' },
             { value: 'No Filter', description: 'No Filter' },
