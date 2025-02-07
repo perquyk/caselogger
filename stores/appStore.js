@@ -20,16 +20,6 @@ export const useAppStore = defineStore('applist', {
                 icon: 'i-material-symbols-download',
                 img: '/antscopy-logo.png',
             },
-            {
-                name: 'Antscopy M-v3',
-                author: 'Kenny Perquy',
-                description:
-                    'Voegt kopieer-functie toe aan Ants. Zit ook reeds ingebouwd in Frustrafix. ',
-                action: 'Chrome Webstore',
-                url: 'https://chromewebstore.google.com/detail/antscopy/ndcgnmdjcfifegkmmlfnjiplbiochjhj?authuser=0&hl=nl',
-                icon: 'i-lineicons-chrome',
-                img: '/antscopy-logo.png',
-            },
         ],
     }),
 })
