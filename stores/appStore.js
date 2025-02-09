@@ -20,6 +20,15 @@ export const useAppStore = defineStore('applist', {
                 icon: 'i-material-symbols-download',
                 img: '/antscopy-logo.png',
             },
+            {
+                name: 'Router Tools',
+                author: 'Kenny Perquy',
+                description: "Collectie van alle links om router info op te vragen. Dit staat hier omdat het nog niet getest is :) ",
+                action: "Visit",
+                url: "https://perquyk.org/tools/routers",
+                icon: 'i-lineicons-chrome',
+                img: '/Logo128.png',
+            }
         ],
     }),
 })
