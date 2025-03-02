@@ -14,7 +14,7 @@ export const useAppStore = defineStore('applist', {
             {
                 name: 'Antscopy M-v2',
                 author: 'Jonathan Geevaert',
-                description: 'Voegt functies toe aan Ants',
+                description: 'Voegt functies toe aan Ants.',
                 action: 'Download',
                 url: 'https://www.facebook.com/groups/reptechtelenet/permalink/23891621783817644',
                 icon: 'i-material-symbols-download',
