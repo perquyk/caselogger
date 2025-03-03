@@ -2,12 +2,9 @@
     <div class="mx-auto grid w-9/12 grid-cols-12 gap-3 p-3">
         <FormDiv title="GSX Migration" />
         <FormDiv>
-            <p class="col-span-12 mb-3 rounded-lg bg-amber-500/90 text-slate-800 font-bold p-3">
-                Vanaf aanstaande maandag 03 maart 2025..zal het volledige GSX team vanuit een nieuwe functionele mailbox werken om onze interne processen te optimaliseren. Hierdoor is er een wijziging van het algemene email adres nodig van waaruit de communicatie wordt ontvangen/verstuurd.
-                <br>
-                <br>
-                Gelieve de projectnaam altijd mee in het onderwerp van je mail toe te voegen wanneer je mail gericht is aan tb-voicemigration@telenetgroup.be
-                Het stappenplan in het descriptionveld van de woli’s heeft/zal ook een update krijgen.
+            <p class="col-span-12 mb-3 rounded-lg bg-amber-500/90 text-slate-800 p-3">
+                <strong>Opgelet!</strong> Sinds 03/03/2025 is er een nieuwe mailbox voor de mails:
+                <a href="mailto:tb-voicemigration@telenetgroup.be" class="font-bold"><em>tb-voicemigration@telenetgroup.be</em></a>
             </p>
             <UButton block class="col-span-12" to="https://comm.unit-t.eu/thehive/article/nieuw-telenet-business-project-gsx-migratie/" label="Project Info"/>
         </FormDiv>
